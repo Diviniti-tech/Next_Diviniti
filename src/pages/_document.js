@@ -33,6 +33,32 @@ export default function Document() {
         <meta property="og:locale" content="fr_FR" />
         <meta property="og:site_name" content="Pixecurity" />
        
+       {/* Favicon */}
+        <link rel="icon" href="/favicon.ico" />
+       
+
+        {/* Google Fonts */}
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+
+        />
+
+        {/* Font Awesome */}
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+
+        />
+
+
+        <link
+          rel="stylesheet"
+          href="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+
+        />
+
+
 
       </Head>
       <body>
