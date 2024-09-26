@@ -8,7 +8,8 @@ export default function Home() {
 
         <div className={styles.homeContainer}>
 
-            <h1 className={styles.title}>Welcome to the Home Page</h1>
+            {/* <h1 className={styles.title}>Welcome to the Home Page</h1> */}
+            <img src="assets/diviniti-logo-white.svg" alt="Diviniti logo" className={styles.homeLogo}/>
 
                     </div>
                         
