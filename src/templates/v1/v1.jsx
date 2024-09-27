@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import styles from "./style.module.scss";
+import { motion } from "framer-motion";
 
 export default function V1() {
   const skyRef = useRef(null); // Utilisation de useRef pour accéder à #sky après le rendu
@@ -50,7 +51,13 @@ export default function V1() {
  
 
     </div>
-    <img src="assets/diviniti-logo-purple.svg" alt="Diviniti logo" className={styles.homeLogo2}/>
+    <motion.img src="assets/diviniti-logo-purple.svg" alt="Diviniti logo" className={styles.homeLogo2}
+     animate={{ scale: [1, 1.05, 1] }} // Légère animation de pulse
+     transition={{
+       duration: 1, // Durée de l'animation
+       ease: 'easeInOut', // Transition fluide
+       repeat: Infinity, // Répéter à l'infini
+     }}/>
     </div>
   );
 }
