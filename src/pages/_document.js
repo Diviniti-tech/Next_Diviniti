@@ -12,17 +12,17 @@ export default function Document() {
         />
         <meta
           name="keywords"
-          content="diviniti, soron, Atna, Befrost, it, security, securite, surete, ia, ai, videoprotection, videosurveillance, protection "
+          content="diviniti, soron, atna, befrost, it, security, securite, surete, ia, ai, videoprotection, videosurveillance, protection "
         />
         <meta name="author" content="Diviniti" />
         <meta name="robots" content="index, follow" />
         <meta
           property="og:title"
-          content="Pixecurity - Fournisseur de solutions de sûreté intelligentes"
+          content="Diviniti"
         />
         <meta
           property="og:description"
-          content="Pixecurity offre des solutions de sûreté innovantes pour protéger vos biens et votre personnel. Découvrez nos solutions de sécurité."
+          content="Diviniti"
         />
         <meta property="og:url" content="https://www.diviniti.io" />
         <meta property="og:type" content="website" />
