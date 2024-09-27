@@ -8,13 +8,13 @@ export default function Document() {
         {/* Meta Tags for SEO */}
         <meta
           name="description"
-          content="Pixecurity offre des solutions de sûreté innovantes pour protéger vos biens et votre personnel. Découvrez nos solutions de sécurité."
+          content="Diviniti"
         />
         <meta
           name="keywords"
-          content="sécurité, sûreté, protection, videoprotection, surveillance, videosurveillance, Pixecurity, france, paris, IDF, vidéoprotection, contrôle d'accès, analyse d'image, hypervision, réseau, caméra, caméras, switch, bullet, ptz, dôme, bosch, vivotek, i-pro, zyxel, vms, milestone, til"
+          content="diviniti, soron, Atna, Befrost, it, security, securite, surete, ia, ai, videoprotection, videosurveillance, protection "
         />
-        <meta name="author" content="Pixecurity" />
+        <meta name="author" content="Diviniti" />
         <meta name="robots" content="index, follow" />
         <meta
           property="og:title"
@@ -24,17 +24,17 @@ export default function Document() {
           property="og:description"
           content="Pixecurity offre des solutions de sûreté innovantes pour protéger vos biens et votre personnel. Découvrez nos solutions de sécurité."
         />
-        <meta property="og:url" content="https://www.pixecurity.com" />
+        <meta property="og:url" content="https://www.diviniti.io" />
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://files.pixecurity.com/wp-content/uploads/sites/2/2024/07/fav-pix.png"
+          content="/assets/diviniti-logo-gradient.svg"
         />
         <meta property="og:locale" content="fr_FR" />
-        <meta property="og:site_name" content="Pixecurity" />
+        <meta property="og:site_name" content="Diviniti" />
        
        {/* Favicon */}
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/assets/diviniti-logo-gradient.svg" />
        
 
         {/* Google Fonts */}
