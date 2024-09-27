@@ -1,0 +1,24 @@
+.v4Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-image : url("/assets/test1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+    
+    .homeLogo4 {
+        // max-width: 200px; // Ajustez la taille maximale si nécessaire
+        width: 11rem;
+        height: auto;
+        margin-bottom: 20px;
+        animation: pulse infinite;
+        -webkit-animation: pulse 12s infinite;
+        position: absolute;
+        
+    }
+    }
+
+

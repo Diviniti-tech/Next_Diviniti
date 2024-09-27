@@ -1,0 +1,26 @@
+.v5Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-image : url("/assets/test2.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+    
+    
+    
+    .homeLogo5 {
+          // max-width: 200px; // Ajustez la taille maximale si nécessaire
+          width: 18rem;
+          height: auto;
+          margin-bottom: 20px;
+          animation: pulse infinite;
+          -webkit-animation: pulse 12s infinite;
+          position: absolute;
+          
+    }
+    }
+
+
