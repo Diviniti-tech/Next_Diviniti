@@ -1,13 +1,14 @@
 
 import styles from "./style.module.scss";
 import Link from "next/link";
+import Image from "next/image";
 
 function Footer() {
 
   return (
     <div className={styles["footer-container"]}>
       <div className={styles["section-1"]}>
-        <img src="/assets/diviniti-logo-purple.svg" alt="Logo Diviniti" loading="lazy" />
+        <Image src="/assets/diviniti-logo-purple.svg" alt="Logo Diviniti" loading="lazy" />
         <p className={styles.slogan}>Gaming for Realiti</p>
         <p className={styles.description}>Le nouveau système d'exploitation sûreté</p>
       </div>

@@ -1,5 +1,6 @@
 import styles from "./style.module.scss";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   const linkedin = "https://www.linkedin.com/company/divinititech";
@@ -10,7 +11,7 @@ export default function Header() {
         <div className={styles.headerLogo}>
           <Link href="/">
             {" "}
-            <img
+            <Image
               src="assets/diviniti-logo-white.svg"
               alt="Diviniti logo"
             />{" "}
