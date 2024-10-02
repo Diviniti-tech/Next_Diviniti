@@ -62,7 +62,7 @@ export default function Home() {
       />
       <motion.div className={styles.titles} variants={container}>
         <motion.h2 variants={item}>Gaming for Realiti</motion.h2>
-        <motion.h1 variants={item}>Le nouveau système d'exploitation sûreté</motion.h1>
+        <motion.h1 variants={item}>Le nouveau système d`&apos;`exploitation sûreté</motion.h1>
         <motion.div variants={item} className={styles.cta}>
           <AnimatedLink />
         </motion.div>

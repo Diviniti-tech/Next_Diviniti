@@ -10,13 +10,12 @@ export default function Header() {
       <div className={styles.headerContainer}>
         <div className={styles.headerLogo}>
           <Link href="/">
-            {" "}
             <Image
               src="assets/diviniti-logo-white.svg"
               alt="Diviniti logo"
               width={200}
               height={100}
-            />{" "}
+            />
           </Link>
         </div>
         <ul className={styles.headerLinks}>
