@@ -1,9 +1,7 @@
 .headerContainer {
   display: flex;
-  // margin-left: 13.5%;
-  margin-top: 1%;
+  // margin-top: 1%;
   align-self: center;
-  padding: 0.5rem 1rem;
   background-color: rgba(255, 255, 255, 0);
   color: white;
   position: fixed;
@@ -11,6 +9,7 @@
   position: absolute;
   top: 0;
   width: 100%;
+
   border-radius: 5rem;
   -webkit-border-radius: 5rem;
   -moz-border-radius: 5rem;
@@ -18,18 +17,26 @@
   -o-border-radius: 5rem;
 
   .headerLogo {
-    width: 4.5rem;
-    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    padding-top: 1rem;
     padding-left: 2rem;
-    &:hover {
-      color: black;
-      scale: 1.1;
+    left : 5%;
+    img {
+      width: 4rem;
+      height: auto;
+      &:hover {
+        color: black;
+        scale: 1.1;
+      }
     }
   }
   .headerLinks {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 85%;
     align-items: center;
     gap: 20px;
 
@@ -46,21 +53,15 @@
           background-color: white;
           color: black;
         }
-        &:hover {
-          background-color: white;
-          color: black;
-          scale: 1.1;
-        }
       }
     }
     .linkedinIcon {
       display: flex;
-      right : 5%;
+      right: 5%;
       position: absolute;
-     
-    
+
       img {
-        width: 2.8rem;
+        width: 3.5rem;
         height: auto;
 
         &:hover {

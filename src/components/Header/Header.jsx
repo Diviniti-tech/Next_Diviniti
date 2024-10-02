@@ -2,21 +2,20 @@ import styles from "./style.module.scss";
 import Link from "next/link";
 
 export default function Header() {
-
   const linkedin = "https://www.linkedin.com/company/divinititech";
 
   return (
-    <header>
+  
       <div className={styles.headerContainer}>
-        <Link href="/">
-          {" "}
-          <img
-            src="assets/diviniti-logo-white.svg"
-            alt="Diviniti logo"
-            className={styles.headerLogo}
-           
-          />{" "}
-        </Link>
+        <div className={styles.headerLogo}>
+          <Link href="/">
+            {" "}
+            <img
+              src="assets/diviniti-logo-white.svg"
+              alt="Diviniti logo"
+            />{" "}
+          </Link>
+        </div>
         <ul className={styles.headerLinks}>
           {/* <li>
             <Link href="/v1">V1</Link>
@@ -39,17 +38,18 @@ export default function Header() {
           <li>
             <Link href="/team">L'équipe</Link>
           </li> */}
-         
-           
-            <Link href={linkedin} className={styles.linkedinIcon} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }
-            }>
-              <img src="assets/linkedin.png" alt="logo linkedin" />
-            </Link>
 
-          
-
+          <Link
+            href={linkedin}
+            className={styles.linkedinIcon}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+          >
+            <img src="assets/linkedin.png" alt="logo linkedin" />
+          </Link>
         </ul>
       </div>
-    </header>
+   
   );
 }
