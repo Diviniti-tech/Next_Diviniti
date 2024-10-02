@@ -14,6 +14,8 @@ export default function Header() {
             <Image
               src="assets/diviniti-logo-white.svg"
               alt="Diviniti logo"
+              width={200}
+              height={100}
             />{" "}
           </Link>
         </div>
