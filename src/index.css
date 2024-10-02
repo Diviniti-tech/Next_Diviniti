@@ -150,12 +150,13 @@ table {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Hind", sans-serif;
   margin: auto;
   color: white;
-  background-color: #000000;
+  /* background-color: #000000; */
 
-
+width: 100%;
+font-family: 'Barlow', sans-serif;
 
 }
   

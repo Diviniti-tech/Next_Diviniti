@@ -1,26 +1,23 @@
 .v5Container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; 
-    background-image : url("/assets/test2.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-   
-    
-    
-    
-    .homeLogo5 {
+      display: flex;
+      justify-content: center;
+      // align-items: center;
+      height: 100vh; 
+      background-image : url("/assets/test3.jpeg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      
+      
+      
+      .homeLogo5 {
           // max-width: 200px; // Ajustez la taille maximale si nécessaire
-          width: 12rem;
+          width: 20rem;
+          margin-top : 14%;
           height: auto;
           margin-bottom: 20px;
           animation: pulse infinite;
           -webkit-animation: pulse 12s infinite;
           position: absolute;
           
-    }
-    }
-
-
+      }
+      }

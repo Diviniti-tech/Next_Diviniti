@@ -1,26 +1,50 @@
-.v2Container {
+
+  
+  .homeContainer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh; // Remplit la hauteur de la fenêtre
-    background-color: black; // Ou toute autre couleur de fond
-    // background-image: url('https://images.unsplash.com/photo-1677784975579-b16f8028b555?q=80&w=1828&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-    background-image: url('https://images.unsplash.com/photo-1682100615316-e152a40b5793?q=80&w=1828&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-   
+    height: 100vh; 
+    background-image : url("/assets/test2.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
+   
     
     
     
-    .homeLogo3 {
-        // max-width: 200px; // Ajustez la taille maximale si nécessaire
-        width: 12rem;
-        height: auto;
-        margin-bottom: 20px;
-        animation: pulse infinite;
-        -webkit-animation: pulse 12s infinite;
-        position: absolute;
+    .homeLogo5 {
+          // max-width: 200px; // Ajustez la taille maximale si nécessaire
+          width: 12rem;
+          height: auto;
+          margin-bottom: 20px;
+          animation: pulse infinite;
+          -webkit-animation: pulse 12s infinite;
         
-    }
+          
     }
 
-
+    .homeLinks {
+      display: flex;
+  
+      justify-content: top;
+      align-items: top ;
+     
+      gap: 20px;
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.5rem;
+        padding: 10px 20px;
+        border: 1px solid white;
+        border-radius: 5px;
+        transition: all 0.3s;
+        &:hover {
+          background-color: white;
+          color: black;
+        }
+      }
+    }
+}
+  

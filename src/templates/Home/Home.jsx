@@ -1,25 +1,72 @@
-import styles from './style.module.scss';
-import Link from 'next/link';
+import styles from "./style.module.scss";
+import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function Home() {
 
+  const flip = {
+    initial: { rotateY: 90, opacity: 0 },
+    animate: { rotateY: 0, opacity: 1, transition: { duration: 0.6 } },
+  };
 
+  const container = {
+    hidden: { opacity: 0, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.4,
+        staggerChildren: 0.6,
+      },
+    },
+  };
+  
+  const item = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+    },
+  };
 
-    return (
+  const AnimatedLink = () => (
+    <Link href="/about" passHref>
+      <motion.div
+        whileHover={{ scale: 1.1 }}
+        onHoverStart={e => {}}
+        onHoverEnd={e => {}}
+        className={styles.ctaButtonWrapper} // Assurez-vous d'avoir une classe de wrapper qui correspond à la taille du bouton
+      >
+        <a className={styles.ctaButton}>En savoir plus</a>
+      </motion.div>
+    </Link>
+  );
 
-        <div className={styles.homeContainer}>
-
-            <img src="assets/diviniti-logo-white.svg" alt="Diviniti logo" className={styles.homeLogo}/>
-
-<h1>Suggestions :</h1>
-<Link href="/v1">Go to V1</Link>
-<Link href="/v2">Go to V2</Link>
-<Link href="/v3">Go to V3</Link>
-<Link href="/v4">Go to V4</Link>
-<Link href="/v5">Go to V5</Link>
-
-                    </div>
-                        
-                        );
-    
-                        }
+  return (
+    <motion.div
+      className={styles.v2Container}
+      initial="hidden"
+      animate="visible"
+      variants={container}
+    >
+      <motion.img
+        src="assets/diviniti-logo-white.svg"
+        alt="Diviniti logo"
+        className={styles.homeLogo3}
+        animate={{ scale: [1, 1.05, 1] }} // Légère animation de pulse
+        transition={{
+          duration: 1, // Durée de l'animation
+          ease: "easeInOut", // Transition fluide
+          repeat: Infinity, // Répéter à l'infini
+        }}
+      />
+      <motion.div className={styles.titles} variants={container}>
+        <motion.h2 variants={item}>Gaming for Realiti</motion.h2>
+        <motion.h1 variants={item}>Le nouveau système d'exploitation sûreté</motion.h1>
+        <motion.div variants={item} className={styles.cta}>
+          <AnimatedLink />
+        </motion.div>
+      </motion.div>
+    </motion.div>
+  );
+}

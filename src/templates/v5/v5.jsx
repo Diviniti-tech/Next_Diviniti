@@ -3,11 +3,11 @@ import { motion } from 'framer-motion';
 
 
 export default function V5() {
-    const flip = {
-        initial: { rotateY: 90, opacity: 0 },
-        animate: { rotateY: 0, opacity: 1, transition: { duration: 0.6 } },
-      };
-    
+  
+  const flip = {
+    initial: { rotateY: 90, opacity: 0 },
+    animate: { rotateY: 0, opacity: 1, transition: { duration: 0.6 } },
+  };
       return (
         <div className={styles.v5Container}>
            <motion.img
