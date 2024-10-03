@@ -6,16 +6,24 @@ export default function Document() {
     <Html lang="fr">
       <Head>
         {/* Meta Tags for SEO */}
-        <meta name="description" content="Diviniti" />
+        <meta 
+          name="description" 
+          content="Diviniti, pionnier en sûreté augmentée, propose des solutions de vidéoprotection, IA et XR pour la ville intelligente de demain. Découvrez notre système d'exploitation dédié à la sécurité." 
+        />
         <meta
           name="keywords"
-          content="diviniti, soron, atna, befrost, it, security, securite, surete, ia, ai, videoprotection, videosurveillance, protection "
+          content="sûreté augmentée, vidéoprotection, intelligence artificielle, réalité étendue, XR, ville intelligente, sécurité proactive, analyse d'image, contrôle d'accès, prédiction des risques, gestion de la sécurité, smart city, transport sécurisé, Diviniti"
         />
         <meta name="author" content="Diviniti" />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="Diviniti" />
-        <meta property="og:description" content="Diviniti" />
-        <meta property="og:url" content="https://www.diviniti.io" />
+
+        {/* Open Graph Tags for Social Sharing */}
+        <meta property="og:title" content="Diviniti - Sûreté augmentée pour la ville de demain" />
+        <meta 
+          property="og:description" 
+          content="Diviniti développe des solutions de sûreté augmentée intégrant l'intelligence artificielle et la réalité étendue pour sécuriser les infrastructures de transport, bâtiments et villes." 
+        />
+        <meta property="og:url" content="https://www.diviniti.tech" />
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
@@ -24,8 +32,20 @@ export default function Document() {
         <meta property="og:locale" content="fr_FR" />
         <meta property="og:site_name" content="Diviniti" />
 
+        {/* Twitter Cards */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Diviniti - Sûreté augmentée et solutions de sécurité IA" />
+        <meta 
+          name="twitter:description" 
+          content="Découvrez les solutions Diviniti pour la ville de demain, combinant IA et réalité étendue pour une sécurité proactive." 
+        />
+        <meta 
+          name="twitter:image" 
+          content="/assets/diviniti-logo-gradient.svg" 
+        />
+
         {/* Favicon */}
-        <link rel="icon" href="/assets/diviniti-logo-gradient.svg" />
+        <link rel="icon" href="/assets/diviniti-logo-gradient.svg" type="image/svg+xml" />
 
         {/* Google Fonts */}
         <link
@@ -48,10 +68,8 @@ export default function Document() {
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         />
 
-        <link
-          rel="stylesheet"
-          href="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"
-        />
+        {/* jQuery */}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       </Head>
       <body>
         <Main />
