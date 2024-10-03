@@ -27,7 +27,7 @@ export default function Document() {
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="/assets/diviniti-logo-gradient.svg"
+          content="/assets/diviniti-logo-purple.svg"
         />
         <meta property="og:locale" content="fr_FR" />
         <meta property="og:site_name" content="Diviniti" />
@@ -45,7 +45,7 @@ export default function Document() {
         />
 
         {/* Favicon */}
-        <link rel="icon" href="/assets/diviniti-logo-gradient.svg" type="image/svg+xml" />
+        <link rel="icon" href="/assets/diviniti-logo-purple.svg" type="image/svg+xml" />
 
         {/* Google Fonts */}
         <link
