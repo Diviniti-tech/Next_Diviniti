@@ -25,6 +25,16 @@ export default function Document() {
         />
 
         {/* Meta Tags for SEO */}
+
+        <meta 
+          name="viewport"
+          content="width=device-width, initial-scale=1"
+        />
+        <title>Diviniti - Sûreté augmentée pour la ville de demain</title>
+        <meta
+          name="title"
+          content="Diviniti - Sûreté augmentée pour la ville de demain" 
+        />
         <meta
           name="description"
           content="Diviniti, pionnier en sûreté augmentée, propose des solutions de vidéoprotection, IA et XR pour la ville intelligente de demain. Découvrez notre système d'exploitation dédié à la sécurité."
