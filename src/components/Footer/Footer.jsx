@@ -35,15 +35,15 @@ function Footer() {
       <div className={styles["section-3"]}>
         <h4>Contact</h4>
         <ul>
-          <li>
+          {/* <li>
             <i className="fa-solid fa-envelope"></i>
-            <Link href="mailto:pixecurity@pixecurity.com">email</Link>
+            <Link href="mailto:diviniti@diviniti.com">diviniti@diviniti.com</Link>
+          </li> */}
+          <li>
+            <i className="fa-solid fa-phone"></i>(+33) 1 39 60 98 82
           </li>
           <li>
-            <i className="fa-solid fa-phone"></i>phone
-          </li>
-          <li>
-            <i className="fa-solid fa-location-dot"></i> adress
+            <i className="fa-solid fa-location-dot"></i> 38 Rue Jean Mermoz, 78600 Maisons-Laffitte
           </li>
           <li>
             <i className="fa-brands fa-linkedin"></i>

@@ -4,10 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Home() {
 
-  const flip = {
-    initial: { rotateY: 90, opacity: 0 },
-    animate: { rotateY: 0, opacity: 1, transition: { duration: 0.6 } },
-  };
+
 
   const container = {
     hidden: { opacity: 0, scale: 0 },
@@ -44,7 +41,7 @@ export default function Home() {
 
   return (
     <motion.div
-      className={styles.v2Container}
+      className={styles.homeContainer}
       initial="hidden"
       animate="visible"
       variants={container}
@@ -52,7 +49,7 @@ export default function Home() {
       <motion.img
         src="assets/diviniti-logo-white.svg"
         alt="Diviniti logo"
-        className={styles.homeLogo3}
+        className={styles.homeLogo}
         animate={{ scale: [1, 1.05, 1] }} // Légère animation de pulse
         transition={{
           duration: 1, // Durée de l'animation

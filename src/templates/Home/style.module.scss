@@ -1,4 +1,4 @@
-.v2Container {
+.homeContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,7 +10,7 @@
 
   background-position: center;
 
-  .homeLogo3 {
+  .homeLogo {
     width: 10rem;
     height: auto;
     margin-bottom: 20px;
@@ -72,7 +72,7 @@
 }
 
 @media (max-width: 1080px) {
-  .v2Container {
+  .homeContainer {
     padding-top: 2rem;
     padding-left: 4%;
     padding-right: 4%;
