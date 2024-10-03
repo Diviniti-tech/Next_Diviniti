@@ -1,6 +1,7 @@
 import styles from "./style.module.scss";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Head from "next/head";
 
 export default function Home() {
 
@@ -40,6 +41,25 @@ export default function Home() {
   );
 
   return (
+
+  <>
+
+<Head>
+        {/* Viewport Meta Tag for Mobile Optimization */}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          property="og:title"
+          content="Diviniti - Sûreté augmentée pour la ville de demain"
+        />
+        <meta
+          property="og:description"
+          content="Découvrez les solutions Diviniti pour la ville de demain, combinant IA et réalité étendue pour une sécurité proactive."
+        />
+        <meta property="og:keywords" content="sûreté augmentée, vidéoprotection, intelligence artificielle, réalité étendue, XR, ville intelligente, sécurité proactive, analyse d'image, contrôle d'accès, prédiction des risques, gestion de la sécurité, smart city, transport sécurisé, Diviniti" />
+        <meta property="og:url" content="https://www.diviniti.tech" />
+
+</Head>
+
     <motion.div
       className={styles.homeContainer}
       initial="hidden"
@@ -65,5 +85,6 @@ export default function Home() {
         </motion.div>
       </motion.div>
     </motion.div>
+    </>
   );
 }
