@@ -6,8 +6,9 @@ import Head from "next/head";
 export default function About() {
   return (
     <>
-      <Head>
-        {/* Viewport Meta Tag for Mobile Optimization */}
+       <Head>
+        <title>Diviniti - À Propos</title>
+        
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           property="og:title"
