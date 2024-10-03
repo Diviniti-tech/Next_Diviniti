@@ -1,10 +1,33 @@
 // pages/_document.js
 import { Html, Head, Main, NextScript } from "next/document";
+import { GA_TRACKING_ID } from '../../lib/gtag';
 
 export default function Document() {
   return (
     <Html lang="fr">
       <Head>
+
+      
+        {/* Google Analytics */}
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${GA_TRACKING_ID}', {
+                page_path: window.location.pathname,
+              });
+            `,
+          }}
+        />
+
+
+
         {/* Meta Tags for SEO */}
         <meta 
           name="description" 
@@ -68,8 +91,7 @@ export default function Document() {
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         />
 
-        {/* jQuery */}
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      
       </Head>
       <body>
         <Main />
