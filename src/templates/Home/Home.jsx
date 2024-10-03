@@ -40,7 +40,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        {/* Viewport Meta Tag for Mobile Optimization */}
+        <title>Diviniti - Sûreté augmentée pour la ville de demain</title>
+        
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           property="og:title"

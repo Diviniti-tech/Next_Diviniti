@@ -26,15 +26,6 @@ export default function Document() {
 
         {/* Meta Tags for SEO */}
 
-        <meta 
-          name="viewport"
-          content="width=device-width, initial-scale=1"
-        />
-        <title>Diviniti - Sûreté augmentée pour la ville de demain</title>
-        <meta
-          name="title"
-          content="Diviniti - Sûreté augmentée pour la ville de demain" 
-        />
         <meta
           name="description"
           content="Diviniti, pionnier en sûreté augmentée, propose des solutions de vidéoprotection, IA et XR pour la ville intelligente de demain. Découvrez notre système d'exploitation dédié à la sécurité."
@@ -45,8 +36,8 @@ export default function Document() {
         />
         <meta name="author" content="Diviniti" />
         <meta name="robots" content="index, follow" />
+     
 
-        {/* Open Graph Tags for Social Sharing */}
         <meta
           property="og:title"
           content="Diviniti - Sûreté augmentée pour la ville de demain"
@@ -104,10 +95,42 @@ export default function Document() {
         {/* Font Awesome */}
         <link
           rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+           {/* Google Tag Manager */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(w,d,s,l,i){
+                w[l]=w[l]||[];
+                w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});
+                var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+                j.async=true;
+                j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+                f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-TXS5MXDB');
+            `,
+          }}
         />
+        {/* End Google Tag Manager */}
       </Head>
       <body>
+ {/* Google Tag Manager (noscript) */}
+ <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-TXS5MXDB"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+            title="Google Tag Manager"
+          ></iframe>
+        </noscript>
+        {/* End Google Tag Manager (noscript) */}
+
+
+
         <Main />
         <NextScript />
       </body>
