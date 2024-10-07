@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Diviniti Website
 
-## Getting Started
+## Description
 
-First, run the development server:
+**Diviniti** est une société innovante qui développe des solutions logicielles pour la ville de demain. Nous sommes à la pointe de la vidéoprotection, du contrôle d'accès et de l'analyse d'image, avec un accent particulier sur l'intelligence artificielle. Ce projet représente le début d'une landing page dédiée à nos offres, accessible via [www.diviniti.fr](http://www.diviniti.fr), [www.diviniti.tech](http://www.diviniti.tech) et [www.diviniti.io](http://www.diviniti.io).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Nous offrons un système d'exploitation dédié à la sûreté, inspiré des interfaces de gaming, pour une expérience utilisateur intuitive. Grâce à la réalité étendue (XR) et à notre technologie d'IA, nous permettons une gestion proactive de la sécurité dans les environnements urbains.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Table des matières
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- [Caractéristiques](#caractéristiques)
+- [Technologies utilisées](#technologies-utilisées)
+- [Screenshots](#screenshots)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Caractéristiques
 
-## Learn More
+- Solutions logicielles avancées pour la sécurité urbaine.
+- Expérience utilisateur inspirée des interfaces de gaming.
+- Intégration de la réalité étendue (XR) pour une immersion totale.
+- Intelligence artificielle pour l'analyse en temps réel et la prédiction des risques.
+- Système d'exploitation dédié à la sûreté, offrant un contrôle accru des environnements complexes.
 
-To learn more about Next.js, take a look at the following resources:
+## Technologies utilisées
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Next.js** pour le développement de l'application web.
+- **Sass (SCSS)** pour le style et la mise en page.
+- **Framer Motion** pour les animations et transitions.
+- **Next.js Google Analytics** pour le suivi des utilisateurs.
+- **React** et **React DOM** pour la construction de l'interface utilisateur.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Screenshots
 
-## Deploy on Vercel
+![alt text](public/assets/screenshots/Firefox_Screenshot_2024-10-07T10-14-44.942Z.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+![alt text](public/assets/screenshots/Firefox_Screenshot_2024-10-07T10-14-59.347Z.png)
