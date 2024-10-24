@@ -2,6 +2,7 @@ import styles from "./style.module.scss";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Head from "next/head";
+import Countdown from "@/components/Countdown/countdown";
 
 export default function Home() {
   const container = {
@@ -64,6 +65,10 @@ export default function Home() {
         animate="visible"
         variants={container}
       >
+
+<Countdown />
+
+
         <motion.img
           src="assets/diviniti-logo-white.svg"
           alt="Diviniti logo"

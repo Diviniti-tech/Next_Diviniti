@@ -40,7 +40,7 @@ export default function Header() {
           <li>
             <Link href="/team">L'équipe</Link>
           </li> */}
-
+<li>
           <Link
             href={linkedin}
             className={styles.linkedinIcon}
@@ -50,6 +50,7 @@ export default function Header() {
           >
             <img src="assets/linkedin.png" alt="logo linkedin" />
           </Link>
+          </li>
         </ul>
       </div>
    
