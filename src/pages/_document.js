@@ -50,7 +50,7 @@ export default function Document() {
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="/assets/diviniti-logo-gradient.svg"
+          content="https://files.pixecurity.com/wp-content/uploads/sites/2/2024/10/diviniti-logo-gradient.png"
         />
         <meta property="og:locale" content="fr_FR" />
         <meta property="og:site_name" content="Diviniti" />
@@ -73,8 +73,7 @@ export default function Document() {
         {/* Favicon */}
         <link
           rel="icon"
-          href="/assets/diviniti-logo-gradient.svg"
-          type="image/svg+xml"
+          href="http://files.pixecurity.com/wp-content/uploads/sites/2/2024/10/diviniti-logo-gradient.png"
         />
 
         {/* Google Fonts */}
