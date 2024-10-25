@@ -9,7 +9,6 @@
   position: absolute;
   top: 0;
   width: 100%;
-
   border-radius: 5rem;
   -webkit-border-radius: 5rem;
   -moz-border-radius: 5rem;
@@ -55,9 +54,11 @@
     //     }
     //   }
     // }
+
     .linkedinIcon {
       display: flex;
-      right: 5%;
+      right: 7%;
+      top : 30%;
       position: absolute;
 
       img {
