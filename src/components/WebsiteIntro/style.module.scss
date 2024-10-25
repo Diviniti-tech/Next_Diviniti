@@ -1,0 +1,12 @@
+.introContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000000;
+
+  .introVideo {
+    width: 100%;
+    object-fit: cover;
+  }
+}
