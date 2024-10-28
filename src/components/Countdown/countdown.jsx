@@ -35,10 +35,18 @@ export default function Countdown() {
     exit: { y: "-100%", opacity: 0 },
   };
 
+  const item = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+    },
+  };
+
   return (
     <div className={styles.countdownContainer}>
       <h2>RENDEZ-VOUS le 15 novembre</h2>
-      <div className={styles.countdown}>
+      <motion.div className={styles.countdown} variants={item}>
         {["jours", "heures", "minutes", "secondes"].map((unit) => (
           <div key={unit} className={styles.countdownItem}>
             <AnimatePresence mode="wait" initial={false}>
@@ -59,7 +67,7 @@ export default function Countdown() {
             </span>
           </div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 }
