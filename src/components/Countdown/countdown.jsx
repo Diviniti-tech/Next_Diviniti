@@ -1,7 +1,5 @@
-// creation d un composant Countdown qui affiche un compte à rebours jusq'au 15/11/2024 12h00
-
 import React, { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import styles from "./style.module.scss";
 
 export default function Countdown() {
@@ -31,35 +29,37 @@ export default function Countdown() {
     return () => clearTimeout(timer);
   });
 
-  const item = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-    },
+  const itemVariants = {
+    hidden: { y: "100%", opacity: 0 },
+    visible: { y: "0%", opacity: 1 },
+    exit: { y: "-100%", opacity: 0 },
   };
 
   return (
     <div className={styles.countdownContainer}>
-      <h2>RENDEZ-VOUS le 15 novembre </h2>
-      <motion.div variants={item} className={styles.countdown}>
-        <div className={styles.countdownItem}>
-          <span>{timeLeft.jours}</span>
-          <span>Jours</span>
-        </div>
-        <div className={styles.countdownItem}>
-          <span>{timeLeft.heures}</span>
-          <span>Heures</span>
-        </div>
-        <div className={styles.countdownItem}>
-          <span>{timeLeft.minutes}</span>
-          <span>Minutes</span>
-        </div>
-        < div className={styles.countdownItem}>
-          <span>{timeLeft.secondes}</span>
-          <span>Secondes</span>
+      <h2>RENDEZ-VOUS le 15 novembre</h2>
+      <div className={styles.countdown}>
+        {["jours", "heures", "minutes", "secondes"].map((unit) => (
+          <div key={unit} className={styles.countdownItem}>
+            <AnimatePresence mode="wait" initial={false}>
+              <motion.span
+                key={timeLeft[unit]}
+                initial="hidden"
+                animate="visible"
+                exit="exit"
+                variants={itemVariants}
+                transition={{ duration: 0.3 }}
+                className={styles.countdownNumber}
+              >
+                {timeLeft[unit]}
+              </motion.span>
+            </AnimatePresence>
+            <span className={styles.unitLabel}>
+              {unit.charAt(0).toUpperCase() + unit.slice(1)}
+            </span>
+          </div>
+        ))}
       </div>
-     </motion.div>
     </div>
   );
 }
