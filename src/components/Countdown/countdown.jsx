@@ -41,7 +41,7 @@ export default function Countdown() {
 
   return (
     <div className={styles.countdownContainer}>
-      <h2>RDV le 15 novembre </h2>
+      <h2>RENDEZ-VOUS le 15 novembre </h2>
       <motion.div variants={item} className={styles.countdown}>
         <div className={styles.countdownItem}>
           <span>{timeLeft.jours}</span>

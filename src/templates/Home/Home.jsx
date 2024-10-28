@@ -7,10 +7,11 @@ import Countdown from "@/components/Countdown/countdown";
 import WebsiteIntro from "@/components/WebsiteIntro/websiteIntro";
 
 export default function Home() {
-  const [showContent, setShowContent] = useState(false);
+  // // variable d'état pour afficher le contenu après l'intro
+  // const [showContent, setShowContent] = useState(false);
 
-  // Fonction appelée après l'intro
-  const handleIntroEnd = () => setShowContent(true);
+  // // Fonction appelée après l'intro
+  // const handleIntroEnd = () => setShowContent(true);
 
   const container = {
     hidden: { opacity: 0, scale: 0 },
@@ -48,44 +49,46 @@ export default function Home() {
       <Head>
         <title>Diviniti - Sûreté augmentée pour la ville de demain</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="Diviniti - Sûreté augmentée pour la ville de demain" />
-        <meta property="og:description" content="Découvrez les solutions Diviniti pour la ville de demain, combinant IA et réalité étendue pour une sécurité proactive." />
+        <meta
+          property="og:title"
+          content="Diviniti - Sûreté augmentée pour la ville de demain"
+        />
+        <meta
+          property="og:description"
+          content="Découvrez les solutions Diviniti pour la ville de demain, combinant IA et réalité étendue pour une sécurité proactive."
+        />
         <meta property="og:url" content="https://www.diviniti.tech" />
       </Head>
 
-      {showContent ? (
-        <motion.div
-          className={styles.homeContainer}
-          initial="hidden"
-          animate="visible"
-          variants={container}
-        >
-          <Countdown />
-          <motion.img
-            src="/assets/diviniti-logo-white.svg"
-            alt="Diviniti logo"
-            className={styles.homeLogo}
-            animate={{ scale: [1, 1.05, 1] }}
-            transition={{
-              duration: 1,
-              ease: "easeInOut",
-              repeat: Infinity,
-            }}
-          />
+      <motion.div
+        className={styles.homeContainer}
+        initial="hidden"
+        animate="visible"
+        variants={container}
+      >
+        <Countdown />
+        <motion.img
+          src="/assets/diviniti-logo-white.svg"
+          alt="Diviniti logo"
+          className={styles.homeLogo}
+          // animate={{ scale: [1, 1.05, 1] }}
+          // transition={{
+          //   duration: 1,
+          //   ease: "easeInOut",
+          //   repeat: Infinity,
+          // }}
+        />
 
-          <motion.div className={styles.titles} variants={container}>
-            <motion.h2 variants={item}>Gaming for Realiti</motion.h2>
-            <motion.h1 variants={item}>
-              Le nouveau système d&apos;exploitation sûreté
-            </motion.h1>
-            <motion.div variants={item} className={styles.cta}>
-              <AnimatedLink />
-            </motion.div>
+        <motion.div className={styles.titles} variants={container}>
+          <motion.h2 variants={item}>Gaming for Realiti</motion.h2>
+          <motion.h1 variants={item}>
+            Le nouveau système d&apos;exploitation sûreté
+          </motion.h1>
+          <motion.div variants={item} className={styles.cta}>
+            <AnimatedLink />
           </motion.div>
         </motion.div>
-      ) : (
-        <WebsiteIntro onEnd={handleIntroEnd} />
-      )}
+      </motion.div>
     </>
   );
 }
