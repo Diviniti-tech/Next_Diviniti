@@ -19,6 +19,7 @@
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 50%;
+    position: absolute;
 
     .closeModal {
       top: 10px;
@@ -35,7 +36,7 @@
       color: rgba(0, 0, 0, 0.918);
     }
 
-    position: absolute;
+
     .closeModal {
       top: 10px;
       right: 10px;
@@ -76,15 +77,15 @@
         color: red;
         margin-top: 10px;
       }
-  
+
       .success {
         color: green;
         margin-top: 10px;
       }
     }
-  
+
     .submitBtn {
-      background-color:#870bff;
+      background-color: #870bff;
       border: none;
       padding: 10px 20px;
       border-radius: 5px;
@@ -93,12 +94,11 @@
       font-weight: 600;
       color: #ffffff;
       transition: all 0.3s;
-  
+
       &:hover {
         background-color: #a143ff;
         color: #fff;
       }
     }
-    }
-
+  }
 }

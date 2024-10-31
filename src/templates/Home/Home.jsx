@@ -31,13 +31,24 @@ export default function Home() {
   const AnimatedLink = () => (
     <Link href="/about" passHref>
       <motion.div
-        whileHover={{ scale: 1.1 }}
+        whileHover={{ scale: 1.05 }}
         className={styles.ctaButtonWrapper}
       >
-        <a className={styles.ctaButton}>En savoir plus</a>
+        <a className={styles.knowMoreButton}>En savoir plus</a>
       </motion.div>
     </Link>
   );
+
+  const AnimatedButton = () => (
+    <motion.button
+      whileHover={{ scale: 1.05 }}
+      className={styles.downloadButton}
+      onClick={() => setShowModal(true)}
+    >
+      Télécharger la plaquette
+    </motion.button>
+  );
+
 
   const [showModal, setShowModal] = useState(false);
 
@@ -83,14 +94,8 @@ export default function Home() {
           </motion.h1>
           <motion.div variants={item} className={styles.cta}>
             <AnimatedLink />
-            {/* <motion.div variants={item} className={styles.cta}>
-              <button
-                onClick={() => setShowModal(true)}
-                className={styles.btnDownload}
-              >
-                Télécharger la plaquette
-              </button>
-            </motion.div> */}
+          
+            {/* <AnimatedButton />   */}
           </motion.div>
         </motion.div>
         <ModalDownloadPdf showModal={showModal} setShowModal={setShowModal} />
