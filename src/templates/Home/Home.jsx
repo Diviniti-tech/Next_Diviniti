@@ -4,15 +4,10 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import Head from "next/head";
 import Countdown from "@/components/Countdown/countdown";
-import WebsiteIntro from "@/components/WebsiteIntro/websiteIntro";
+// import WebsiteIntro from "@/components/WebsiteIntro/websiteIntro";
+import ModalDownloadPdf from "@/components/ModalDownloadPdf/ModalDownloadPdf";
 
 export default function Home() {
-  // // variable d'état pour afficher le contenu après l'intro
-  // const [showContent, setShowContent] = useState(false);
-
-  // // Fonction appelée après l'intro
-  // const handleIntroEnd = () => setShowContent(true);
-
   const container = {
     hidden: { opacity: 0, scale: 0 },
     visible: {
@@ -43,6 +38,8 @@ export default function Home() {
       </motion.div>
     </Link>
   );
+
+  const [showModal, setShowModal] = useState(false);
 
   return (
     <>
@@ -86,8 +83,17 @@ export default function Home() {
           </motion.h1>
           <motion.div variants={item} className={styles.cta}>
             <AnimatedLink />
+            {/* <motion.div variants={item} className={styles.cta}>
+              <button
+                onClick={() => setShowModal(true)}
+                className={styles.btnDownload}
+              >
+                Télécharger la plaquette
+              </button>
+            </motion.div> */}
           </motion.div>
         </motion.div>
+        <ModalDownloadPdf showModal={showModal} setShowModal={setShowModal} />
       </motion.div>
     </>
   );

@@ -3,7 +3,14 @@ import { motion } from "framer-motion";
 import styles from "./style.module.scss";
 import Head from "next/head";
 
+
 export default function About() {
+
+
+
+
+
+
   return (
     <>
        <Head>
