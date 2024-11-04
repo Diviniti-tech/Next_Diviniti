@@ -94,7 +94,7 @@ export default function Home() {
           </motion.h1>
           <motion.div variants={item} className={styles.cta}>
             <AnimatedLink />
-          
+          {/* Composant bouton de téléchargement de la plaquette commerciale */}
             {/* <AnimatedButton />   */}
           </motion.div>
         </motion.div>
