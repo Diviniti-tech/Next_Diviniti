@@ -29,7 +29,7 @@ export default function Home() {
   };
 
   const AnimatedLink = () => (
-    <Link href="/about" passHref>
+    <Link href="/gaming-for-realiti" passHref>
       <motion.div
         whileHover={{ scale: 1.05 }}
         className={styles.ctaButtonWrapper}
