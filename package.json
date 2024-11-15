@@ -10,13 +10,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "firebase": "^11.0.1",
     "framer-motion": "^11.7.0",
     "next": "^14.2.13",
     "nextjs-google-analytics": "^2.3.7",
     "react": "^18",
     "react-dom": "^18",
-    "sass": "^1.79.3"
+    "sass": "^1.79.3",
+    "sweetalert2": "^11.14.5"
   },
   "devDependencies": {
     "eslint": "^8",

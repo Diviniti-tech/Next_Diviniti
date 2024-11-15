@@ -5,7 +5,8 @@ import { motion } from "framer-motion";
 import Head from "next/head";
 import Countdown from "@/components/Countdown/countdown";
 // import WebsiteIntro from "@/components/WebsiteIntro/websiteIntro";
-import ModalDownloadPdf from "@/components/ModalDownloadPdf/ModalDownloadPdf";
+// import ModalDownloadPdf from "@/components/ModalDownloadPdf/ModalDownloadPdf";
+import ModalBookDemo from "@/components/ModalBookDemo/ModalBookDemo";
 
 export default function Home() {
   const container = {
@@ -28,27 +29,15 @@ export default function Home() {
     },
   };
 
-  const AnimatedLink = () => (
-    <Link href="/gaming-for-realiti" passHref>
-      <motion.div
-        whileHover={{ scale: 1.05 }}
-        className={styles.ctaButtonWrapper}
-      >
-        <a className={styles.knowMoreButton}>En savoir plus</a>
-      </motion.div>
-    </Link>
-  );
-
-  const AnimatedButton = () => (
-    <motion.button
-      whileHover={{ scale: 1.05 }}
-      className={styles.downloadButton}
-      onClick={() => setShowModal(true)}
-    >
-      Télécharger la plaquette
-    </motion.button>
-  );
-
+  // const DownloadPdfButton = () => (
+  //   <motion.button
+  //     whileHover={{ scale: 1.05 }}
+  //     className={styles.downloadButton}
+  //     onClick={() => setShowModal(true)}
+  //   >
+  //     Télécharger la plaquette
+  //   </motion.button>
+  // );
 
   const [showModal, setShowModal] = useState(false);
 
@@ -92,13 +81,37 @@ export default function Home() {
           <motion.h1 variants={item}>
             Le nouveau système d&apos;exploitation sûreté
           </motion.h1>
+
+
           <motion.div variants={item} className={styles.cta}>
-            <AnimatedLink />
-          {/* Composant bouton de téléchargement de la plaquette commerciale */}
-            {/* <AnimatedButton />   */}
+            <motion.div whileHover={{ scale: 1.05 }}>
+              <Link
+                href="/gaming-for-realiti"
+                passHref
+                className={styles.ctaButton}
+              >
+               <button > En savoir plus</button>
+              </Link>
+            </motion.div>
+
+
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              onClick={() => setShowModal(true)}
+            >
+              {" "}
+              <button className={styles.ctaButton}>Demander une Démo </button>
+            </motion.div>
+            {/* Composant bouton de téléchargement de la plaquette commerciale */}
+            {/* <DownloadPdfButton /> */}
           </motion.div>
+
+
+
         </motion.div>
-        <ModalDownloadPdf showModal={showModal} setShowModal={setShowModal} />
+        {/* Composant Modal pour télécharger la plaquette commerciale */}
+        {/* <ModalDownloadPdf showModal={showModal} setShowModal={setShowModal} /> */}
+        <ModalBookDemo showModal={showModal} setShowModal={setShowModal} />
       </motion.div>
     </>
   );
