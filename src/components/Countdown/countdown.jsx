@@ -4,7 +4,7 @@ import styles from "./style.module.scss";
 
 export default function Countdown() {
   const calculateTimeLeft = () => {
-    const difference = +new Date("2024-11-15 16:00:00") - +new Date();
+    const difference = +new Date("2024-11-15 17:00:00") - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
