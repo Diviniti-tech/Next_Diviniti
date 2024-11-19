@@ -54,12 +54,14 @@
     align-items: center;
     gap: 3rem;
     width: 100%;
+    margin-bottom : 4rem  ;
 
-    .ctaButton, button {
+    .ctaButton,
+    button {
       color: #870bff;
       background-color: #ffffff;
-       padding: 0.8rem 0rem;
-      font-weight: 600;
+      padding: 0.8rem 0rem;
+      font-weight: 500;
       cursor: pointer;
       font-size: 1.1rem;
       width: 16rem;
@@ -68,11 +70,16 @@
       -moz-border-radius: 2rem;
       -ms-border-radius: 2rem;
       -o-border-radius: 2rem;
-      border : none
+      border: none;
+      transition: all 0.3s;
+      &:hover {
+        background-color: #870bff;
+        color: white;
+      }
     }
+
   }
   a {
-
     text-decoration: none;
   }
   // .downloadButton {
@@ -91,7 +98,7 @@
   // }
 }
 
-@media (max-width:800px) {
+@media (max-width: 800px) {
   .homeContainer {
     padding-top: 2rem;
     padding-left: 4%;
@@ -112,11 +119,13 @@
     .cta {
       display: flex;
       flex-direction: column;
-   
-      .ctaButton, button {
-        
+
+      .ctaButton,
+      button {
         font-size: 1rem;
       }
+
+
     }
   }
 }

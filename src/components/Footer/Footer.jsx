@@ -17,17 +17,18 @@ function Footer() {
           Le nouveau système d&apos;exploitation sûreté
         </p>
       </div>
-      {/* <div className={styles["section-2"]}>
-        <img className={styles.mase} src="/assets/icons/mase.png" alt="Logo MASE" loading="lazy" />
-      </div> */}
-      <div className={styles["section-3"]}>
+   
+      <div className={styles["section-2"]}>
         <h4>Plan de site </h4>
         <ul>
           <Link href="/">
             <li>Accueil</li>
           </Link>
-          <Link href="/about">
-            <li>A Propos</li>
+          <Link href="/gaming-for-realiti">
+            <li>Notre Mission et Vision</li>
+          </Link>
+          <Link href="/team">
+            <li>Qui Sommes-Nous ?</li>
           </Link>
         </ul>
       </div>

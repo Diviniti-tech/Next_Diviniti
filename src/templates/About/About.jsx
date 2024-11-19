@@ -3,19 +3,12 @@ import { motion } from "framer-motion";
 import styles from "./style.module.scss";
 import Head from "next/head";
 
-
 export default function About() {
-
-
-
-
-
-
   return (
     <>
-       <Head>
-        <title>Diviniti - À Propos</title>
-        
+      <Head>
+        <title>Diviniti - Notre mission et Vision</title>
+
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           property="og:title"
@@ -33,19 +26,19 @@ export default function About() {
       </Head>
 
       <div className={styles.aboutContainer}>
-        <h1>Vue d&apos;ensemble</h1>
+        <h1>Notre Mission et Vision</h1>
 
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.9 }}
+          transition={{ duration: 1}}
         >
           <Image
             src="/assets/diviniti-logo-gradient.svg" // Chemin relatif depuis public/
             alt="logo Diviniti"
-            width={500} // Remplace avec la largeur réelle de l'image
-            height={300} // Remplace avec la hauteur réelle de l'image
+            width={200} // Remplace avec la largeur réelle de l'image
+            height={200} // Remplace avec la hauteur réelle de l'image
             priority // Optionnel, si tu veux charger l'image plus tôt
           />
         </motion.div>

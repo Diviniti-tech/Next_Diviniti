@@ -100,7 +100,7 @@ export default function Home() {
               onClick={() => setShowModal(true)}
             >
               {" "}
-              <button className={styles.ctaButton}>Demander une Démo </button>
+              <button className={styles.ctaButton}>Demander une démo </button>
             </motion.div>
             {/* Composant bouton de téléchargement de la plaquette commerciale */}
             {/* <DownloadPdfButton /> */}

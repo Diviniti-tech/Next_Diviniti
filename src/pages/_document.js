@@ -36,7 +36,6 @@ export default function Document() {
         />
         <meta name="author" content="Diviniti" />
         <meta name="robots" content="index, follow" />
-     
 
         <meta
           property="og:title"
@@ -55,28 +54,13 @@ export default function Document() {
         <meta property="og:locale" content="fr_FR" />
         <meta property="og:site_name" content="Diviniti" />
 
-        {/* Twitter Cards */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Diviniti - Sûreté augmentée et solutions de sécurité IA"
-        />
-        <meta
-          name="twitter:description"
-          content="Découvrez les solutions Diviniti pour la ville de demain, combinant IA et réalité étendue pour une sécurité proactive."
-        />
-        <meta
-          name="twitter:image"
-          content="/assets/diviniti-logo-gradient.svg"
-        />
-
         {/* Favicon */}
         <link
           rel="icon"
           href="http://files.pixecurity.com/wp-content/uploads/sites/2/2024/10/diviniti-logo-gradient.png"
         />
 
-        {/* Google Fonts */}
+        {/*  External Stylesheets */}
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
@@ -91,15 +75,14 @@ export default function Document() {
         />
         <link href="https://fonts.cdnfonts.com/css/barlow" rel="stylesheet" />
 
-        {/* Font Awesome */}
+        <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet"/>
+
         <link
           rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
 
-
-
-
-           {/* Google Tag Manager */}
+        {/* Google Tag Manager */}
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -119,8 +102,8 @@ export default function Document() {
         {/* End Google Tag Manager */}
       </Head>
       <body>
- {/* Google Tag Manager (noscript) */}
- <noscript>
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-TXS5MXDB"
             height="0"
@@ -130,8 +113,6 @@ export default function Document() {
           ></iframe>
         </noscript>
         {/* End Google Tag Manager (noscript) */}
-
-
 
         <Main />
         <NextScript />
