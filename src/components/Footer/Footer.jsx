@@ -7,7 +7,7 @@ function Footer() {
     <div className={styles["footer-container"]}>
       <div className={styles["section-1"]}>
         <Image
-          src="/assets/diviniti-logo-purple.svg"
+          src="/assets/diviniti-logo-white.svg"
           alt="Logo Diviniti"
           width={400}
           height={200}

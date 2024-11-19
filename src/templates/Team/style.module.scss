@@ -6,16 +6,10 @@
   background-color: #f4f4f9;
   min-height: 100vh;
   padding-top: 9rem;
-
-    //  background-image : url('https://images.unsplash.com/photo-1618556450991-2f1af64e8191?q=80&w=1664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-  // background-image : url('https://images.unsplash.com/photo-1618004912476-29818d81ae2e?q=80&w=1664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-  // background-image : url('https://plus.unsplash.com/premium_photo-1671751033694-74f291470839?q=80&w=1712&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-  // background-image : url('https://images.unsplash.com/photo-1664070719373-7648af3b35bb?q=80&w=3028&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-  // background-image : url('https://images.unsplash.com/photo-1677297680059-a0061c35d894?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fHw%3D');
-background-image : url('https://files.pixecurity.com/wp-content/uploads/sites/2/2024/11/team-scaled.webp');
-
-
+  background-image: url("https://files.pixecurity.com/wp-content/uploads/sites/2/2024/11/team-scaled.webp");
   background-size: cover;
+  overflow-x: hidden; // Empêche les débordements horizontaux
+
 
   .teamHero {
     display: flex;
@@ -41,7 +35,7 @@ background-image : url('https://files.pixecurity.com/wp-content/uploads/sites/2/
       }
       p {
         font-size: 1.1rem;
-        font-weight: 400  ;
+        font-weight: 400;
         line-height: 1.6;
       }
     }
@@ -66,18 +60,16 @@ background-image : url('https://files.pixecurity.com/wp-content/uploads/sites/2/
         -moz-transform: scale(1.03);
         -ms-transform: scale(1.03);
         -o-transform: scale(1.03);
-}
+      }
 
       h2 {
-        margin-top : 1rem;
+        margin-top: 1rem;
         font-size: 1.5rem;
-      
       }
 
       p {
-        margin-top : 0.5rem;
+        margin-top: 0.5rem;
         font-size: 1rem;
-       
       }
     }
   }
@@ -115,37 +107,35 @@ background-image : url('https://files.pixecurity.com/wp-content/uploads/sites/2/
       h2 {
         color: #f0a500;
         font-size: 1.4rem;
-        font-weight : 600;
-      
+        font-weight: 600;
       }
 
       p {
-        color :rgb(42, 42, 42);
-        margin-top : 0.5rem;
+        color: rgb(42, 42, 42);
+        margin-top: 0.5rem;
         font-size: 1rem;
-       
       }
     }
   }
-}
+
 
 @media (max-width: 1024px) {
+
+  padding-top : 7rem;
   .teamHero {
     flex-direction: column;
-    padding: 1rem;
-
+   
+    
     .heroLeft {
+      padding : 0.2rem 0rem;
       h1 {
-        font-size: 2.2rem;
+        font-size: 2rem;
       }
     }
 
     .heroRight {
-      margin-top : 2rem;
-      // img {
-      //   width: 200px;
-      //   height: 200px;
-      // }
+      margin-top: 2rem;
+    
 
       h2 {
         font-size: 1.4rem;
@@ -173,4 +163,5 @@ background-image : url('https://files.pixecurity.com/wp-content/uploads/sites/2/
       }
     }
   }
+}
 }

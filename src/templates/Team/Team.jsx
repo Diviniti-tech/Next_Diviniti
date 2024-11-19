@@ -1,7 +1,6 @@
 import styles from "./style.module.scss";
 import Image from "next/image";
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 
 export default function Team() {
   const team = [

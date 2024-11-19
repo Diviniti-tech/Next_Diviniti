@@ -32,7 +32,7 @@ export default function Header2() {
       <div className={styles.headerLogo}>
         <Link href="/">
           <Image
-            src="assets/diviniti-logo-purple.svg"
+            src="assets/diviniti-logo-gradient2.png"
             alt="Diviniti logo"
             width={200}
             height={200}
@@ -45,24 +45,29 @@ export default function Header2() {
         className={styles.headerLinks}
         initial={isMobile ? { x: "100%" } : { x: 0 }} // Visible sur desktop
         animate={isOpen ? { x: 0 } : isMobile ? { x: "100%" } : { x: 0 }}
-        transition={{ type:  "keyframes", stiffness: 100, damping: 10 }}
+        transition={{ type: "keyframes", stiffness: 100, damping: 10 }}
       >
         <ul>
           <li>
-            <Link href="/gaming-for-realiti">Notre Mission et Vision</Link>
+            <Link href="/gaming-for-realiti" onClick={toggleMenu}>
+              Notre Mission et Vision
+            </Link>
           </li>
           <li>
-            <Link href="/team">Qui Sommes-Nous ?</Link>
+            <Link href="/team" onClick={toggleMenu}>
+              Qui Sommes-Nous ?
+            </Link>
           </li>
           <li>
             <Link
               href={linkedin}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={toggleMenu}
               style={{ textDecoration: "none" }}
               className={styles.linkedinIcon}
             >
-              <img src="assets/linkedin.png" alt="logo linkedin" className={styles.linkedinIcon}/>
+              <img src="assets/linkedin.png" alt="logo linkedin" className={styles.linkedinIcon} />
             </Link>
           </li>
         </ul>
@@ -72,7 +77,7 @@ export default function Header2() {
       {isMobile && ( // Affiche le menu burger uniquement en mobile
         <div className={styles.burgerMenu} onClick={toggleMenu}>
           <motion.div
-            animate={isOpen ? { rotate: 45, y: 10 } : { rotate: 0, y: 0 }}
+            animate={isOpen ? { rotate: 45, y: 12 } : { rotate: 0, y: 0 }}
             className={styles.line}
           />
           <motion.div
@@ -80,7 +85,7 @@ export default function Header2() {
             className={styles.line}
           />
           <motion.div
-            animate={isOpen ? { rotate: -45, y: -10 } : { rotate: 0, y: 0 }}
+            animate={isOpen ? { rotate: -45, y: -12 } : { rotate: 0, y: 0 }}
             className={styles.line}
           />
         </div>
