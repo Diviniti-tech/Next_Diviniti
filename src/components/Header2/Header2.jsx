@@ -58,6 +58,11 @@ export default function Header2() {
               Qui Sommes-Nous ?
             </Link>
           </li>
+          {/* <li>
+            <Link href="/actualites" onClick={toggleMenu}>
+              Actualités
+            </Link>
+          </li> */}
           <li>
             <Link
               href={linkedin}

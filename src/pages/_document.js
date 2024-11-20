@@ -57,7 +57,7 @@ export default function Document() {
         {/* Favicon */}
         <link
           rel="icon"
-          href="http://files.pixecurity.com/wp-content/uploads/sites/2/2024/10/diviniti-logo-gradient.png"
+          href="/assets/diviniti-logo-gradient2.png"
         />
 
         {/*  External Stylesheets */}
