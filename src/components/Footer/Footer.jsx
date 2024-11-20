@@ -27,7 +27,7 @@ function Footer() {
           <Link href="/gaming-for-realiti">
             <li>Notre Mission et Vision</li>
           </Link>
-          <Link href="/team">
+          <Link href="/qui-sommes-nous">
             <li>Qui Sommes-Nous ?</li>
           </Link>
         </ul>
