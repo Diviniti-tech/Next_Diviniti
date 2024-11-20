@@ -1,7 +1,16 @@
 {
   "hosting": {
     "public": "out",
+    "cleanUrls": true,
     "rewrites": [
+      {
+        "source": "**/gaming-for-realiti",
+        "destination": "/gaming-for-realiti/index.html"
+      },
+      {
+        "source": "**/qui-sommes-nous",
+        "destination": "/qui-sommes-nous/index.html"
+      },
       {
         "source": "**",
         "destination": "/index.html"
