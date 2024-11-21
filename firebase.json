@@ -12,6 +12,10 @@
         "destination": "/qui-sommes-nous/index.html"
       },
       {
+        "source": "**/actualites",
+        "destination": "/actualites/index.html"
+      },
+      {
         "source": "**",
         "destination": "/index.html"
       }

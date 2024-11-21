@@ -9,13 +9,13 @@
   width: 100%;
   z-index: 1000;
   padding: 0 20px;
-  height: 7rem;
+  height: 6rem;
 
   .headerLogo {
     padding-left: 1rem;
     img {
-      width: 5.5rem;
-      height: 5.5rem;
+      width: 5rem;
+      height: 5rem;
       cursor: pointer;
       border-radius: 5px;
       -webkit-border-radius: 5px;
@@ -97,6 +97,15 @@
   }
 
   @media screen and (max-width: 900px) {
+
+    height: 5rem;
+
+    .headerLogo {
+      img {
+        width: 4rem;
+        height: 4rem;
+      }
+    }
     .burgerMenu {
       display: flex;
       padding-right: 4rem;
@@ -137,4 +146,6 @@
       }
     }
   }
+
 }
+
