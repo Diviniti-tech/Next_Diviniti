@@ -59,8 +59,8 @@ export default function Header2() {
             </Link>
           </li>
           <li>
-            <Link href="/actualites" onClick={toggleMenu}>
-              Actualités
+            <Link href="/tendances-et-actus" onClick={toggleMenu}>
+              Tendances & Actus
             </Link>
           </li>
           <li>

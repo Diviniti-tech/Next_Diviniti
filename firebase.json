@@ -12,8 +12,8 @@
         "destination": "/qui-sommes-nous/index.html"
       },
       {
-        "source": "**/actualites",
-        "destination": "/actualites/index.html"
+        "source": "**/tendances-et-actus",
+        "destination": "/tendances-et-actus/index.html"
       },
       {
         "source": "**",
