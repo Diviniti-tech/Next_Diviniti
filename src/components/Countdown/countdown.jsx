@@ -4,7 +4,7 @@ import styles from "./style.module.scss";
 
 export default function Countdown() {
   const calculateTimeLeft = () => {
-    const difference = +new Date("2024-12-15 16:00:00") - +new Date();
+    const difference = +new Date("2024-12-16 16:00:00") - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
@@ -45,7 +45,7 @@ export default function Countdown() {
 
   return (
     <div className={styles.countdownContainer}>
-      <h2>RENDEZ-VOUS le 15 décembre</h2>
+      <h2>RENDEZ-VOUS le 16 décembre</h2>
       <motion.div className={styles.countdown} variants={item}>
         {["jours", "heures", "minutes", "secondes"].map((unit) => (
           <div key={unit} className={styles.countdownItem}>
