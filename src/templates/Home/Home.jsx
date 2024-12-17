@@ -84,7 +84,6 @@ export default function Home() {
           
             src="https://www.youtube.com/embed/WR8Izjm4JF8"
             title="Diviniti: Révolutionnez la sûreté avec l&#39;IA, la XR et les codes du gaming"
-            frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen

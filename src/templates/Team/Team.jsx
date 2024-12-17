@@ -9,20 +9,11 @@ export default function Team() {
       role: "CXO",
       image: "/assets/team/FABIEN.jpg",
     },
+
     {
-      name: "Abdelhadi LAMMINI",
-      role: "Product Owner",
-      image: "/assets/team/ABDELHADI.webp",
-    },
-    {
-      name: "Augustin MAHIEU",
-      role: "Développeur",
-      image: "/assets/team/AUGUSTIN.jpg",
-    },
-    {
-      name: "Amélie CORDIER",
-      role: "UX/UI Designer",
-      image: "/assets/team/AMELIE.webp",
+      name: "Stecie RAZA",
+      role: "Chargée de Communication & Marketing",
+      image: "/assets/team/STECIE_.jpg",
     },
     {
       name: "Abdel-Rahmen DEGHBOUDJ",
@@ -30,16 +21,18 @@ export default function Team() {
       image:
         "/assets/team/ABDEL-RAHMEN_.webp",
     },
+    
     {
       name: "Andy BARZOLA",
       role: "3D Designer",
       image: "/assets/team/ANDY.webp",
     },
     {
-      name: "Meriem BOUSSAHA",
-      role: "Développeuse",
-      image: "/assets/team/MERIEM.jpg",
+      name: "Augustin MAHIEU",
+      role: "Développeur",
+      image: "/assets/team/AUGUSTIN.jpg",
     },
+ 
     {
       name: "Zine-Eddine BENZENATI",
       role: "Développeur",
