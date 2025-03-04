@@ -32,7 +32,7 @@ export default function Header2() {
       <div className={styles.headerLogo}>
         <Link href="/">
           <Image
-            src="assets/diviniti-logo-gradient2.png"
+            src="assets/logo/diviniti3.png"
             alt="Diviniti logo"
             width={200}
             height={200}

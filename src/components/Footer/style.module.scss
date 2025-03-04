@@ -1,10 +1,10 @@
 .footer-container {
   // background: #f2edeb;
-  background-color: #37323e;
+  background-color: #03084e;
   width: 100%;
   box-shadow: 0 0 3px rgba(255, 254, 254, 0.5);
   display: flex;
- height: 60vh;
+ height: 50vh;
   justify-content: space-around;
   color: white;
 
@@ -20,12 +20,13 @@
     text-align: center;
 
     img {
-      width: 30%;
+      width: 50%;
+      height : auto;
     }
 
     .slogan {
       font-size: 1.5rem;
-      color: #e18aff;
+      color: #870bff;
       font-weight: 500;
       margin-top: 1rem;
     }
@@ -41,6 +42,7 @@
   .section-2,
   .section-3 {
     width: 30%;
+    padding-top : 5rem;
 
     h4 {
       text-transform: uppercase;
@@ -48,7 +50,7 @@
       font-weight: 500;
       margin-top: 5rem;
       margin-bottom: 1em;
-      color: #e18aff;
+      color: #f7b422;
     }
 
     li {
@@ -58,11 +60,11 @@
 
     i {
       margin-right: 0.7rem;
-      color: #e18aff;
+      color: #f7b422;
     }
 
     .copyright {
-      padding-top: 6em;
+      padding-top: 9em;
       margin-bottom: 0.5em;
       font-size: 1rem;
       color: rgb(178, 174, 174);

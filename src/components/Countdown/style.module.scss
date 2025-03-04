@@ -14,7 +14,7 @@
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 2px;
-    color : #f7b422;
+    color: #f7b422;
     text-shadow: 2px 2px 2px #4a4a4a84;
   }
 
@@ -27,8 +27,6 @@
     font-weight: bold;
     color: #fff;
     padding: 1rem;
-    
-   
 
     .countdownItem {
       display: flex;
@@ -37,7 +35,6 @@
       overflow: hidden;
       width: 4.5rem;
       height: 5rem;
-      
 
       .countdownNumber {
         display: block;
@@ -54,7 +51,7 @@
         font-size: 0.9rem;
         margin-top: 0.3rem;
         text-transform: uppercase;
-        border : none;
+        border: none;
       }
     }
   }
