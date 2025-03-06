@@ -115,7 +115,7 @@ export default function About2() {
                 nous permettons aux opérateurs de sécurité d’anticiper les risques 
                 et de réagir efficacement en temps réel."
               </p>
-              <Link href="/contact">En savoir plus</Link>
+              <Link href="/qui-sommes-nous">Qui sommes nous ?</Link>
               <div className={styles.leftBottom}>
                 <img
                   src="https://avatar.iran.liara.run/public/boy?username=Ash"

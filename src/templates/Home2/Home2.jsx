@@ -52,7 +52,7 @@ export default function Home2() {
     <p>
       Diviniti propose un écosystème de solutions innovantes intégrant l’IA, la 3D et la réalité mixte pour répondre aux défis de la sécurité de demain.
     </p>
-    <Link href="/nos-solutions" passHref>
+    <Link href="/gaming-for-realiti" passHref>
       En savoir plus
     </Link>
     <div className={styles.cards}>

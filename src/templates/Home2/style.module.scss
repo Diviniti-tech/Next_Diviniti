@@ -66,11 +66,10 @@
     align-items: center;
 
     .section1left {
-      padding-left: 5%;
+      padding-left: 10%;
       display: flex;
       width: 60%;
       flex-direction: column;
-    
 
       h2 {
         color: #f7b422;
@@ -131,8 +130,6 @@
             background-color: #870bff;
             color: white;
           }
-
-      
         }
       }
 
@@ -143,11 +140,9 @@
     .section1right {
       width: 40%;
       display: flex;
-    
-    
+
       img {
-        
-    height : 30rem;
+        height: 30rem;
       }
     }
   }
@@ -238,7 +233,7 @@
 
       a {
         color: white;
-        background-color: #870bff; 
+        background-color: #870bff;
         border-radius: 30px;
         padding: 1rem 2rem;
         text-align: center;
@@ -254,9 +249,9 @@
         border: none;
 
         &:hover {
-          background-color:  white;
+          background-color: white;
           color: #870bff;
-          border : 1px solid #870bff;
+          border: 1px solid #870bff;
         }
       }
 
@@ -272,20 +267,18 @@
         .card {
           width: 80%;
           z-index: 1000;
-          height: 300px;
           display: flex;
-gap : 2rem;
+          gap: 4rem;
           justify-content: center;
           flex-direction: column;
           align-items: center;
 
-          margin: 1rem;
           background-color: #fcfaf5;
           border-radius: 10px;
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
           transition: 0.4s;
           cursor: pointer;
-          padding: 2rem;
+          padding: 2rem 2rem;
 
           &:hover {
             transform: scale(1.05);
