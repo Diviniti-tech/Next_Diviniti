@@ -66,11 +66,11 @@
     align-items: center;
 
     .section1left {
-      padding-left: 15%;
+      padding-left: 5%;
       display: flex;
-      width: 40%;
+      width: 60%;
       flex-direction: column;
-      align-items: center;
+    
 
       h2 {
         color: #f7b422;
@@ -91,6 +91,15 @@
         font-weight: 500;
         padding-top: 0rem;
         padding-bottom: 2rem;
+      }
+
+      p {
+        color: white;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        line-height: 1.7rem;
+        font-weight: 400;
+        width: 80%;
       }
 
       .cta {
@@ -132,14 +141,13 @@
       }
     }
     .section1right {
-      width: 50%;
+      width: 40%;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      vertical-align: middle;
+    
+    
       img {
-        height: 50%;
-        width: auto;
+        
+    height : 30rem;
       }
     }
   }
@@ -266,7 +274,7 @@
           z-index: 1000;
           height: 300px;
           display: flex;
-
+gap : 2rem;
           justify-content: center;
           flex-direction: column;
           align-items: center;

@@ -19,7 +19,7 @@ export default function Actualites() {
         {/* Loader affiché tant que l'iframe n'est pas chargé */}
         {isLoading && (
           <div className={styles.loader}>
-            <MoonLoader color="#FFD700" loading={isLoading} size={90} />
+            <MoonLoader color="#ffff" loading={isLoading} size={90} />
           </div>
         )}
         <iframe

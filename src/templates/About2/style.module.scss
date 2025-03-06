@@ -45,7 +45,7 @@
         font-size: 1.2rem;
         margin-bottom: 2rem;
         line-height: 1.7rem;
-        font-weight: 400;
+        font-weight: 700;
       }
     }
   }
@@ -84,7 +84,7 @@
   }
 
   .section3 {
-    min-height: 80vh;
+    min-height: 90vh;
     background-color: #fffaf0;
     background-image: url(https://uploads.pixecurity.com/files/AdobeStock_1036695203.png);
     background-size: cover;
@@ -108,10 +108,10 @@
       }
 
       .section3cards {
-        margin-top: 3rem;
+        margin-top: 5rem;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 3rem;
+        gap: 4rem;
      
 
         img {
@@ -192,7 +192,7 @@
           color: white;
           border-radius: 30px;
           padding: 1rem 2rem;
-          width: 80px;
+          width: 120px;
           font-size: 1.1rem;
           font-weight: 600;
           text-decoration: none;
@@ -202,7 +202,13 @@
           -moz-border-radius: 30px;
           -ms-border-radius: 30px;
           -o-border-radius: 30px;
+          &:hover {
+            background-color: white;
+            color:  #870bff;
+            border: 1px solid #870bff;
+          }
 }
+
 
 .leftBottom {
   display: flex;

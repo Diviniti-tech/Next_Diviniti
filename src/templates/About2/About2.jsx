@@ -25,50 +25,37 @@ export default function About2() {
       </Head>
 
       <div className={styles.aboutContainer}>
-        {/* <div className={styles.section1}>
-          <div className={styles.section1content}>
-            <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h1>
-            <p>
-              {" "}
-              Quod dignissimos consequatur, sed nobis in tempora atque, officiis
-              illo laudantium, minus praesentium nulla? Magnam maxime officiis
-              nostrum, nemo soluta delectus ex.{" "}
-            </p>
-          </div>
-        </div> */}
-
         <div className={styles.section1}>
           <video autoPlay loop muted className={styles.backgroundVideo}>
             <source src="/assets/video.mp4" type="video/mp4" />
           </video>
           <div className={styles.section1content}>
-            <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+            <h1>Réinventer la sécurité grâce à l'innovation</h1>
             <p>
-              Quod dignissimos consequatur, sed nobis in tempora atque, officiis
-              illo laudantium, minus praesentium nulla? Magnam maxime officiis
-              nostrum, nemo soluta delectus ex
+              Diviniti révolutionne la sûreté en combinant intelligence artificielle, 
+              réalité étendue et technologies avancées pour offrir une protection proactive 
+              et immersive des environnements urbains et industriels.
             </p>
           </div>
         </div>
 
         <div className={styles.section2}>
           <div className={styles.section2content}>
-            <h1>Notre Mission et Vision</h1>
+            <h1>Notre mission et vision</h1>
 
             <p>
               Diviniti est une société innovante spécialisée dans le
               développement de solutions logicielles pour la ville de demain.
-              Avec notre expertise de la vidéoprotection, du contrôle
-              d&apos;accès et de l&apos;analyse d&apos;image, combinées au
-              dernières avancées en termes de matériel et &apos;intelligence
-              artificielle, notre mission est de transformer la manière dont les
-              entreprises, les infrastructures de transport et les villes
-              sécurisent et supervisent leurs environnements.
+              Avec notre expertise en vidéoprotection, contrôle d&apos;accès et
+              analyse d&apos;image, combinée aux dernières avancées en matériel
+              et intelligence artificielle, notre mission est de transformer la
+              manière dont les entreprises, infrastructures de transport et
+              villes sécurisent et supervisent leurs environnements.
             </p>
 
             <p>
               Nous proposons un véritable système d&apos;exploitation dédié à la
-              sûreté, qui s&apos;inspire des interfaces de gaming pour offrir
+              sûreté, s&apos;inspirant des interfaces de gaming pour offrir
               une expérience utilisateur intuitive et engageante. Grâce à
               l&apos;intégration de la réalité étendue (XR), nos utilisateurs
               peuvent interagir avec leur environnement à distance et
@@ -79,10 +66,10 @@ export default function About2() {
             <p>
               L&apos;intelligence artificielle au cœur de nos technologies
               permet de prédire les risques potentiels, d&apos;analyser des flux
-              vidéo en temps réel, et d&apos;automatiser les réponses pour une
+              vidéo en temps réel et d&apos;automatiser les réponses pour une
               gestion proactive de la sécurité. Cette approche innovante,
               alliant prévision et immersion, est conçue pour répondre aux
-              besoins évolutifs de bâtiments complexes, systèmes de transport,
+              besoins évolutifs de bâtiments complexes, systèmes de transport
               et villes intelligentes, en offrant un contrôle accru et une
               efficacité renforcée.
             </p>
@@ -99,41 +86,43 @@ export default function About2() {
           <div className={styles.section3content}>
             <img
               src="https://uploads.pixecurity.com/files/screenshots1.png"
-              alt=""
+              alt="Aperçu des solutions Diviniti"
               className={styles.mainImage}
             />
 
             <div className={styles.section3cards}>
               <img
                 src="https://uploads.pixecurity.com/files/screenshots_%283%29.png"
-                alt=""
+                alt="Interface utilisateur Diviniti"
               />
 
               <img
                 src="https://uploads.pixecurity.com/files/screenshots_%282%29.png"
-                alt=""
+                alt="Technologie immersive Diviniti"
               />
             </div>
           </div>
         </div>
+
         <div className={styles.section4}>
           <div className={styles.section4content}>
             <div className={styles.left}>
-              <h2>Lorem : ipsum dolor</h2>
+              <h2>Une approche centrée sur l'utilisateur</h2>
 
-              <h1>Sit amet consectetur adipisicing elit </h1>
+              <h1>Transformer la sûreté en une expérience immersive</h1>
               <p>
-                "Alias vel, dicta dignissimos nesciunt error numquam voluptates,
-                distinctio corporis saepe commodi ab qui magni"
+                "Grâce à une interface intuitive et à des outils basés sur l'IA, 
+                nous permettons aux opérateurs de sécurité d’anticiper les risques 
+                et de réagir efficacement en temps réel."
               </p>
-              <Link href="/contact">Distinctio</Link>
+              <Link href="/contact">En savoir plus</Link>
               <div className={styles.leftBottom}>
                 <img
                   src="https://avatar.iran.liara.run/public/boy?username=Ash"
-                  alt=""
+                  alt="Utilisateur Diviniti"
                 />
-                <p>Dicta dignissimos</p>
-                <p>Distinctio corporis saepe commodi ab qui </p>
+                <p>Une innovation au service de la sûreté</p>
+                <p>Optimisation, réactivité et immersion</p>
               </div>
             </div>
             <div className={styles.right}></div>
