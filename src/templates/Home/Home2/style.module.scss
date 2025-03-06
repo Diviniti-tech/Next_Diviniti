@@ -1,0 +1,379 @@
+// keyfram balance, 10 deg gauche droite
+@keyframes balance {
+  0% {
+    transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+  }
+}
+
+//keyframe wave
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.04);
+    -webkit-transform: scale(1.04);
+    -moz-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+    -o-transform: scale(1.04);
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+}
+
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; // Remplit la hauteur de la fenêtre
+  background-color: #ffffff;
+
+  padding-top: 3rem;
+
+  .section1 {
+    min-height: 85vh;
+    background-image: url("https://uploads.pixecurity.com/files/1.jpeg");
+    // background-image: url("https://uploads.pixecurity.com/files/2.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    width: 100%;
+    background-attachment: fixed; /* Ajout pour parallax */
+  justify-content: center;
+  align-items: center;
+
+    .section1left {
+      padding-left: 15%;
+      display: flex;
+      width: 40%;
+      flex-direction: column;
+
+      h2 {
+        color: #f7b422;
+        font-size: 4rem;
+        letter-spacing: 2px;
+        font-weight: 800;
+        margin-bottom: 2rem;
+        border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+        -ms-border-radius: 10px 10px 10px 10px;
+        -o-border-radius: 10px 10px 10px 10px;
+      }
+
+      h1 {
+        color: white;
+        font-size: 1.9rem;
+        font-weight: 500;
+        padding-top: 0rem;
+        padding-bottom: 2rem;
+      }
+
+      .cta {
+        margin-top: 2rem;
+        display: inline-flex;
+        align-items: center;
+        gap: 3rem;
+        width: 100%;
+
+        .ctaButton {
+          color: #870bff;
+          background-color: #ffffff;
+          padding: 0.8rem 0rem;
+          font-weight: 500;
+          cursor: pointer;
+          font-size: 1.1rem;
+          width: 16rem;
+          border-radius: 5px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          -o-border-radius: 5px;
+          border: none;
+          transition: all 0.3s;
+          text-align: center;
+
+          &:hover {
+            background-color: #870bff;
+            color: white;
+          }
+
+          a {
+            text-decoration: none;
+            color: #870bff;
+            font-weight: 500;
+          }
+        }
+      }
+
+      a {
+        text-decoration: none;
+      }
+    }
+    .section1right {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      vertical-align: middle;
+      img {
+        height: 50%;
+        width: auto;
+      }
+    }
+  }
+
+  .section2 {
+    min-height: 50vh;
+    background-color: #fffaf0;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .section2content {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+
+      h3 {
+        color: black;
+        font-size: 3.5rem;
+        font-weight: 700;
+      }
+      h4 {
+        color: #870bff;
+        font-size: 1.4rem;
+        font-weight: 600;
+
+        padding-top: 1.5rem;
+      }
+
+      p {
+        padding-top: 3rem;
+        color: rgb(98, 98, 98);
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  .section3 {
+    min-height: 80vh;
+    background-color: ffffff;
+    justify-content: center;
+    align-items: center;
+
+    .section3content {
+      max-width: 1400px;
+      text-align: center;
+      margin: 4rem auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      span {
+        color: black;
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 1.5;
+        padding-bottom: 2rem;
+      }
+
+      h4 {
+        color: black;
+        letter-spacing: 1px;
+        font-size: 3rem;
+        font-weight: 800;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+      }
+
+      p {
+        color: rgb(105, 105, 105);
+
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.5;
+        padding-bottom: 4rem;
+      }
+      .logo {
+        margin-top: 5rem;
+        width: 20rem;
+        animation: zoom 3s infinite;
+        -webkit-animation: zoom 3s infinite;
+      }
+
+      a {
+        background-color: #870bff;
+        color: #ffffff;
+        padding: 0.8rem 0rem;
+        font-weight: 500;
+        cursor: pointer;
+        font-size: 1.1rem;
+        width: 18rem;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        border: none;
+        transition: all 0.3s;
+        text-align: center;
+        text-decoration: none;
+
+        &:hover {
+          background-color: #870bff;
+          color: white;
+        }
+      }
+
+      // <div className={styles.cards}>
+      // <div className={styles.card}>
+
+      .cards {
+        padding-top: 4rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3rem;
+
+        .card {
+          width: 80%;
+          z-index: 1000;
+          height: 300px;
+          display: flex;
+
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+
+          margin: 1rem;
+          background-color: #fff;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          transition: 0.4s;
+          cursor: pointer;
+          padding: 2rem;
+
+          &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+          }
+
+          img {
+            // width: 100%;
+            height: 150px;
+            border-radius: 10px 10px 0 0;
+          }
+        }
+      }
+    }
+  }
+
+  .section4 {
+    min-height: 85vh;
+    background-image: url("https://uploads.pixecurity.com/files/wave.jpeg");
+    background-size: cover;
+    background-attachment: fixed; /* Ajout pour parallax */
+    margin-top: -13rem;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 3rem;
+
+    .section4content {
+      max-width: 1400px;
+      margin: 0 auto;
+      h2 {
+        color: #f7b422;
+        font-size: 4rem;
+        letter-spacing: 2px;
+        font-weight: 700;
+        margin-bottom: 2rem;
+      }
+
+      p {
+        color: white;
+
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 1.6;
+        padding-top: 1rem;
+      }
+    }
+  }
+
+  .section5 {
+    min-height: 60vh;
+    background-color: #fffaf0;
+    display: flex;
+    justify-content: center;
+
+    .section5content {
+      width: 100%;
+      display: flex;
+      max-width: 1400px;
+      margin: 4rem auto;
+      justify-content: space-around;
+      align-items: center;
+
+      .section5left {
+        width: 45%;
+
+        img {
+          width: 100%;
+          height: auto;
+          animation: balance 2s infinite;
+          -webkit-animation: balance 2s infinite;
+        }
+      }
+      .section5right {
+        width: 50%;
+
+        h2 {
+          color: #870bff;
+          font-size: 3rem;
+          font-weight: 600;
+          margin-bottom: 2rem;
+        }
+
+        p {
+          color: black;
+
+          font-size: 1.2rem;
+          font-weight: 500;
+          line-height: 1.6;
+          padding-top: 1rem;
+        }
+      }
+    }
+  }
+}

@@ -1,3 +1,3 @@
-import Team from '@/templates/team/team';
+import Team2 from '@/templates/team2/team2';
 
-export default Team;
+export default Team2;
