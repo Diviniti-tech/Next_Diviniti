@@ -52,7 +52,7 @@ export default function Home2() {
                 En savoir plus
               </Link>
 
-              <button className={styles.ctaButton}>Demander une démo </button>
+            
             </div>
           </div>
 
