@@ -43,12 +43,12 @@ export default function Team2() {
 
   return (
     <div className={styles.teamContainer}>
+      <div className={styles.teamHero}>
       <div className={styles.background}>
         {[...Array(20)].map((_, i) => (
           <span key={i}></span>
         ))}
       </div>
-      <div className={styles.teamHero}>
         <div className={styles.heroContent}>
           <div className={styles.heroLeft}>
             <h1>Diviniti : Qui Sommes-Nous ?</h1>

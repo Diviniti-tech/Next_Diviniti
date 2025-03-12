@@ -249,6 +249,7 @@
     }
 
     .section2 {
+      min-height: 110vh;
       .section2content {
         width: 90%;
         h1 {
@@ -270,7 +271,7 @@
     }
 
     .section4 {
-      min-height: 110vh;
+      min-height: 90vh;
       .section4content {
         .left {
           width: 70%;
@@ -291,3 +292,148 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+
+  .aboutContainer {
+    .section1 {
+      .section1content {
+        width: 90%;
+        h1 {
+          font-size: 2.5rem;
+        }
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .section2 {
+      min-height : 130vh;
+      .section2content {
+        
+        width: 90%;
+        h1 {
+          font-size: 2.5rem;
+        }
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .section3 {
+      min-height : 70vh;
+      .section3content {
+        padding: 1rem;
+        .mainImage {
+          width: 100%;
+        }
+
+        .section3cards {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    }
+
+    .section4 {
+      min-height: 80vh;
+      padding : 2rem 0rem;
+      margin : none;  
+      .section4content {
+        width: 95%;
+        .left {
+          width: 70%;
+          h2 {
+            font-size: 1rem;
+          }
+          h1 {
+            font-size: 2.5rem;
+          }
+          p {
+            font-size: 1rem;
+          }
+          a {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) { 
+
+  .aboutContainer {
+    .section1 {
+
+      .backgroundVideo {
+       
+      }
+  
+      .section1content {
+        width: 90%;
+        h1 {
+          font-size: 2rem;
+        }
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .section2 {
+      min-height : 120vh;
+      .section2content {
+        width: 90%;
+        padding-bottom : 10rem;
+        h1 {
+          padding-top : 2rem;
+          font-size: 2rem;
+        }
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .section3 {
+      min-height : 100vh;
+      .section3content {
+        padding: 1rem;
+        .mainImage {
+          width: 100%;
+        }
+
+        .section3cards {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    }
+
+    .section4 {
+      min-height: 80vh;
+      padding : 2rem 0rem;
+      margin : none;  
+      .section4content {
+        width: 95%;
+        .left {
+          width: 70%;
+          h2 {
+            font-size: 1rem;
+          }
+          h1 {
+            font-size: 2rem;
+          }
+          p {
+            font-size: 1rem;
+          }
+          a {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
