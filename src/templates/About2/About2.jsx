@@ -85,19 +85,19 @@ export default function About2() {
         <div className={styles.section3}>
           <div className={styles.section3content}>
             <img
-              src="https://uploads.pixecurity.com/files/screenshots1.png"
+              src="https://uploads.pixecurity.com/files/screenshots1.webp"
               alt="Aperçu des solutions Diviniti"
               className={styles.mainImage}
             />
 
             <div className={styles.section3cards}>
               <img
-                src="https://uploads.pixecurity.com/files/screenshots_%283%29.png"
+                src="https://uploads.pixecurity.com/files/screenshots_%282%29.webp"
                 alt="Interface utilisateur Diviniti"
               />
 
               <img
-                src="https://uploads.pixecurity.com/files/screenshots_%282%29.png"
+                src="https://uploads.pixecurity.com/files/screenshots_%283%29.webp"
                 alt="Technologie immersive Diviniti"
               />
             </div>

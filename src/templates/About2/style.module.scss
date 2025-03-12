@@ -112,7 +112,6 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 4rem;
-     
 
         img {
           width: 100%;
@@ -134,7 +133,7 @@
 
     .section4content {
       width: 80%;
-      height: 40rem;
+     height : 100%;
       display: flex;
       margin: 0 auto;
       background-color: white;
@@ -149,20 +148,20 @@
         display: flex;
         flex-direction: column;
 
-      //   <h2>
-      //   Lorem : ipsum dolor , alias vel, dicta dignissimos nesciunt
-      //   error numquam voluptates, distinctio corporis saepe commodi ab
-      //   qui magni. Voluptatem natus cum tenetur repellendus explicabo?
-      // </h2>
+        //   <h2>
+        //   Lorem : ipsum dolor , alias vel, dicta dignissimos nesciunt
+        //   error numquam voluptates, distinctio corporis saepe commodi ab
+        //   qui magni. Voluptatem natus cum tenetur repellendus explicabo?
+        // </h2>
 
-      // <h1>Sit amet consectetur adipisicing elit aspernatur</h1>
-      // <p>
-      //   "alias vel, dicta dignissimos nesciunt error numquam voluptates,
-      //   distinctio corporis saepe commodi ab qui magni"
-      // </p>
-      // <Link href="/contact">Distinctio</Link>
-      // <span>Dicta dignissimos</span>
-      // <p>Distinctio corporis saepe commodi ab qui </p>
+        // <h1>Sit amet consectetur adipisicing elit aspernatur</h1>
+        // <p>
+        //   "alias vel, dicta dignissimos nesciunt error numquam voluptates,
+        //   distinctio corporis saepe commodi ab qui magni"
+        // </p>
+        // <Link href="/contact">Distinctio</Link>
+        // <span>Dicta dignissimos</span>
+        // <p>Distinctio corporis saepe commodi ab qui </p>
 
         h2 {
           font-size: 1.2rem;
@@ -197,41 +196,37 @@
           font-weight: 600;
           text-decoration: none;
           margin-bottom: 1rem;
-          margin-top : 1rem;
+          margin-top: 1rem;
           -webkit-border-radius: 30px;
           -moz-border-radius: 30px;
           -ms-border-radius: 30px;
           -o-border-radius: 30px;
           &:hover {
             background-color: white;
-            color:  #870bff;
+            color: #870bff;
             border: 1px solid #870bff;
           }
-}
+        }
 
+        .leftBottom {
+          display: flex;
 
-.leftBottom {
-  display: flex;
+          flex-direction: column;
+          margin-top: 2rem;
 
-  flex-direction: column;
-  margin-top : 2rem;
-
-  img { 
-    width: 6rem;
-    height: 6rem;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-  }
-}
-     
-
+          img {
+            width: 6rem;
+            height: 6rem;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+          }
+        }
       }
 
       .right {
         width: 40%;
-        height: 100%;
-        background-image:
-        url(https://uploads.pixecurity.com/files/test3.jpeg);
+        height: auto;
+        background-image: url(https://uploads.pixecurity.com/files/test3.jpeg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -240,7 +235,59 @@
         -moz-border-radius: 0 30px 30px 0;
         -ms-border-radius: 0 30px 30px 0;
         -o-border-radius: 0 30px 30px 0;
+      }
+    }
+  }
 }
+
+@media (max-width: 1024px) {
+  .aboutContainer {
+    .section1 {
+      .section1content {
+        width: 90%;
+      }
+    }
+
+    .section2 {
+      .section2content {
+        width: 90%;
+        h1 {
+          font-size: 3rem;
+        }
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .section3 {
+      min-height : 70vh;
+      .section3content {
+        .mainImage {
+          width: 40rem;
+        }
+      }
+    }
+
+    .section4 {
+      min-height: 110vh;
+      .section4content {
+        .left {
+          width: 70%;
+          h2 {
+            font-size: 1rem;
+          }
+          h1 {
+            font-size: 3rem;
+          }
+          p {
+            font-size: 1rem;
+          }
+          a {
+            font-size: 1rem;
+          }
+        }
+      }
     }
   }
 }
