@@ -16,7 +16,7 @@ export default function Header2() {
   // Détection de la taille de l'écran
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 900); // Mobile/Tablet si largeur <= 900px
+      setIsMobile(window.innerWidth <= 1024); // Mobile/Tablet si largeur <= 1024px
     };
 
     handleResize(); // Vérifie une première fois au chargement
