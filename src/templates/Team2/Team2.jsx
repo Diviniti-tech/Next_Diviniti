@@ -44,11 +44,11 @@ export default function Team2() {
   return (
     <div className={styles.teamContainer}>
       <div className={styles.teamHero}>
-      <div className={styles.background}>
-        {[...Array(20)].map((_, i) => (
-          <span key={i}></span>
-        ))}
-      </div>
+        <div className={styles.background}>
+          {[...Array(20)].map((_, i) => (
+            <span key={i}></span>
+          ))}
+        </div>
         <div className={styles.heroContent}>
           <div className={styles.heroLeft}>
             <h1>Diviniti : Qui Sommes-Nous ?</h1>
@@ -88,7 +88,11 @@ export default function Team2() {
       </div>
       <div className={styles.teamMembers}>
         <p>Nous sommes une équipe dédiée à l'innovation et à la créativité.</p>
-        <img src="/assets/logo/diviniti-logo3.png" alt="Diviniti Logo" className={styles.imgLogo} />
+        <img
+          src="/assets/logo/diviniti-logo3.png"
+          alt="Diviniti Logo"
+          className={styles.imgLogo}
+        />
         <div className={styles.teamMemberContent}>
           {team.map((member, index) => (
             <motion.div

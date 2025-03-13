@@ -32,9 +32,10 @@ export default function About2() {
           <div className={styles.section1content}>
             <h1>Réinventer la sécurité grâce à l'innovation</h1>
             <p>
-              Diviniti révolutionne la sûreté en combinant intelligence artificielle, 
-              réalité étendue et technologies avancées pour offrir une protection proactive 
-              et immersive des environnements urbains et industriels.
+              Diviniti révolutionne la sûreté en combinant intelligence
+              artificielle, réalité étendue et technologies avancées pour offrir
+              une protection proactive et immersive des environnements urbains
+              et industriels.
             </p>
           </div>
         </div>
@@ -55,8 +56,8 @@ export default function About2() {
 
             <p>
               Nous proposons un véritable système d&apos;exploitation dédié à la
-              sûreté, s&apos;inspirant des interfaces de gaming pour offrir
-              une expérience utilisateur intuitive et engageante. Grâce à
+              sûreté, s&apos;inspirant des interfaces de gaming pour offrir une
+              expérience utilisateur intuitive et engageante. Grâce à
               l&apos;intégration de la réalité étendue (XR), nos utilisateurs
               peuvent interagir avec leur environnement à distance et
               s&apos;immerger dans des lieux physiques comme s&apos;ils y
@@ -69,8 +70,8 @@ export default function About2() {
               vidéo en temps réel et d&apos;automatiser les réponses pour une
               gestion proactive de la sécurité. Cette approche innovante,
               alliant prévision et immersion, est conçue pour répondre aux
-              besoins évolutifs de bâtiments complexes, systèmes de transport
-              et villes intelligentes, en offrant un contrôle accru et une
+              besoins évolutifs de bâtiments complexes, systèmes de transport et
+              villes intelligentes, en offrant un contrôle accru et une
               efficacité renforcée.
             </p>
 
@@ -111,9 +112,9 @@ export default function About2() {
 
               <h1>Transformer la sûreté en une expérience immersive</h1>
               <p>
-                "Grâce à une interface intuitive et à des outils basés sur l'IA, 
-                nous permettons aux opérateurs de sécurité d’anticiper les risques 
-                et de réagir efficacement en temps réel."
+                "Grâce à une interface intuitive et à des outils basés sur l'IA,
+                nous permettons aux opérateurs de sécurité d’anticiper les
+                risques et de réagir efficacement en temps réel."
               </p>
               <Link href="/qui-sommes-nous">Qui sommes nous ?</Link>
               <div className={styles.leftBottom}>
