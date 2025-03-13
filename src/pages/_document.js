@@ -37,12 +37,12 @@ export default function Document() {
         <meta property="og:description" content="Diviniti développe des solutions..." />
         <meta property="og:url" content="https://www.diviniti.tech" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://files.pixecurity.com/wp-content/uploads/sites/2/2024/10/diviniti-logo-gradient.png" />
+        <meta property="og:image" content="https://uploads.pixecurity.com/files/divinit-new.jpg" />
         <meta property="og:locale" content="fr_FR" />
         <meta property="og:site_name" content="Diviniti" />
 
         {/* Favicon */}
-        <link rel="icon" href="/assets/diviniti-logo-gradient2.png" />
+        <link rel="icon" href="https://uploads.pixecurity.com/files/divinit-new.jpg" />
 
         {/* External Stylesheets */}
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" />
