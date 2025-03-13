@@ -1,170 +1,170 @@
-.teamContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 3rem;
-  min-height: 100vh;
-  padding-top: 9rem;
-  background-image: url("/assets/team.webp");
-  background-size: cover;
-  overflow-x: hidden; // Empêche les débordements horizontaux
-  // background-attachment: fixed; /* Ajout pour parallax */
+// .teamContainer {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   padding: 3rem;
+//   min-height: 100vh;
+//   padding-top: 9rem;
+//   background-image: url("/assets/team.webp");
+//   background-size: cover;
+//   overflow-x: hidden; // Empêche les débordements horizontaux
+//   // background-attachment: fixed; /* Ajout pour parallax */
 
 
 
-  .teamHero {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    // background: linear-gradient(135deg, #2d3e5048 30%, #1c1f25);
-    border-radius: 15px;
-    padding: 2rem;
-    color: #ffffff;
-    max-width: 1200px;
-    width: 100%;
-    margin-bottom: 4rem;
+//   .teamHero {
+//     display: flex;
+//     flex-wrap: wrap;
+//     align-items: center;
+//     justify-content: space-between;
+//     // background: linear-gradient(135deg, #2d3e5048 30%, #1c1f25);
+//     border-radius: 15px;
+//     padding: 2rem;
+//     color: #ffffff;
+//     max-width: 1200px;
+//     width: 100%;
+//     margin-bottom: 4rem;
 
-    .heroLeft {
-      flex: 2;
-      padding: 2rem;
+//     .heroLeft {
+//       flex: 2;
+//       padding: 2rem;
   
-      h1 {
-        font-size: 2.7rem;
-        margin-bottom: 1rem;
-        font-weight: 700;
-        color: #f0a500;
-      }
-      p {
-        font-size: 1.1rem;
-        font-weight: 400;
-        line-height: 1.6;
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-      }
-    }
+//       h1 {
+//         font-size: 2.7rem;
+//         margin-bottom: 1rem;
+//         font-weight: 700;
+//         color: #f0a500;
+//       }
+//       p {
+//         font-size: 1.1rem;
+//         font-weight: 400;
+//         line-height: 1.6;
+//         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+//       }
+//     }
 
-    .heroRight {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+//     .heroRight {
+//       flex: 1;
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
 
-      img {
-        border-radius: 10px;
-        max-width: 100%;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-        transition: transform 0.3s ease-in-out;
-        object-fit: cover;
-      }
+//       img {
+//         border-radius: 10px;
+//         max-width: 100%;
+//         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+//         transition: transform 0.3s ease-in-out;
+//         object-fit: cover;
+//       }
 
-      &:hover img {
-        transform: scale(1.03);
-        -webkit-transform: scale(1.03);
-        -moz-transform: scale(1.03);
-        -ms-transform: scale(1.03);
-        -o-transform: scale(1.03);
-      }
+//       &:hover img {
+//         transform: scale(1.03);
+//         -webkit-transform: scale(1.03);
+//         -moz-transform: scale(1.03);
+//         -ms-transform: scale(1.03);
+//         -o-transform: scale(1.03);
+//       }
 
-      h2 {
-        margin-top: 1rem;
-        font-size: 1.5rem;
-      }
+//       h2 {
+//         margin-top: 1rem;
+//         font-size: 1.5rem;
+//       }
 
-      p {
-        margin-top: 0.5rem;
-        font-size: 1rem;
-      }
-    }
-  }
+//       p {
+//         margin-top: 0.5rem;
+//         font-size: 1rem;
+//       }
+//     }
+//   }
 
-  .teamMembers {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-    max-width: 1200px;
+//   .teamMembers {
+//     display: flex;
+//     flex-wrap: wrap;
+//     gap: 2rem;
+//     justify-content: center;
+//     max-width: 1200px;
 
-    .teamMember {
-      background-color: #ffffffe0;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-      padding: 1.5rem;
-      text-align: center;
-      flex: 1 1 250px;
-      transition: transform 0.2s, box-shadow 0.2s;
+//     .teamMember {
+//       background-color: #ffffffe0;
+//       border-radius: 10px;
+//       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+//       padding: 1.5rem;
+//       text-align: center;
+//       flex: 1 1 250px;
+//       transition: transform 0.2s, box-shadow 0.2s;
 
-      &:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-      }
+//       &:hover {
+//         transform: translateY(-10px);
+//         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+//       }
 
-      img {
-        border-radius: 50%;
-        width: 200px;
-        height: 200px;
-        object-fit: cover;
-        margin-bottom: 1rem;
-        border: 4px solid #f0a500;
-      }
+//       img {
+//         border-radius: 50%;
+//         width: 200px;
+//         height: 200px;
+//         object-fit: cover;
+//         margin-bottom: 1rem;
+//         border: 4px solid #f0a500;
+//       }
 
-      h2 {
-        color: #f0a500;
-        font-size: 1.4rem;
-        font-weight: 600;
-      }
+//       h2 {
+//         color: #f0a500;
+//         font-size: 1.4rem;
+//         font-weight: 600;
+//       }
 
-      p {
-        color: rgb(42, 42, 42);
-        margin-top: 0.5rem;
-        font-size: 1rem;
-      }
-    }
-  }
+//       p {
+//         color: rgb(42, 42, 42);
+//         margin-top: 0.5rem;
+//         font-size: 1rem;
+//       }
+//     }
+//   }
 
 
-@media (max-width: 1024px) {
+// @media (max-width: 1024px) {
 
-  padding-top : 7rem;
-  .teamHero {
-    flex-direction: column;
+//   padding-top : 7rem;
+//   .teamHero {
+//     flex-direction: column;
    
     
-    .heroLeft {
-      padding : 0.2rem 0rem;
-      h1 {
-        font-size: 2rem;
-      }
-    }
+//     .heroLeft {
+//       padding : 0.2rem 0rem;
+//       h1 {
+//         font-size: 2rem;
+//       }
+//     }
 
-    .heroRight {
-      margin-top: 2rem;
+//     .heroRight {
+//       margin-top: 2rem;
     
 
-      h2 {
-        font-size: 1.4rem;
-      }
+//       h2 {
+//         font-size: 1.4rem;
+//       }
 
-      p {
-        font-size: 1rem;
-      }
-    }
-  }
+//       p {
+//         font-size: 1rem;
+//       }
+//     }
+//   }
 
-  .teamMembers {
-    .teamMember {
-      img {
-        width: 150px;
-        height: 150px;
-      }
+//   .teamMembers {
+//     .teamMember {
+//       img {
+//         width: 150px;
+//         height: 150px;
+//       }
 
-      h2 {
-        font-size: 1.2rem;
-      }
+//       h2 {
+//         font-size: 1.2rem;
+//       }
 
-      p {
-        font-size: 0.9rem;
-      }
-    }
-  }
-}
-}
+//       p {
+//         font-size: 0.9rem;
+//       }
+//     }
+//   }
+// }
+// }
