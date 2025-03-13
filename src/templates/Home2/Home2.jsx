@@ -150,8 +150,8 @@ export default function Home2() {
             src="https://www.youtube.com/embed/WR8Izjm4JF8"
             title="Diviniti: Révolutionnez la sûreté avec l&#39;IA, la XR et les codes du gaming"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
           ></iframe>
         </div>
 
