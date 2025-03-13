@@ -160,7 +160,7 @@
   }
 
   .section3 {
-    min-height: 80vh;
+    min-height: 55rem;
     background-color: ffffff;
     justify-content: center;
     align-items: center;
@@ -197,14 +197,9 @@
         font-size: 1rem;
         font-weight: 500;
         line-height: 1.5;
-        padding-bottom: 4rem;
+        
       }
-      .logo {
-        margin-top: 5rem;
-        width: 20rem;
-        animation: zoom 3s infinite;
-        -webkit-animation: zoom 3s infinite;
-      }
+  
 
       a {
         color: white;
@@ -278,7 +273,7 @@
     justify-content: center;
     align-items: center;
     align-items: left;
-    padding: 3rem;
+    padding: 2rem;
 
     .section4content {
       max-width: 1400px;
@@ -433,6 +428,7 @@
     }
     .section4 {
       min-height: 100vh;
+      padding :  1rem;
       .section4content {
         h2 {
           font-size: 3rem;

@@ -73,9 +73,9 @@ export default function Home2() {
               l’IA, la 3D et la réalité mixte pour répondre aux défis de la
               sécurité de demain.
             </p>
-            <Link href="/gaming-for-realiti" passHref>
+            {/* <Link href="/gaming-for-realiti" passHref>
               En savoir plus
-            </Link>
+            </Link> */}
             <div className={styles.cards}>
               <div className={styles.card}>
                 <img

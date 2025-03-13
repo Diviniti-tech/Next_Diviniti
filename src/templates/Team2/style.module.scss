@@ -195,7 +195,7 @@
         padding: 2rem;
 
         h1 {
-          font-size: 3.3rem;
+          font-size: 3.2rem;
           margin-bottom: 1rem;
           font-weight: 800;
           color: #f0a500;
@@ -260,7 +260,7 @@
   gap: 10rem;
 
   h1 {
-    font-size: 5rem;
+    font-size: 4.5rem;
     font-weight: 900;
     color: white;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
@@ -368,7 +368,7 @@
         width: 100%;
 
         h1 {
-          font-size: 2.5rem;
+          font-size: 2.4rem;
         }
         h2 {
           font-size: 1.2rem;
@@ -423,27 +423,29 @@
 }
 
 @media (max-width: 768px) {
-
+  .teamContainer {
   .teamHero {
     .background {
-      height: 120vh;
+      height: 100vh;
     }
     .heroContent {
       .heroLeft {
         h1 {
-          font-size: 2rem;
+          font-size: 2.5rem;
         }
         h2 {
-          font-size: 1rem;
+          font-size: 1.2rem;
+          line-height: 2rem;
         }
         p {
           font-size: 0.9rem;
         }
       }
       .heroRight {
+        text-align: center;
         img {
-          width: 100px;
-          height: 100px;
+          width: 200px;
+          height: 200px;
         }
         h2 {
           font-size: 1rem;
@@ -455,6 +457,7 @@
     }
   }
   .teamMembersIntro {
+    text-align: center;
     h1 {
       font-size: 2.5rem;
     }
@@ -463,8 +466,11 @@
     }
   }
   .teamMembers {
+   
     p {
       font-size: 1rem;
+      width: 80%;
+      text-align: center;
     }
     .teamMemberContent {
       .teamMember {
@@ -481,4 +487,71 @@
       }
     }
   }
+}}
+
+@media (max-width: 425px) {
+
+  .teamContainer {
+  .teamHero {
+    .background {
+      height: 200vh;
+    }
+    .heroContent {
+      padding : 1rem;
+
+      .heroLeft {
+        h1 {
+          font-size: 1.6rem;
+        }
+        h2 {
+          font-size: 1.1rem;
+        }
+        p {
+          font-size: 0.9rem;
+        }
+      }
+      .heroRight {
+        img {
+          width: 170px;
+          height: 170px;
+        }
+        h2 {
+          font-size: 0.8rem;
+        }
+        p {
+          font-size: 0.6rem;
+        }
+      }
+    }
+  }
+  .teamMembersIntro {
+   
+    h1 {
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+  }
+  .teamMembers {
+    p {
+      font-size: 0.8rem;
+    }
+    .teamMemberContent {
+      .teamMember {
+        img {
+          width: 170px;
+          height: 170px;
+        }
+        h2 {
+          font-size: 1rem;
+        }
+        p {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
 }
