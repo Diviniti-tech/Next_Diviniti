@@ -30,6 +30,9 @@ function Footer() {
           <Link href="/qui-sommes-nous">
             <li>Qui Sommes-Nous ?</li>
           </Link>
+          <Link href="/tendances-et-actus">
+            <li>Tendances & Actus</li>
+          </Link>
         </ul>
       </div>
 

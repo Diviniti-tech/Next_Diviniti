@@ -1,13 +1,13 @@
 import React from "react";
 // import Header from "../Header/Header";
-import Header2 from "../Header2/Header2";
+import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
 function Template({ children }) {
   return (
     <>
     {/* <Header /> */}
-    <Header2 />
+    <Header />
       {children}
       <Footer />
     </>

@@ -1,3 +1,3 @@
-import Home2 from "@/templates/Home2/Home2";
+import Home from "@/templates/Home/Home";
 
-export default Home2;
+export default Home;
