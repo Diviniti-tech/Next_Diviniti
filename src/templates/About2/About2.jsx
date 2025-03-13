@@ -1,6 +1,7 @@
 import Link from "next/link";
 import styles from "./style.module.scss";
 import Head from "next/head";
+import Image from "next/image";
 
 export default function About2() {
   return (
@@ -85,21 +86,30 @@ export default function About2() {
 
         <div className={styles.section3}>
           <div className={styles.section3content}>
-            <img
+            <Image
               src="https://uploads.pixecurity.com/files/screenshots1.webp"
               alt="Aperçu des solutions Diviniti"
               className={styles.mainImage}
+              width={800}
+              height={500}
+              loading="lazy"
             />
 
             <div className={styles.section3cards}>
-              <img
+              <Image
                 src="https://uploads.pixecurity.com/files/screenshots_%282%29.webp"
                 alt="Interface utilisateur Diviniti"
+                width={400}
+                height={400}
+                loading="lazy"
               />
 
-              <img
+              <Image
                 src="https://uploads.pixecurity.com/files/screenshots_%283%29.webp"
                 alt="Technologie immersive Diviniti"
+                width={400}
+                height={400}
+                loading="lazy"
               />
             </div>
           </div>
@@ -118,9 +128,12 @@ export default function About2() {
               </p>
               <Link href="/qui-sommes-nous">Qui sommes nous ?</Link>
               <div className={styles.leftBottom}>
-                <img
+                <Image
                   src="https://avatar.iran.liara.run/public/boy?username=Ash"
                   alt="Utilisateur Diviniti"
+                  width={400}
+                  height={400}
+                  loading="lazy"
                 />
                 <p>Une innovation au service de la sûreté</p>
                 <p>Optimisation, réactivité et immersion</p>

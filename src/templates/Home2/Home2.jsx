@@ -3,6 +3,7 @@ import styles from "./style.module.scss";
 import Link from "next/link";
 import Head from "next/head";
 import ModalBookDemo from "@/components/ModalBookDemo/ModalBookDemo";
+import Image from "next/image";
 
 export default function Home2() {
   const [showModal, setShowModal] = useState(false);
@@ -44,10 +45,12 @@ export default function Home2() {
             </div>
           </div>
           <div className={styles.section1right}>
-            <img
+            <Image
               src="assets/logo/test1.gif"
               alt="Animation de présentation Diviniti"
               loading="lazy"
+              width={500}
+              height={500}
             />
           </div>
         </div>
@@ -78,9 +81,12 @@ export default function Home2() {
             </Link> */}
             <div className={styles.cards}>
               <div className={styles.card}>
-                <img
+                <Image
                   src="https://uploads.pixecurity.com/files/soron-logo-clear-bkgd-centered.png"
                   alt="Soron Logo"
+                  width={150}
+                  height={100}
+                   loading="lazy"
                 />
                 <p>
                   <strong>Soron</strong> - Logiciel d’hypervision 3D pour une
@@ -88,9 +94,12 @@ export default function Home2() {
                 </p>
               </div>
               <div className={styles.card}>
-                <img
+                <Image
                   src="https://uploads.pixecurity.com/files/ATNa-logo-clear-bkgd-centered.png"
                   alt="ATNa Logo"
+                  width={100}
+                  height={100}
+                   loading="lazy"
                 />
                 <p>
                   <strong>ATNa</strong> - Intelligence artificielle et
@@ -98,9 +107,12 @@ export default function Home2() {
                 </p>
               </div>
               <div className={styles.card}>
-                <img
+                <Image
                   src="https://uploads.pixecurity.com/files/raven-logo-clear-bkgd-centered.png"
                   alt="Raven Logo"
+                  width={150}
+                  height={100}
+                   loading="lazy"
                 />
                 <p>
                   <strong>Raven</strong> - Casques VR et solutions de réalité
@@ -108,9 +120,12 @@ export default function Home2() {
                 </p>
               </div>
               <div className={styles.card}>
-                <img
+                <Image
                   src="https://uploads.pixecurity.com/files/befrost-logo-clear-bkgd-centered.png"
                   alt="Befrost Logo"
+                  width={200}
+                  height={100}
+                   loading="lazy"
                 />
                 <p>
                   <strong>Befrost</strong> - Connecteurs intelligents assurant
@@ -143,9 +158,12 @@ export default function Home2() {
         <div className={styles.section5}>
           <div className={styles.section5content}>
             <div className={styles.section5left}>
-              <img
+              <Image
                 src="https://uploads.pixecurity.com/files/AdobeStock_540919231.webp"
                 alt="Illustration de la sûreté augmentée"
+                width={500}
+                height={500}
+                loading="lazy"
               />
             </div>
             <div className={styles.section5right}>

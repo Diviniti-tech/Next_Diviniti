@@ -88,10 +88,13 @@ export default function Team2() {
       </div>
       <div className={styles.teamMembers}>
         <p>Nous sommes une équipe dédiée à l'innovation et à la créativité.</p>
-        <img
+        <Image
           src="/assets/logo/diviniti-logo3.png"
           alt="Diviniti Logo"
           className={styles.imgLogo}
+          width={200}
+          height={200}
+          priority={false}
         />
         <div className={styles.teamMemberContent}>
           {team.map((member, index) => (

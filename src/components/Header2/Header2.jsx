@@ -72,7 +72,14 @@ export default function Header2() {
               style={{ textDecoration: "none" }}
               className={styles.linkedinIcon}
             >
-              <img src="assets/linkedin.png" alt="logo linkedin" className={styles.linkedinIcon} />
+              <Image
+                src="assets/linkedin.png"
+                alt="logo linkedin"
+                className={styles.linkedinIcon}
+                width={30}
+                height={50}
+                priority={true}
+              />
             </Link>
           </li>
         </ul>
