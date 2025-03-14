@@ -2,8 +2,8 @@ import { useState } from "react";
 import styles from "./style.module.scss";
 import Link from "next/link";
 import Head from "next/head";
-import ModalBookDemo from "@/components/ModalBookDemo/ModalBookDemo";
 import Image from "next/image";
+import ModalBookDemo from "@/components/ModalBookDemo/ModalBookDemo";
 
 export default function Home() {
   const [showModal, setShowModal] = useState(false);
@@ -22,6 +22,17 @@ export default function Home() {
           content="Découvrez les solutions Diviniti pour la ville de demain, combinant IA et réalité étendue pour une sécurité proactive."
         />
         <meta property="og:url" content="https://www.diviniti.tech" />
+
+        <meta
+          name="description"
+          content="Découvrez les solutions Diviniti pour la ville de demain, combinant IA et réalité étendue pour une sécurité proactive."
+        />
+
+        <link
+          rel="preload"
+          href="https://uploads.pixecurity.com/files/1.webp"
+          as="image"
+        />
       </Head>
 
       <div className={styles.homeContainer}>
@@ -49,8 +60,7 @@ export default function Home() {
               src="assets/logo/test1.gif"
               alt="Animation de présentation Diviniti"
               width={500}
-              height={500}
-              priority={true}
+              height={800}
             />
           </div>
         </div>
@@ -86,7 +96,7 @@ export default function Home() {
                   alt="Soron Logo"
                   width={150}
                   height={100}
-                   loading="lazy"
+                  loading="lazy"
                 />
                 <p>
                   <strong>Soron</strong> - Logiciel d’hypervision 3D pour une
@@ -99,7 +109,7 @@ export default function Home() {
                   alt="ATNa Logo"
                   width={100}
                   height={100}
-                   loading="lazy"
+                  loading="lazy"
                 />
                 <p>
                   <strong>ATNa</strong> - Intelligence artificielle et
@@ -112,7 +122,7 @@ export default function Home() {
                   alt="Raven Logo"
                   width={150}
                   height={100}
-                   loading="lazy"
+                  loading="lazy"
                 />
                 <p>
                   <strong>Raven</strong> - Casques VR et solutions de réalité
@@ -125,7 +135,7 @@ export default function Home() {
                   alt="Befrost Logo"
                   width={200}
                   height={100}
-                   loading="lazy"
+                  loading="lazy"
                 />
                 <p>
                   <strong>Befrost</strong> - Connecteurs intelligents assurant
@@ -165,6 +175,7 @@ export default function Home() {
                 height={500}
                 loading="lazy"
               />
+           
             </div>
             <div className={styles.section5right}>
               <h2>Découvrez la sûreté augmentée avec Diviniti</h2>
@@ -173,12 +184,17 @@ export default function Home() {
                 immersive, nous permettons aux opérateurs de réagir plus
                 rapidement et plus efficacement.
               </p>
+              <button
+                className={styles.bookDemo}
+                onClick={() => setShowModal(true)}
+              >
+                Réserver une démo
+              </button>
             </div>
           </div>
         </div>
-
-        <ModalBookDemo showModal={showModal} setShowModal={setShowModal} />
       </div>
+      <ModalBookDemo showModal={showModal} setShowModal={setShowModal} />
     </>
   );
 }

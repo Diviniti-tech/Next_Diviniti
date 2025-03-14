@@ -105,7 +105,7 @@ export default function Team() {
               whileInView={{ opacity: 1, y: 0, x: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{
-                duration: 0.9,
+                duration: 0.5,
                 delay: index * 0.1,
                 type: "spring",
                 stiffness: 100,

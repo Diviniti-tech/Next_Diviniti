@@ -160,7 +160,7 @@
 
   .section3 {
     min-height: 55rem;
-    background-color: ffffff;
+    background-color: #ffff;
     justify-content: center;
     align-items: center;
 
@@ -259,7 +259,7 @@
   }
 
   .section4 {
-    min-height: 140vh;
+    min-height: 80rem;
     background-image: url("https://uploads.pixecurity.com/files/wave.webp");
     background-size: cover;
     background-attachment: fixed; /* Ajout pour parallax */
@@ -302,7 +302,7 @@
   }
 
   .section5 {
-    min-height: 60vh;
+    min-height: 40rem;
     background-color: #fffaf0;
     display: flex;
     justify-content: center;
@@ -342,6 +342,31 @@
           font-weight: 500;
           line-height: 1.6;
           padding-top: 1rem;
+        }
+        .bookDemo {
+          color:white;
+          background-color:   #870bff;
+          border-radius: 30px;
+          padding: 1rem 2rem;
+          text-align: center;
+          margin-top: 2rem;
+          width: 250px;
+          font-size: 1.1rem;
+          font-weight: 600;
+          text-decoration: none;
+          margin-bottom: 1rem;
+          -webkit-border-radius: 30px;
+          -moz-border-radius: 30px;
+          -ms-border-radius: 30px;
+          -o-border-radius: 30px;
+          cursor: pointer;
+          border : 1px solid white;
+    
+          &:hover {
+            background-color:  white;
+            color: #870bff;
+            border : 1px solid #870bff;
+          }
         }
       }
     }
@@ -624,6 +649,7 @@
           img {
             width: 15rem;
           }
+   
         }
         .section5right {
           h2 {
@@ -632,6 +658,8 @@
           p {
             font-size: 1rem;
           }
+          
+         
         }
       }
     }

@@ -6,9 +6,7 @@ import Image from "next/image";
 import ModalBookDemo from "@/components/ModalBookDemo/ModalBookDemo";
 
 export default function About() {
-
   const [showModal, setShowModal] = useState(false);
-
 
   return (
     <>
@@ -44,18 +42,15 @@ export default function About() {
               une protection proactive et immersive des environnements urbains
               et industriels.
             </p>
-         
-            {/* 🔹 Bouton pour ouvrir le modal */}
-            <button className={styles.bookDemoButton} onClick={() => setShowModal(true)}>
+
+            <button
+              className={styles.bookDemoButton}
+              onClick={() => setShowModal(true)}
+            >
               Réserver une démo
             </button>
-        
+          </div>
         </div>
-
-        {/* 🔹 Affichage du modal si showModal est true */}
-        {showModal && <ModalBookDemo onClose={() => setShowModal(false)} />}
-        </div>
-
         <div className={styles.section2}>
           <div className={styles.section2content}>
             <h1>Notre mission et vision</h1>
@@ -98,7 +93,6 @@ export default function About() {
             </p>
           </div>
         </div>
-
         <div className={styles.section3}>
           <div className={styles.section3content}>
             <Image
@@ -129,7 +123,6 @@ export default function About() {
             </div>
           </div>
         </div>
-
         <div className={styles.section4}>
           <div className={styles.section4content}>
             <div className={styles.left}>
@@ -157,9 +150,6 @@ export default function About() {
             <div className={styles.right}></div>
           </div>
         </div>
-*
-
-        
       </div>
 
       <ModalBookDemo showModal={showModal} setShowModal={setShowModal} />

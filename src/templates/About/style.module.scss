@@ -65,10 +65,12 @@
         -ms-border-radius: 30px;
         -o-border-radius: 30px;
         cursor: pointer;
+        border : 1px solid white;
 
         &:hover {
           background-color: #870bff;
           color: white;
+          border : 1px solid #870bff;
         }
       }
     }
