@@ -1,7 +1,10 @@
-// next.config.mjs
 export default {
   images: {
-    domains: ['uploads.pixecurity.com'], // Ajoute ton serveur d’images ici
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "uploads.pixecurity.com",
+      },
+    ],
   },
 };
-

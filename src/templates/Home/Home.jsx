@@ -62,11 +62,10 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.section1right}>
-            <Image
+            <img
               src="/assets/logo/test1.gif"
               alt="Animation de présentation Diviniti"
-              width={500}
-              height={800}
+             
             />
           </div>
         </div>
