@@ -38,7 +38,7 @@ export default function Home() {
           as="image"
         />
 
-        <link rel="preload" href="assets/logo/test1.gif" as="image" />
+        <link rel="preload" href="/assets/logo/test1.gif" as="image" />
       </Head>
 
       <div className={styles.homeContainer}>
@@ -63,7 +63,7 @@ export default function Home() {
           </div>
           <div className={styles.section1right}>
             <Image
-              src="assets/logo/test1.gif"
+              src="/assets/logo/test1.gif"
               alt="Animation de présentation Diviniti"
               width={500}
               height={800}

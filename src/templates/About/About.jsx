@@ -137,7 +137,7 @@ export default function About() {
               <Link href="/qui-sommes-nous">Qui sommes nous ?</Link>
               <div className={styles.leftBottom}>
                 <Image
-                  src="https://avatar.iran.liara.run/public/boy?username=Ash"
+                  src="https://uploads.pixecurity.com/files/boy.png"
                   alt="Utilisateur Diviniti"
                   width={400}
                   height={400}

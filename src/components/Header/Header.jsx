@@ -32,7 +32,7 @@ export default function Header() {
       <div className={styles.headerLogo}>
         <Link href="/">
           <Image
-            src="assets/logo/diviniti3.png"
+            src="/assets/logo/diviniti3.png"
             alt="Diviniti logo"
             width={200}
             height={200}
@@ -73,7 +73,7 @@ export default function Header() {
               className={styles.linkedinIcon}
             >
               <Image
-                src="assets/linkedin.png"
+                src="/assets/linkedin.png"
                 alt="logo linkedin"
                 className={styles.linkedinIcon}
                 width={30}

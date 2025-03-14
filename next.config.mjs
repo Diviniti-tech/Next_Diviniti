@@ -1,14 +1,7 @@
 // next.config.mjs
 export default {
-  output: 'export', // Utiliser 'output: export' pour générer des pages statiques
   images: {
-    unoptimized: true, // Désactiver l'optimisation des images pour l'export statique
+    domains: ['uploads.pixecurity.com'], // Ajoute ton serveur d’images ici
   },
 };
 
-// const isProd = process.env.NODE_ENV === 'production';
-
-// export default {
-//   ...(isProd && { output: 'export' }), // Appliquer seulement en prod
-
-// };
