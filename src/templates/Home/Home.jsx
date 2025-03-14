@@ -37,6 +37,8 @@ export default function Home() {
           href="https://uploads.pixecurity.com/files/1.webp"
           as="image"
         />
+
+        <link rel="preload" href="assets/logo/test1.gif" as="image" />
       </Head>
 
       <div className={styles.homeContainer}>
