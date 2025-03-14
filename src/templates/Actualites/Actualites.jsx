@@ -29,7 +29,7 @@ export default function Actualites() {
       </Head>
 
       <div className={styles.actualitesContainer}>
-        <h1>What's up Diviniti?</h1>
+        <h1>What's up Diviniti ?</h1>
 
         <div className={styles.newsList}>
           {/* Loader affiché tant que l'iframe n'est pas chargé */}
