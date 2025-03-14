@@ -27,6 +27,10 @@ export default function Home() {
           name="description"
           content="Découvrez les solutions Diviniti pour la ville de demain, combinant IA et réalité étendue pour une sécurité proactive."
         />
+        <meta
+          property="og:keywords"
+          content="sûreté augmentée, vidéoprotection, intelligence artificielle, réalité étendue, XR, ville intelligente, sécurité proactive, analyse d'image, contrôle d'accès, prédiction des risques, gestion de la sécurité, smart city, transport sécurisé, Diviniti"
+        />
 
         <link
           rel="preload"
@@ -175,7 +179,6 @@ export default function Home() {
                 height={500}
                 loading="lazy"
               />
-           
             </div>
             <div className={styles.section5right}>
               <h2>Découvrez la sûreté augmentée avec Diviniti</h2>

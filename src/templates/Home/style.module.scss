@@ -47,7 +47,7 @@
 
       h2 {
         // color: #f7b422;
-         color :   #ffd67d;
+        color: #ffd67d;
         font-weight: 800;
         font-size: 4rem;
         letter-spacing: 2px;
@@ -133,7 +133,7 @@
 
     .section2content {
       max-width: 1400px;
-      margin : 0 auto;
+      margin: 0 auto;
 
       h3 {
         color: black;
@@ -278,7 +278,7 @@
 
       h2 {
         // color: #f7b422;
-        color : #ffd67d;
+        color: #ffd67d;
         font-size: 4rem;
         letter-spacing: 2px;
         font-weight: 700;
@@ -344,8 +344,8 @@
           padding-top: 1rem;
         }
         .bookDemo {
-          color:white;
-          background-color:   #870bff;
+          color: white;
+          background-color: #870bff;
           border-radius: 30px;
           padding: 1rem 2rem;
           text-align: center;
@@ -360,12 +360,12 @@
           -ms-border-radius: 30px;
           -o-border-radius: 30px;
           cursor: pointer;
-          border : 1px solid white;
-    
+          border: 1px solid white;
+
           &:hover {
-            background-color:  white;
+            background-color: white;
             color: #870bff;
-            border : 1px solid #870bff;
+            border: 1px solid #870bff;
           }
         }
       }
@@ -649,7 +649,6 @@
           img {
             width: 15rem;
           }
-   
         }
         .section5right {
           h2 {
@@ -658,8 +657,6 @@
           p {
             font-size: 1rem;
           }
-          
-         
         }
       }
     }
