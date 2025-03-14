@@ -8,12 +8,12 @@ export default function Team() {
     {
       name: "Fabien THOMAS",
       role: "CXO",
-      image: "/assets/team/FABIEN.jpg",
+      image: "/assets/team/FABIEN.webp",
     },
     {
       name: "Ambroise JULIEN-LAFFERRIERE",
       role: "Commercial",
-      image: "/assets/team/ambroise.png",
+      image: "/assets/team/AMBROISE.webp",
     },
     {
       name: "Abdel-Rahmen DEGHBOUDJ",
@@ -28,7 +28,7 @@ export default function Team() {
     {
       name: "Augustin MAHIEU",
       role: "Développeur",
-      image: "/assets/team/AUGUSTIN.jpg",
+      image: "/assets/team/AUGUSTIN.webp",
     },
     {
       name: "Zine-Eddine BENZENATI",
@@ -38,7 +38,7 @@ export default function Team() {
     {
       name: "Henri UNG",
       role: "Développeur",
-      image: "/assets/team/henri.png",
+      image: "/assets/team/HENRI.webp",
     },
   ];
 
@@ -90,9 +90,10 @@ export default function Team() {
             >
               <Image
                 src="/assets/team/YANN.jpg"
-                alt="team"
+                alt="Yann Duchet - CEO Diviniti"
                 width={300}
                 height={250}
+                priority={true}
               />
               <h2>Yann DUCHET</h2>
               <p>CEO</p>
@@ -131,7 +132,8 @@ export default function Team() {
                   duration: 0.5,
                   delay: index * 0.1,
                   type: "spring",
-                  stiffness: 100,
+                  stiffness: 80,
+                  damping: 12,
                 }}
                 whileHover={{
                   scale: 1.03,
@@ -141,7 +143,7 @@ export default function Team() {
               >
                 <Image
                   src={member.image}
-                  alt={member.name}
+                  alt={`Photo de ${member.name}, ${member.role}`}
                   width={150}
                   height={150}
                 />
