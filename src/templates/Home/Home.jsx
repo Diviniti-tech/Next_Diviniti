@@ -65,7 +65,6 @@ export default function Home() {
             <img
               src="/assets/logo/test1.gif"
               alt="Animation de présentation Diviniti"
-             
             />
           </div>
         </div>

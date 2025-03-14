@@ -65,12 +65,12 @@
         -ms-border-radius: 30px;
         -o-border-radius: 30px;
         cursor: pointer;
-        border : 1px solid white;
+        border: 1px solid white;
 
         &:hover {
           background-color: #870bff;
           color: white;
-          border : 1px solid #870bff;
+          border: 1px solid #870bff;
         }
       }
     }
@@ -175,8 +175,6 @@
         padding: 2rem;
         display: flex;
         flex-direction: column;
-
-  
 
         h2 {
           font-size: 1.2rem;

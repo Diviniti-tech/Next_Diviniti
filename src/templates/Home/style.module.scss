@@ -28,7 +28,7 @@
   padding-top: 3rem;
 
   .section1 {
-    min-height: 50rem;
+    min-height: 60rem;
     background-image: url("https://uploads.pixecurity.com/files/1.webp");
     // background-image: url("https://uploads.pixecurity.com/files/2.jpeg");
     background-size: cover;
@@ -117,7 +117,7 @@
       display: flex;
 
       img {
-        height : 25rem;
+        height: 25rem;
         width: 25rem;
       }
     }
@@ -413,7 +413,7 @@
 
         img {
           height: 50%;
-          width:50%;
+          width: 50%;
         }
       }
     }
@@ -517,7 +517,7 @@
       .section1right {
         img {
           height: 70%;
-          width:70%;
+          width: 70%;
         }
       }
     }
@@ -592,7 +592,7 @@
 @media (max-width: 480px) {
   .homeContainer {
     .section1 {
-      min-height: 110vh;
+      min-height: 50rem;
       .section1left {
         h2 {
           font-size: 2rem;
