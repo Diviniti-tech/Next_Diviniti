@@ -11,7 +11,7 @@ export default function Team() {
       image: "/assets/team/FABIEN.webp",
     },
     {
-      name: "Ambroise JULIEN-LAFFERRIERE",
+      name: "Ambroise JULIEN-LAFERRIERE",
       role: "Commercial",
       image: "/assets/team/AMBROISE.webp",
     },

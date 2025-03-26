@@ -80,7 +80,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-
+      
         <div className={styles.section3}>
           <div className={styles.section3content}>
             <span>Nos solutions technologiques</span>
