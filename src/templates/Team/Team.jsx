@@ -11,14 +11,14 @@ export default function Team() {
       image: "/assets/team/FABIEN.webp",
     },
     {
-      name: "Ambroise JULIEN-LAFERRIERE",
-      role: "Commercial",
-      image: "/assets/team/AMBROISE.webp",
-    },
-    {
       name: "Abdel-Rahmen DEGHBOUDJ",
       role: "Développeur",
       image: "/assets/team/ABDEL-RAHMEN_.webp",
+    },
+    {
+      name: "Ambroise JULIEN-LAFERRIERE",
+      role: "Commercial",
+      image: "/assets/team/AMBROISE.webp",
     },
     {
       name: "Andy BARZOLA",
