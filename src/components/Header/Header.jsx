@@ -49,8 +49,13 @@ export default function Header() {
       >
         <ul>
           <li>
-            <Link href="/gaming-for-realiti" onClick={toggleMenu}>
+            <Link href="/notre-mission-et-vision" onClick={toggleMenu}>
               Notre Mission et Vision
+            </Link>
+          </li>
+          <li>
+            <Link href="/nos-solutions-diviniti" onClick={toggleMenu}>
+              Nos Solutions Diviniti
             </Link>
           </li>
           <li>

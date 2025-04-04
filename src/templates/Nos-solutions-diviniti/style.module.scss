@@ -1,0 +1,40 @@
+.ourSolutionsContainer {
+  min-height: 100vh;
+  margin-top: 3rem;
+
+  .soronSolution {
+    padding-top: 2rem;
+    // background-color: #fffaf0;
+    background-color: #010101;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .solutioncontent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      
+        max-width: 1400px;
+        
+
+    img {
+      width: 40rem;
+      height: auto;
+    }
+
+    h2 {
+      
+      font-size: 2rem;
+      margin: 2rem 0;
+    }
+    p {
+      font-size: 1.2rem;
+      margin: 0.5rem 0;
+      line-height: 2rem;
+    }
+  }}
+}

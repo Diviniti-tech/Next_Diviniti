@@ -5,7 +5,7 @@ import Head from "next/head";
 import Image from "next/image";
 import ModalBookDemo from "@/components/ModalBookDemo/ModalBookDemo";
 
-export default function About() {
+export default function NotreMissionEtVision() {
   const [showModal, setShowModal] = useState(false);
 
   return (
