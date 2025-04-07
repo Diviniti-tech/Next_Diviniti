@@ -1,0 +1,140 @@
+.soronContainer {
+  min-height: 100vh;
+  margin-top: 3rem;
+  h2 {
+    font-size: 2.5em;
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    color: #ff7f50; /* Fallback solid color */
+    background: linear-gradient(90deg, #fb922b 0%, #ef1976 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .soronSolution {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .headerSection {
+      background-image: linear-gradient(to right, #151515, #190162);
+
+      .header1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem 2rem;
+        max-width: 1400px;
+
+        img {
+          width: 30rem;
+          height: auto;
+        }
+
+        p {
+          font-size: 1.2rem;
+          margin: 0.5rem 0;
+          line-height: 2rem;
+        }
+      }
+      .header2 {
+        display: flex;
+        .header2Left,
+        .header2Right {
+          width: 50%;
+          padding: 2rem 0rem 2rem 2rem;
+          display: flex;
+          flex-direction: column;
+
+          justify-content: center;
+
+          p {
+            font-size: 1.2rem;
+            margin: 2rem 0;
+            line-height: 2rem;
+          }
+
+          ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: 1.2rem;
+            line-height: 2rem;
+            margin-left: 2rem;
+            li {
+              margin-bottom: 2rem;
+              position: relative;
+              padding-left: 1.5rem;
+              &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0.5rem;
+                width: 0.5rem;
+                height: 0.5rem;
+                background-color: #ff7f50; /* Coral color */
+                border-radius: 50%;
+              }
+            }
+          }
+          img {
+            width: 100%;
+            height: auto;
+            margin: 2rem 0;
+          }
+        }
+      }
+    }
+
+    .section {
+      background-color: #191919;
+      width: 100%;
+      text-align: center;
+      padding: 3rem 2rem;
+      .sectionContent {
+        max-width: 1400px;
+        height: 100%;
+        display: flex;
+        margin: 0 auto;
+
+        .sectionLeft,
+        .sectionRight {
+          width: 100%;
+          img {
+            width: 100%;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+          }
+
+          .sectionCard {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 rem;
+
+            h3 {
+              font-size: 1.5rem;
+              margin: 2rem 0;
+              font-weight: 700;
+            }
+            p {
+              font-size: 1.2rem;
+              margin: 0.5rem 0;
+              line-height: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

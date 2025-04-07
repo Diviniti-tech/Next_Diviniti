@@ -53,11 +53,24 @@ export default function Header() {
               Notre Mission et Vision
             </Link>
           </li>
-          <li>
-            <Link href="/nos-solutions-diviniti" onClick={toggleMenu}>
-              Nos Solutions Diviniti
-            </Link>
-          </li>
+          <li className={styles.dropdown}>
+  <span className={styles.dropdownTitle}>Nos solutions Diviniti <i class="fa-solid fa-caret-down"></i></span>
+  <ul className={styles.dropdownMenu}>
+    <li>
+      <Link href="/soron" onClick={toggleMenu}><img src="https://uploads.pixecurity.com/files/soron-logo-dark-bkgd-centered.png" alt="" /></Link>
+    </li>
+    <li>
+      <Link href="/atna" onClick={toggleMenu}><img src="https://uploads.pixecurity.com/files/ATNa-logo-dark-bkgd-centered.png" alt="" /></Link>
+    </li>
+    <li>
+      <Link href="/befrost" onClick={toggleMenu}><img src="https://uploads.pixecurity.com/files/befrost-logo-dark-bkgd-centered.png" alt="" /></Link>
+    </li>
+    <li>
+      <Link href="/raven" onClick={toggleMenu}><img src="https://uploads.pixecurity.com/files/raven-logo-dark-bkgd-centered.png" alt="" /></Link>
+    </li>
+  </ul>
+</li>
+
           <li>
             <Link href="/qui-sommes-nous" onClick={toggleMenu}>
               Qui Sommes-Nous ?
