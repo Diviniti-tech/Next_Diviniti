@@ -124,19 +124,51 @@ export default function Soron() {
         <div className={styles.section}>
           <h2>L’utilisateur au centre du projet</h2>
           <div className={styles.sectionContent}>
-            <div className={styles.sectionCard}>
-              <h3>Une interface pensée pour l’utilisateur</h3>
+            <div className={styles.sectionLeft}>
+            <img
+                src="https://uploads.pixecurity.com/files/Image10.png"
+                alt=""
+              />
+            </div>
+            <div className={styles.sectionRight}>
+          
+              <div className={styles.sectionCard}>
+                <h3>Une interface pensée pour l’utilisateur</h3>
+                <p>
+                  L’utilisateur final est au coeur de la conception de Soron.
+                  Notre logiciel a été conçu en s’inspirant des codes du gaming
+                  pour être aussi facilement utilisable qu’un Sim City. Nous
+                  menons constamment des recherches en UX/UI pour répondre au
+                  mieux aux besoin des opérateurs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={styles.section6}>
+          <div className={styles.section6content}>
+            <div className={styles.section6card1}>
+              <h3>Dashboard</h3>
               <p>
-                L’utilisateur final est au coeur de la conception de Soron.
-                Notre logiciel a été conçu en s’inspirant des codes du gaming
-                pour être aussi facilement utilisable qu’un Sim City. Nous
-                menons constamment des recherches en UX/UI pour répondre au
-                mieux aux besoin des opérateurs.
+                Permet de garder à l’oeil les informations principales sur un
+                écran totalement customisable.
+              </p>
+            </div>
+            <div className={styles.section6card2}>
+              <h3>Remontée d’informations en direct</h3>
+              <p>
+              Ici les prochaines arrivées de train en gare de Maisons-Laffitte
+              </p>
+            </div>
+            <div className={styles.section6card3}>
+              <h3>Modélisation détaillée avec une grande précision</h3>
+              <p>
+              Accès à un nombre illimité de capteurs en simultané (ici une porte et sa caméras associée + une autre caméra)
               </p>
             </div>
 
             <img
-              src="https://uploads.pixecurity.com/files/Image10.png"
+              src="https://uploads.pixecurity.com/files/Image11.png"
               alt=""
             />
           </div>
