@@ -94,8 +94,8 @@ export default function Header() {
                 src="/assets/linkedin.png"
                 alt="logo linkedin"
                 className={styles.linkedinIcon}
-                width={30}
-                height={50}
+                width={80}
+                height={45}
                 priority={true}
               />
             </Link>
