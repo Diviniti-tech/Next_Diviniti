@@ -84,22 +84,23 @@
         gap: 3rem;
         width: 100%;
 
-        .ctaButton {
+        .ctaButton, .seeSolutions {
           color: #870bff;
           background-color: white;
-          border-radius: 30px;
           padding: 1rem 2rem;
           text-align: center;
-          width: 180px;
+          width: 17rem;
           font-size: 1.1rem;
           font-weight: 600;
           text-decoration: none;
           margin-bottom: 1rem;
+          border: none;
+          cursor : pointer;
+          border-radius: 30px;
           -webkit-border-radius: 30px;
           -moz-border-radius: 30px;
           -ms-border-radius: 30px;
           -o-border-radius: 30px;
-          border: none;
 
           &:hover {
             background-color: #870bff;
@@ -199,28 +200,7 @@
         line-height: 1.5;
       }
 
-      a {
-        color: white;
-        background-color: #870bff;
-        border-radius: 30px;
-        padding: 1rem 2rem;
-        text-align: center;
-        width: 180px;
-        font-size: 1.1rem;
-        font-weight: 600;
-        text-decoration: none;
-        margin-bottom: 1rem;
-        -webkit-border-radius: 30px;
-        -moz-border-radius: 30px;
-        -ms-border-radius: 30px;
-        -o-border-radius: 30px;
-        border: 1px solid #870bff;
-
-        &:hover {
-          background-color: white;
-          color: #870bff;
-        }
-      }
+      
 
       .cards {
         padding-top: 4rem;
@@ -228,9 +208,13 @@
         grid-template-columns: repeat(4, 1fr);
         gap: 3rem;
 
-        .card {
-          width: 80%;
+        a { 
           z-index: 1000;
+          text-decoration: none;
+
+          .card {
+          width: 80%;
+          height : 100%;
           display: flex;
           gap: 4rem;
           justify-content: center;
@@ -256,6 +240,8 @@
           }
         }
       }
+      
+      }
     }
   }
 
@@ -264,7 +250,7 @@
     background-image: url("https://uploads.pixecurity.com/files/wave.webp");
     background-size: cover;
     background-attachment: fixed; /* Ajout pour parallax */
-    margin-top: -13rem;
+    margin-top: -8rem;
     z-index: 100;
     display: flex;
     flex-direction: column;
@@ -351,7 +337,7 @@
           padding: 1rem 2rem;
           text-align: center;
           margin-top: 2rem;
-          width: 250px;
+          width: 17rem;
           font-size: 1.1rem;
           font-weight: 600;
           text-decoration: none;

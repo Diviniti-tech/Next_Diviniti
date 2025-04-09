@@ -47,7 +47,7 @@ export default function NotreMissionEtVision() {
               className={styles.bookDemoButton}
               onClick={() => setShowModal(true)}
             >
-              Réserver une démo
+              Demander une démo
             </button>
           </div>
         </div>

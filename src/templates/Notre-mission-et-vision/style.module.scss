@@ -19,6 +19,7 @@
       object-fit: cover;
       filter: brightness(80%);
       -webkit-filter: brightness(80%);
+    
     }
     .section1content {
       position: relative;
@@ -53,21 +54,19 @@
         color: #870bff;
         background-color: white;
         border-radius: 30px;
-        padding: 1rem 2rem;
+        padding: 1rem 1rem;
         text-align: center;
-        width: 250px;
+        width: 17rem;
         font-size: 1.1rem;
         font-weight: 600;
         text-decoration: none;
         margin-bottom: 1rem;
-        -webkit-border-radius: 30px;
-        -moz-border-radius: 30px;
-        -ms-border-radius: 30px;
-        -o-border-radius: 30px;
+    
         cursor: pointer;
         border: 1px solid white;
 
-        &:hover {
+        &:hover 
+{
           background-color: #870bff;
           color: white;
           border: 1px solid #870bff;
@@ -84,6 +83,7 @@
     background-repeat: no-repeat;
     display: flex;
     padding: 0rem 2rem;
+    background-attachment: fixed;
 
     .section2content {
       max-width: 1400px;
@@ -117,6 +117,7 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
+    background-attachment: fixed;
 
     .section3content {
       max-width: 1400px;

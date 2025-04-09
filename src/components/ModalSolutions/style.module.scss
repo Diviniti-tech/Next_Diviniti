@@ -1,0 +1,83 @@
+.modalSolutionsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.682);
+  z-index: 1000;
+
+  .modalContent {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #030303cc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    position: absolute;
+    width: 35rem;
+    height: 35rem;
+
+    .closeModal {
+      top: 50px;
+      float: right;
+      font-weight: 500;
+      cursor: pointer;
+      color: rgb(122, 66, 66);
+      background-color: #f0efef;
+      padding: 10px 15px;
+      border-radius: 50%;
+      transition: all 0.3s;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+
+      &:hover {
+        background-color: #e0e0e0;
+      }
+    }
+
+    .solutions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 100%;
+      height: 100%;
+
+      .solution {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+      }
+ 
+img {
+    
+        transition: transform 0.3s ease-in-out;
+      }
+   
+
+      // Add hover effect to the solution images
+      img:hover {
+        transform: scale(1.05);
+      }
+
+    
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .modalContainer {
+    .modalContent {
+      width: 80%;
+    }
+  }
+}

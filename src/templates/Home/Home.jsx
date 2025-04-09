@@ -4,9 +4,11 @@ import Link from "next/link";
 import Head from "next/head";
 import Image from "next/image";
 import ModalBookDemo from "@/components/ModalBookDemo/ModalBookDemo";
+import ModalSolutions from "@/components/ModalSolutions/ModalSolutions";
 
 export default function Home() {
-  const [showModal, setShowModal] = useState(false);
+  const [showModalDemo, setShowModalDemo] = useState(false);
+  const [showModalSolutions, setShowModalSolutions] = useState(false);
 
   return (
     <>
@@ -53,12 +55,18 @@ export default function Home() {
             </p>
             <div className={styles.cta}>
               <Link
-                href="/gaming-for-realiti"
+                href="/notre-mission-et-vision"
                 passHref
                 className={styles.ctaButton}
               >
                 En savoir plus
               </Link>
+              <button
+                className={styles.seeSolutions}
+                onClick={() => setShowModalSolutions(true)}
+              >
+                Nos solutions
+              </button>
             </div>
           </div>
           <div className={styles.section1right}>
@@ -90,10 +98,9 @@ export default function Home() {
               l’IA, la 3D et la réalité mixte pour répondre aux défis de la
               sécurité de demain.
             </p>
-            {/* <Link href="/gaming-for-realiti" passHref>
-              En savoir plus
-            </Link> */}
+         
             <div className={styles.cards}>
+                <Link href="/soron" passHref>
               <div className={styles.card}>
                 <Image
                   src="https://uploads.pixecurity.com/files/soron-logo-clear-bkgd-centered.png"
@@ -107,7 +114,10 @@ export default function Home() {
                   gestion immersive des opérations de sûreté.
                 </p>
               </div>
+              </Link>
+              <Link href="/atna" passHref>
               <div className={styles.card}>
+
                 <Image
                   src="https://uploads.pixecurity.com/files/ATNa-logo-clear-bkgd-centered.png"
                   alt="ATNa Logo"
@@ -120,6 +130,10 @@ export default function Home() {
                   algorithmes avancés pour l’analyse des flux vidéo.
                 </p>
               </div>
+              </Link>
+
+              <Link href="/raven" passHref>
+
               <div className={styles.card}>
                 <Image
                   src="https://uploads.pixecurity.com/files/raven-logo-clear-bkgd-centered.png"
@@ -133,6 +147,8 @@ export default function Home() {
                   mixte pour l'entraînement et l’intervention.
                 </p>
               </div>
+              </Link>
+              <Link href="/befrost" passHref>
               <div className={styles.card}>
                 <Image
                   src="https://uploads.pixecurity.com/files/befrost-logo-clear-bkgd-centered.png"
@@ -146,6 +162,7 @@ export default function Home() {
                   l’interopérabilité des systèmes de sécurité.
                 </p>
               </div>
+              </Link>
             </div>
           </div>
         </div>
@@ -189,15 +206,17 @@ export default function Home() {
               </p>
               <button
                 className={styles.bookDemo}
-                onClick={() => setShowModal(true)}
+                onClick={() => setShowModalDemo(true)}
               >
-                Réserver une démo
+                Demander une démo
               </button>
             </div>
           </div>
         </div>
       </div>
-      <ModalBookDemo showModal={showModal} setShowModal={setShowModal} />
+      <ModalBookDemo setShowModal={setShowModalDemo} showModal={showModalDemo} />
+
+      <ModalSolutions showModal={showModalSolutions} setShowModal={setShowModalSolutions} />
     </>
   );
 }
