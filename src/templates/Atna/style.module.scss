@@ -25,6 +25,7 @@
       background-size: cover;
       background-position: right;
       width: 100%;
+      background-attachment: fixed;
     
 
       .header1 {
@@ -143,7 +144,7 @@
           }
 
           ul {
-            list-style: none;
+            list-style-type: " \2713";
             padding: 0;
             margin: 0;
             font-size: 1.2rem;
@@ -160,7 +161,7 @@
                 top: 0.5rem;
                 width: 0.5rem;
                 height: 0.5rem;
-                background-color: #c795fe; /* Coral color */
+   
                 border-radius: 50%;
               }
             }}}

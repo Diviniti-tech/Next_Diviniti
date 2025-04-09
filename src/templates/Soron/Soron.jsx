@@ -13,7 +13,7 @@ export default function Soron() {
               src="https://uploads.pixecurity.com/files/soron-logo-dark-bkgd-long.png"
               alt=""
             />
-            <h2>Notre outil d'hypervision</h2>
+            <h2 className={styles.h2}>Notre outil d'hypervision</h2>
             <p>
               SORON est la plateforme qui permet d’avoir à l’oeil tout
               l’environnement à superviser. Grâce à la modélisation 3D et à son
@@ -23,8 +23,8 @@ export default function Soron() {
           </div>
           <div className={styles.header2}>
             <div className={styles.header2Left}>
-              <p>Un hyperviseur construit sur trois grands axes :</p>
-              <ul>
+              <h3>Un hyperviseur construit sur trois grands axes :</h3>
+              <ul >
                 <li>
                   La modélisation 3D sur mesure de votre environnement
                   d’intérêt.
@@ -39,10 +39,10 @@ export default function Soron() {
                   décision optimisée.
                 </li>
               </ul>
-              <p>
+              <h3>
                 Le tout rassemblé sur un seul et même outil inspiré de l’univers
                 du jeux vidéo pour une navigation intuitive.
-              </p>
+              </h3>
             </div>
 
             <div className={styles.header2Right}>
@@ -125,13 +125,12 @@ export default function Soron() {
           <h2>L’utilisateur au centre du projet</h2>
           <div className={styles.sectionContent}>
             <div className={styles.sectionLeft}>
-            <img
+              <img
                 src="https://uploads.pixecurity.com/files/Image10.png"
                 alt=""
               />
             </div>
             <div className={styles.sectionRight}>
-          
               <div className={styles.sectionCard}>
                 <h3>Une interface pensée pour l’utilisateur</h3>
                 <p>
@@ -157,13 +156,14 @@ export default function Soron() {
             <div className={styles.section6card2}>
               <h3>Remontée d’informations en direct</h3>
               <p>
-              Ici les prochaines arrivées de train en gare de Maisons-Laffitte
+                Ici les prochaines arrivées de train en gare de Maisons-Laffitte
               </p>
             </div>
             <div className={styles.section6card3}>
               <h3>Modélisation détaillée avec une grande précision</h3>
               <p>
-              Accès à un nombre illimité de capteurs en simultané (ici une porte et sa caméras associée + une autre caméra)
+                Accès à un nombre illimité de capteurs en simultané (ici une
+                porte et sa caméras associée + une autre caméra)
               </p>
             </div>
 
