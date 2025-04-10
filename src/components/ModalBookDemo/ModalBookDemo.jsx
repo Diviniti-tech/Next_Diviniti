@@ -88,7 +88,10 @@ export default function ModalBookDemo({ showModal, setShowModal }) {
     <div className={styles.modalContainer}>
       <div className={styles.modalContent}>
         <span onClick={() => setShowModal(false)} className={styles.closeModal}>X</span>
-        <h2>Demander à être recontacté pour une démo</h2>
+        <h1>Planifions une démo !</h1>
+        <h2> 
+          Remplissez le formulaire ci-dessous et nous vous recontacterons dans les plus brefs délais.
+        </h2>
         <form onSubmit={handleSubmit}>
           <label htmlFor="name">Nom et prénom</label>
           <input type="text" value={name} onChange={(e) => setName(e.target.value)} />

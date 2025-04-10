@@ -89,7 +89,7 @@
           background-color: white;
           padding: 1rem 2rem;
           text-align: center;
-          width: 17rem;
+          width: 20rem;
           font-size: 1.1rem;
           font-weight: 600;
           text-decoration: none;
@@ -156,6 +156,29 @@
         font-size: 1.2rem;
         font-weight: 500;
         line-height: 1.5;
+        margin-bottom: 4rem;
+      }
+      .ctaButton{
+        color: white;
+        background-color: #870bff;
+        padding: 1rem 4rem;
+        text-align: center;
+        width: 25rem;
+        font-size: 1.1rem;
+        font-weight: 600;
+        text-decoration: none;
+        border: 1px solid #870bff;
+        cursor : pointer;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+
+        &:hover {
+          background-color:white;
+          color: #870bff;
+        }
       }
     }
   }

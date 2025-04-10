@@ -5,49 +5,51 @@ import Image from "next/image";
 export default function ModalSolutions({ showModal, setShowModal }) {
   if (!showModal) return null;
 
+  const handleClose = () => setShowModal(false);
+
   return (
     <div className={styles.modalSolutionsContainer}>
       <div className={styles.modalContent}>
-        <span onClick={() => setShowModal(false)} className={styles.closeModal}>
+        <span onClick={handleClose} className={styles.closeModal}>
           X
         </span>
         <div className={styles.solutions}>
           <Link href="/soron" passHref>
-            <div className={styles.solution}>
+            <div className={styles.solution} onClick={handleClose}>
               <Image
                 src="https://uploads.pixecurity.com/files/soron-logo-dark-bkgd-centered.png"
                 alt=""
-                width ={130}
+                width={130}
                 height={140}
               />
             </div>
           </Link>
           <Link href="/atna" passHref>
-            <div className={styles.solution}>
+            <div className={styles.solution} onClick={handleClose}>
               <Image
                 src="https://uploads.pixecurity.com/files/ATNa-logo-dark-bkgd-centered.png"
                 alt=""
-                width ={95}
+                width={95}
                 height={135}
               />
             </div>
           </Link>
           <Link href="/befrost" passHref>
-            <div className={styles.solution}>
+            <div className={styles.solution} onClick={handleClose}>
               <Image
                 src="https://uploads.pixecurity.com/files/befrost-logo-dark-bkgd-centered.png"
                 alt=""
-                width ={180}
+                width={180}
                 height={140}
               />
             </div>
           </Link>
           <Link href="/raven" passHref>
-            <div className={styles.solution}>
+            <div className={styles.solution} onClick={handleClose}>
               <Image
                 src="https://uploads.pixecurity.com/files/raven-logo-dark-bkgd-centered.png"
                 alt=""
-                width ={140}
+                width={140}
                 height={140}
               />
             </div>

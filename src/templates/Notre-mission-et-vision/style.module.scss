@@ -111,7 +111,7 @@
   }
 
   .section3 {
-    min-height: 60rem;
+    min-height: 45rem;
     background-color: #fffaf0;
     background-image: url(https://uploads.pixecurity.com/files/AdobeStock_1036695203.webp);
     background-size: cover;
@@ -147,6 +147,32 @@
           height: auto;
           border-radius: 10px;
           box-shadow: 10px 1px 50px rgba(0, 0, 0, 0.476);
+          margin-bottom : 5rem
+        }
+        
+      }
+      .ctaButton, .seeSolutions {
+        color: white;
+        background-color: #870bff;
+        padding: 1rem 2rem;
+        text-align: center;
+        width: 20rem;
+        font-size: 1.1rem;
+        font-weight: 600;
+        text-decoration: none;
+        margin-bottom: 1rem;
+        border: 1px solid #870bff;
+        color: white;
+        cursor : pointer;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+
+        &:hover {
+          background-color:  white;
+          color: #870bff;
         }
       }
     }
@@ -277,7 +303,7 @@
     }
 
     .section3 {
-      min-height: 70vh;
+      min-height: 50rem;
       .section3content {
         .mainImage {
           margin-top: -6rem;
@@ -346,6 +372,8 @@
 
         .section3cards {
           grid-template-columns: repeat(1, 1fr);
+          width: 100%;
+          gap: 1rem;
         }
       }
     }

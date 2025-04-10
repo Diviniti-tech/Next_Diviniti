@@ -3,11 +3,13 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import ModalBookDemo from "../ModalBookDemo/ModalBookDemo";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false); // État pour le menu burger
   const [isMobile, setIsMobile] = useState(false); // État pour la détection de l'écran mobile
   const linkedin = "https://www.linkedin.com/company/divinititech";
+  const [showModal, setShowModal] = useState(false); // État pour le modal de démo
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -54,22 +56,44 @@ export default function Header() {
             </Link>
           </li>
           <li className={styles.dropdown}>
-  <span className={styles.dropdownTitle}>Nos solutions Diviniti <i class="fa-solid fa-caret-down"></i></span>
-  <ul className={styles.dropdownMenu}>
-    <li>
-      <Link href="/soron" onClick={toggleMenu}><img src="https://uploads.pixecurity.com/files/soron-logo-dark-bkgd-centered.png" alt="" /></Link>
-    </li>
-    <li>
-      <Link href="/atna" onClick={toggleMenu}><img src="https://uploads.pixecurity.com/files/ATNa-logo-dark-bkgd-centered.png" alt="" /></Link>
-    </li>
-    <li>
-      <Link href="/befrost" onClick={toggleMenu}><img src="https://uploads.pixecurity.com/files/befrost-logo-dark-bkgd-centered.png" alt="" /></Link>
-    </li>
-    <li>
-      <Link href="/raven" onClick={toggleMenu}><img src="https://uploads.pixecurity.com/files/raven-logo-dark-bkgd-centered.png" alt="" /></Link>
-    </li>
-  </ul>
-</li>
+            <span className={styles.dropdownTitle}>
+              Nos solutions Diviniti <i class="fa-solid fa-caret-down"></i>
+            </span>
+            <ul className={styles.dropdownMenu}>
+              <li>
+                <Link href="/soron" onClick={toggleMenu}>
+                  <img
+                    src="https://uploads.pixecurity.com/files/soron-logo-dark-bkgd-centered.png"
+                    alt=""
+                  />
+                </Link>
+              </li>
+              <li>
+                <Link href="/atna" onClick={toggleMenu}>
+                  <img
+                    src="https://uploads.pixecurity.com/files/ATNa-logo-dark-bkgd-centered.png"
+                    alt=""
+                  />
+                </Link>
+              </li>
+              <li>
+                <Link href="/befrost" onClick={toggleMenu}>
+                  <img
+                    src="https://uploads.pixecurity.com/files/befrost-logo-dark-bkgd-centered.png"
+                    alt=""
+                  />
+                </Link>
+              </li>
+              <li>
+                <Link href="/raven" onClick={toggleMenu}>
+                  <img
+                    src="https://uploads.pixecurity.com/files/raven-logo-dark-bkgd-centered.png"
+                    alt=""
+                  />
+                </Link>
+              </li>
+            </ul>
+          </li>
 
           <li>
             <Link href="/qui-sommes-nous" onClick={toggleMenu}>
@@ -101,6 +125,17 @@ export default function Header() {
             </Link>
           </li>
         </ul>
+      
+          <button
+            className={styles.demoBtn}
+            onClick={() => setShowModal(true)}
+          >
+          
+          <i className="fa-solid fa-rocket"></i>  {"  "}  Commencez ici 
+          </button>
+        
+        
+        
       </motion.nav>
 
       {/* Menu burger */}
@@ -119,6 +154,10 @@ export default function Header() {
             className={styles.line}
           />
         </div>
+      )}
+      {/* Modal de démo */}
+      {showModal && (
+        <ModalBookDemo showModal={showModal} setShowModal={setShowModal} />
       )}
     </header>
   );

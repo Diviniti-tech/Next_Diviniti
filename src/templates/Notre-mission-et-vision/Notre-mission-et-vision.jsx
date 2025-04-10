@@ -4,9 +4,11 @@ import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import ModalBookDemo from "@/components/ModalBookDemo/ModalBookDemo";
+import ModalSolutions from "@/components/ModalSolutions/ModalSolutions";
 
 export default function NotreMissionEtVision() {
-  const [showModal, setShowModal] = useState(false);
+  const [showModalDemo, setShowModalDemo] = useState(false);
+  const [showModalSolutions, setShowModalSolutions] = useState(false);
 
   return (
     <>
@@ -121,6 +123,12 @@ export default function NotreMissionEtVision() {
                 loading="lazy"
               />
             </div>
+            <button
+              className={styles.seeSolutions}
+              onClick={() => setShowModalSolutions(true)}
+            >
+              Découvrir nos solutions
+            </button>
           </div>
         </div>
         <div className={styles.section4}>
@@ -152,7 +160,14 @@ export default function NotreMissionEtVision() {
         </div>
       </div>
 
-      <ModalBookDemo showModal={showModal} setShowModal={setShowModal} />
+      <ModalBookDemo
+        setShowModal={setShowModalDemo}
+        showModal={showModalDemo}
+      />
+      <ModalSolutions
+        showModal={showModalSolutions}
+        setShowModal={setShowModalSolutions}
+      />
     </>
   );
 }

@@ -1,3 +1,20 @@
+// keyframe pulse
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+  100% {
+    transform: scale(1);
+  }
+}
+
 .headerContainer {
   display: flex;
   justify-content: space-between;
@@ -52,13 +69,12 @@
       display: flex;
       gap: 1rem;
       list-style: none;
-     
 
       li {
         display: flex;
         align-items: center;
         justify-content: center;
-       
+
         a {
           text-decoration: none;
           color: white;
@@ -80,8 +96,7 @@
             -moz-border-radius: 30px;
             -ms-border-radius: 30px;
             -o-border-radius: 30px;
-           
-}
+          }
         }
         .linkedinIcon {
           border: none;
@@ -95,21 +110,60 @@
       }
     }
 
+    .demoBtn {
+      position: absolute;
+      right: 5rem;
+      top: 150%;
+      color: white;
+      background-color: #870bff;
+      padding: 1rem 1rem;
+      text-align: center;
+      width: 12rem;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      vertical-align: auto;
+      display: flex;
+   
+      border-radius: 15px;
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      -ms-border-radius: 15px;
+      -o-border-radius: 15px;
+      i {
+        margin-right: 0.8rem;
+        font-size: 1.2em;
+        color: #ffd67d;
+        animation: pulse 2s infinite;
+        -webkit-animation: pulse 2s infinite;
+}
+      &:hover {
+        background-color: white;
+        color: #870bff;
+        
+      }
+
+    }
+
     .dropdown {
       position: relative;
     }
-    
+
     .dropdownTitle {
       cursor: pointer;
       display: inline-block;
       padding: 0.5rem 1rem;
     }
-    
+
     .dropdownMenu {
       display: none;
       position: absolute;
       background-color: #03084e;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
       list-style: none;
       margin: 0;
       padding: 0.5rem 0;
@@ -121,8 +175,8 @@
       -moz-border-radius: 0px 00px 20px 20px;
       -ms-border-radius: 0px 00px 20px 20px;
       -o-border-radius: 0px 00px 20px 20px;
-}
-    
+    }
+
     .dropdownMenu li {
       padding: 0.1rem 1rem;
       white-space: nowrap;
@@ -133,15 +187,14 @@
         margin-right: 0.5rem;
       }
     }
-    
+
     .dropdownMenu li:hover {
       background-color: #03084e;
     }
-    
+
     .dropdown:hover .dropdownMenu {
       display: block;
     }
-    
   }
 
   @media screen and (max-width: 1024px) {
@@ -150,7 +203,7 @@
     .headerLogo {
       img {
         width: 4.7rem;
-      height: 3.5rem;
+        height: 3.5rem;
       }
     }
     .burgerMenu {

@@ -1,8 +1,14 @@
 import styles from "./style.module.scss";
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
+import ModalSolutions from "../ModalSolutions/ModalSolutions";
+import ModalBookDemo from "../ModalBookDemo/ModalBookDemo";
 
 function Footer() {
+  const [showModalSolutions, setShowModalSolutions] = useState(false);
+  const [showModalDemo, setShowModalDemo] = useState(false);
+
   return (
     <div className={styles["footer-container"]}>
       <div className={styles["section-1"]}>
@@ -17,7 +23,7 @@ function Footer() {
           Le nouveau système d&apos;exploitation sûreté
         </p>
       </div>
-   
+
       <div className={styles["section-2"]}>
         <h4>Plan de site </h4>
         <ul>
@@ -27,12 +33,19 @@ function Footer() {
           <Link href="/gaming-for-realiti">
             <li>Notre Mission et Vision</li>
           </Link>
+          <p onClick={() => setShowModalSolutions(true)}>
+            <li>Nos Solutions</li>
+          </p>
+
           <Link href="/qui-sommes-nous">
             <li>Qui Sommes-Nous ?</li>
           </Link>
           <Link href="/tendances-et-actus">
             <li>Tendances & Actus</li>
           </Link>
+          <p onClick={() => setShowModalDemo(true)}>
+            <li>Demander une démo</li>
+          </p>
         </ul>
       </div>
 
@@ -47,7 +60,8 @@ function Footer() {
             <i className="fa-solid fa-phone"></i>(+33) 1 39 60 98 82
           </li>
           <li>
-            <i className="fa-solid fa-location-dot"></i> 38 Rue Jean Mermoz, 78600 Maisons-Laffitte
+            <i className="fa-solid fa-location-dot"></i> 38 Rue Jean Mermoz,
+            78600 Maisons-Laffitte
           </li>
           <li>
             <i className="fa-brands fa-linkedin"></i>
@@ -56,10 +70,18 @@ function Footer() {
             </Link>
           </li>
           <p className={styles.copyright}>
-            © 2024 Diviniti. Tous droits réservés.
+            © 2025 Diviniti. Tous droits réservés.
           </p>
         </ul>
       </div>
+      <ModalSolutions
+        showModal={showModalSolutions}
+        setShowModal={setShowModalSolutions}
+      />
+      <ModalBookDemo
+        setShowModal={setShowModalDemo}
+        showModal={showModalDemo}
+      />
     </div>
   );
 }

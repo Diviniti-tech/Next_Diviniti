@@ -54,18 +54,12 @@ export default function Home() {
               environnements urbains et industriels.
             </p>
             <div className={styles.cta}>
-              <Link
-                href="/notre-mission-et-vision"
-                passHref
-                className={styles.ctaButton}
-              >
-                En savoir plus
-              </Link>
+        
               <button
                 className={styles.seeSolutions}
                 onClick={() => setShowModalSolutions(true)}
               >
-                Nos solutions
+                Découvrir nos solutions
               </button>
             </div>
           </div>
@@ -86,6 +80,13 @@ export default function Home() {
               menaces en temps réel, réduisant les risques et optimisant la
               gestion des interventions.
             </p>
+                  <Link
+                href="/notre-mission-et-vision"
+                passHref
+                className={styles.ctaButton}
+              >
+                Notre mission et vision
+              </Link> 
           </div>
         </div>
       
