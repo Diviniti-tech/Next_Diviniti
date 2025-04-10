@@ -150,7 +150,7 @@ export default function Header() {
             className={styles.line}
           />
           <motion.div
-            animate={isOpen ? { rotate: -45, y: -12 } : { rotate: 0, y: 0 }}
+            animate={isOpen ? { rotate: -45, y: -11 } : { rotate: 0, y: 0 }}
             className={styles.line}
           />
         </div>

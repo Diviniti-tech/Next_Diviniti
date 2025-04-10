@@ -44,13 +44,41 @@ export default function NotreMissionEtVision() {
               une protection proactive et immersive des environnements urbains
               et industriels.
             </p>
+            <div>
+              <div className={styles.solutionsLogos}>
+                <Image
+                  src="https://uploads.pixecurity.com/files/soron.png"
+                  alt=""
+                  width={100}
+                  height={100}
+                />
+                <Image
+                  src="https://uploads.pixecurity.com/files/atna.png"
+                  alt=""
+                  width={100}
+                  height={100}
+                />
+                <Image
+                  src="https://uploads.pixecurity.com/files/befrost.png"
+                  alt=""
+                  width={100}
+                  height={100}
+                />
+                <Image
+                  src="https://uploads.pixecurity.com/files/raven.png"
+                  alt=""
+                  width={100}
+                  height={100}
+                />
+              </div>
+            </div>
 
-            <button
+            {/* <button
               className={styles.bookDemoButton}
               onClick={() => setShowModal(true)}
             >
               Demander une démo
-            </button>
+            </button> */}
           </div>
         </div>
         <div className={styles.section2}>
@@ -97,7 +125,7 @@ export default function NotreMissionEtVision() {
         </div>
         <div className={styles.section3}>
           <div className={styles.section3content}>
-            <Image
+            {/* <Image
               src="https://uploads.pixecurity.com/files/screenshots1.webp"
               alt="Aperçu des solutions Diviniti"
               className={styles.mainImage}
@@ -121,8 +149,15 @@ export default function NotreMissionEtVision() {
                 width={400}
                 height={400}
                 loading="lazy"
+              /> */}
+            {/* </div> */}
+
+            <video autoPlay loop muted className={styles.backgroundVideo}>
+              <source
+                src="https://uploads.pixecurity.com/files/soron_test2_%E2%80%90_R%C3%A9alis%C3%A9e_avec_Clipchamp.mp4"
+                type="video/mp4"
               />
-            </div>
+            </video>
             <button
               className={styles.seeSolutions}
               onClick={() => setShowModalSolutions(true)}

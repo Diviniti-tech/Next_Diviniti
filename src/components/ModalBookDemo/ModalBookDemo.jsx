@@ -1,22 +1,22 @@
-import styles from './style.module.scss';
-import { useState } from 'react';
-import { db } from '../../firebase/firebase';
-import { collection, addDoc } from 'firebase/firestore';
-import Swal from 'sweetalert2';
-import emailjs from '@emailjs/browser';
+import styles from "./style.module.scss";
+import { useState } from "react";
+import { db } from "../../firebase/firebase";
+import { collection, addDoc } from "firebase/firestore";
+import Swal from "sweetalert2";
+import emailjs from "@emailjs/browser";
 
 export default function ModalBookDemo({ showModal, setShowModal }) {
-  const [name, setName] = useState('');
-  const [company, setCompany] = useState('');
-  const [email, setEmail] = useState('');
-  const [error, setError] = useState('');
+  const [name, setName] = useState("");
+  const [company, setCompany] = useState("");
+  const [email, setEmail] = useState("");
+  const [error, setError] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setError('');
+    setError("");
 
     if (!name || !email) {
-      setError('Veuillez remplir tous les champs');
+      setError("Veuillez remplir tous les champs");
       return;
     }
 
@@ -26,19 +26,18 @@ export default function ModalBookDemo({ showModal, setShowModal }) {
       !process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID ||
       !process.env.NEXT_PUBLIC_EMAILJS_USER_ID
     ) {
-      console.log('Service ID:', process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID);
-      console.log('Template ID:', process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID);
-      console.log('User ID:', process.env.NEXT_PUBLIC_EMAILJS_USER_ID);
-    
+      console.log("Service ID:", process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID);
+      console.log("Template ID:", process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID);
+      console.log("User ID:", process.env.NEXT_PUBLIC_EMAILJS_USER_ID);
+
       Swal.fire({
-        title: 'Erreur',
+        title: "Erreur",
         text: "La configuration EmailJS est manquante. Veuillez contacter l'administrateur.",
-        icon: 'error',
-        confirmButtonText: 'OK',
+        icon: "error",
+        confirmButtonText: "OK",
       });
       return;
     }
-    
 
     try {
       // Ajouter le prospect à Firestore
@@ -53,7 +52,6 @@ export default function ModalBookDemo({ showModal, setShowModal }) {
         name,
         company,
         email,
-      
       };
 
       await emailjs.send(
@@ -65,19 +63,19 @@ export default function ModalBookDemo({ showModal, setShowModal }) {
 
       // Afficher une alerte SweetAlert et fermer le modal
       Swal.fire({
-        title: 'Merci !',
-        text: 'Votre demande a été envoyée avec succès. Vous serez recontacté sous peu.',
-        icon: 'success',
-        confirmButtonText: 'OK',
+        title: "Merci !",
+        text: "Votre demande a été envoyée avec succès. Vous serez recontacté sous peu.",
+        icon: "success",
+        confirmButtonText: "OK",
       }).then(() => {
         setShowModal(false); // Fermer le modal
       });
     } catch (e) {
       Swal.fire({
-        title: 'Erreur',
+        title: "Erreur",
         text: "Une erreur s'est produite. Veuillez réessayer.",
-        icon: 'error',
-        confirmButtonText: 'OK',
+        icon: "error",
+        confirmButtonText: "OK",
       });
     }
   };
@@ -87,19 +85,44 @@ export default function ModalBookDemo({ showModal, setShowModal }) {
   return (
     <div className={styles.modalContainer}>
       <div className={styles.modalContent}>
-        <span onClick={() => setShowModal(false)} className={styles.closeModal}>X</span>
+        <span onClick={() => setShowModal(false)} className={styles.closeModal}>
+          X
+        </span>
         <h1>Planifions une démo !</h1>
-        <h2> 
-          Remplissez le formulaire ci-dessous et nous vous recontacterons dans les plus brefs délais.
+
+        <video autoPlay loop muted className={styles.backgroundVideo}>
+          <source
+            src="https://uploads.pixecurity.com/files/soron_test_mini_%E2%80%90_R%C3%A9alis%C3%A9e_avec_Clipchamp.mp4"
+            type="video/mp4"
+          />
+        </video>
+
+        <h2>
+          Remplissez le formulaire ci-dessous et nous vous recontacterons dans
+          les plus brefs délais.
         </h2>
         <form onSubmit={handleSubmit}>
           <label htmlFor="name">Nom et prénom</label>
-          <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
           <label htmlFor="company">Entreprise (optionnel)</label>
-          <input type="text" value={company} onChange={(e) => setCompany(e.target.value)} />
+          <input
+            type="text"
+            value={company}
+            onChange={(e) => setCompany(e.target.value)}
+          />
           <label htmlFor="email">Email</label>
-          <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-          <button type="submit" className={styles.submitBtn}>Me contacter</button>
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <button type="submit" className={styles.submitBtn}>
+            Me contacter
+          </button>
         </form>
         {error && <p className={styles.error}>{error}</p>}
       </div>

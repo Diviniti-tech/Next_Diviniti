@@ -9,7 +9,7 @@
     -moz-transform: scale(1.2);
     -ms-transform: scale(1.2);
     -o-transform: scale(1.2);
-}
+  }
   100% {
     transform: scale(1);
   }
@@ -54,7 +54,6 @@
     .line {
       width: 35px;
       height: 4px;
-      // background-color:#d29ae5.
       background-color: white;
       border-radius: 2px;
     }
@@ -128,7 +127,7 @@
       justify-content: center;
       vertical-align: auto;
       display: flex;
-   
+
       border-radius: 15px;
       -webkit-border-radius: 15px;
       -moz-border-radius: 15px;
@@ -140,13 +139,11 @@
         color: #ffd67d;
         animation: pulse 2s infinite;
         -webkit-animation: pulse 2s infinite;
-}
+      }
       &:hover {
         background-color: white;
         color: #870bff;
-        
       }
-
     }
 
     .dropdown {
