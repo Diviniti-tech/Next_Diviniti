@@ -29,158 +29,25 @@
 
   overflow-x: hidden; // Empêche les débordements horizontaux
   // background-attachment: fixed; /* Ajout pour parallax */
-  .background {
-    // position: fixed;
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    background: #39167a;
-    overflow: hidden;
-
-    span {
-      width: 15vmin;
-      height: 15vmin;
-      border-radius: 15vmin;
-      backface-visibility: hidden;
-      position: absolute;
-      animation: move;
-      animation-duration: 45;
-      animation-timing-function: linear;
-      animation-iteration-count: infinite;
-      -webkit-border-radius: 15vmin;
-      -moz-border-radius: 15vmin;
-      -ms-border-radius: 15vmin;
-      -o-border-radius: 15vmin;
-    }
-
-    span:nth-child(0) {
-      color: #e45a84;
-      top: 46%;
-      left: 73%;
-      animation-duration: 11s;
-      animation-delay: -39s;
-      transform-origin: 10vw -10vh;
-      box-shadow: -34vmin 0 4.558398178700208vmin currentColor;
-    }
-    span:nth-child(1) {
-      color: #e45a84;
-      top: 30%;
-      left: 27%;
-      animation-duration: 7s;
-      animation-delay: -42s;
-      transform-origin: -7vw -5vh;
-      box-shadow: 34vmin 0 5.183379098792598vmin currentColor;
-    }
-    span:nth-child(2) {
-      color: #583c87;
-      top: 1%;
-      left: 80%;
-      animation-duration: 43s;
-      animation-delay: -4s;
-      transform-origin: 8vw -4vh;
-      box-shadow: 34vmin 0 4.7506736502125255vmin currentColor;
-    }
-    span:nth-child(3) {
-      color: #583c87;
-      top: 31%;
-      left: 91%;
-      animation-duration: 17s;
-      animation-delay: -31s;
-      transform-origin: -8vw 18vh;
-      box-shadow: 34vmin 0 4.527566155499961vmin currentColor;
-    }
-    span:nth-child(4) {
-      color: #583c87;
-      top: 39%;
-      left: 93%;
-      animation-duration: 15s;
-      animation-delay: -47s;
-      transform-origin: 4vw -10vh;
-      box-shadow: 34vmin 0 4.429449872681882vmin currentColor;
-    }
-    span:nth-child(5) {
-      color: #583c87;
-      top: 55%;
-      left: 95%;
-      animation-duration: 33s;
-      animation-delay: -17s;
-      transform-origin: -18vw 23vh;
-      box-shadow: 34vmin 0 4.349412219730785vmin currentColor;
-    }
-    span:nth-child(6) {
-      color: #e45a84;
-      top: 80%;
-      left: 10%;
-      animation-duration: 6s;
-      animation-delay: -34s;
-      transform-origin: -20vw -16vh;
-      box-shadow: -34vmin 0 4.355934613340526vmin currentColor;
-    }
-    span:nth-child(7) {
-      color: #ffacac;
-      top: 8%;
-      left: 97%;
-      animation-duration: 16s;
-      animation-delay: -35s;
-      transform-origin: -9vw -17vh;
-      box-shadow: 34vmin 0 5.114350465528703vmin currentColor;
-    }
-    span:nth-child(8) {
-      color: #e45a84;
-      top: 3%;
-      left: 35%;
-      animation-duration: 52s;
-      animation-delay: -14s;
-      transform-origin: -21vw 14vh;
-      box-shadow: 34vmin 0 4.8347058333820225vmin currentColor;
-    }
-    span:nth-child(9) {
-      color: #583c87;
-      top: 9%;
-      left: 66%;
-      animation-duration: 40s;
-      animation-delay: -50s;
-      transform-origin: -21vw 10vh;
-      box-shadow: 34vmin 0 4.692544933522685vmin currentColor;
-    }
-    span:nth-child(10) {
-      color: #e45a84;
-      top: 91%;
-      left: 95%;
-      animation-duration: 46s;
-      animation-delay: -19s;
-      transform-origin: -14vw 11vh;
-      box-shadow: 34vmin 0 4.920284193518419vmin currentColor;
-    }
-    .background span:nth-child(11) {
-      color: #ffacac;
-      top: 80%;
-      left: 14%;
-      animation-duration: 29s;
-      animation-delay: -25s;
-      transform-origin: -12vw 15vh;
-      box-shadow: -34vmin 0 4.296480812939585vmin currentColor;
-    }
-    .background span:nth-child(12) {
-      color: #ffacac;
-      top: 74%;
-      left: 18%;
-      animation-duration: 42s;
-      animation-delay: -36s;
-      transform-origin: -24vw 2vh;
-      box-shadow: 34vmin 0 5.215245349310781vmin currentColor;
-    }
-  }
   .teamHero {
-    align-items: center;
-    justify-content: space-between;
-
+    position: relative; // ✅ doit être à l'intérieur de .teamHero
     width: 100%;
     min-height: 80vh;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .backgroundVideo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 0.9;
+      pointer-events: none;
+    }
 
     .heroContent {
       height: 100%;
@@ -189,6 +56,8 @@
       justify-content: space-between;
       align-items: center;
       margin: 0 auto;
+      position: relative; // pour être au-dessus
+      z-index: 1;
 
       .heroLeft {
         width: 100%;
@@ -236,7 +105,7 @@
           margin-top: 1rem;
           font-size: 1.5rem;
           // color: #f0a500;
-         color: #ffd67d ;
+          color: #ffd67d;
         }
 
         p {

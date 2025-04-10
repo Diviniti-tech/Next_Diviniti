@@ -17,7 +17,7 @@ export default function Team() {
     },
     {
       name: "Ambroise JULIEN-LAFERRIERE",
-      role: "Commercial",
+      role: "VP Sales",
       image: "/assets/team/AMBROISE.webp",
     },
     {
@@ -61,11 +61,20 @@ export default function Team() {
 
       <div className={styles.teamContainer}>
         <div className={styles.teamHero}>
-          <div className={styles.background}>
-            {[...Array(20)].map((_, i) => (
-              <span key={i}></span>
-            ))}
-          </div>
+          <video
+            className={styles.backgroundVideo}
+            autoPlay
+            loop
+            muted
+            playsInline
+          >
+            <source
+              src="https://uploads.pixecurity.com/files/Aurora-1744296233957.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+
           <div className={styles.heroContent}>
             <div className={styles.heroLeft}>
               <h1>Diviniti : Qui Sommes-Nous ?</h1>

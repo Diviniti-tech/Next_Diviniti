@@ -2,19 +2,21 @@ import styles from "./style.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
 import ModalBookDemo from "../ModalBookDemo/ModalBookDemo";
+import { AnimatePresence, motion } from "framer-motion";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false); // État pour le menu burger
   const [isMobile, setIsMobile] = useState(false); // État pour la détection de l'écran mobile
   const linkedin = "https://www.linkedin.com/company/divinititech";
   const [showModal, setShowModal] = useState(false); // État pour le modal de démo
-
+  const [dropdownOpen, setDropdownOpen] = useState(false);
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-
+  const toggleDropdown = () => {
+    setDropdownOpen((prev) => !prev);
+  };
   // Détection de la taille de l'écran
   useEffect(() => {
     const handleResize = () => {
@@ -56,44 +58,44 @@ export default function Header() {
             </Link>
           </li>
           <li className={styles.dropdown}>
-            <span className={styles.dropdownTitle}>
-              Nos solutions Diviniti <i class="fa-solid fa-caret-down"></i>
-            </span>
-            <ul className={styles.dropdownMenu}>
-              <li>
-                <Link href="/soron" onClick={toggleMenu}>
-                  <img
-                    src="https://uploads.pixecurity.com/files/soron-logo-dark-bkgd-centered.png"
-                    alt=""
-                  />
-                </Link>
-              </li>
-              <li>
-                <Link href="/atna" onClick={toggleMenu}>
-                  <img
-                    src="https://uploads.pixecurity.com/files/ATNa-logo-dark-bkgd-centered.png"
-                    alt=""
-                  />
-                </Link>
-              </li>
-              <li>
-                <Link href="/befrost" onClick={toggleMenu}>
-                  <img
-                    src="https://uploads.pixecurity.com/files/befrost-logo-dark-bkgd-centered.png"
-                    alt=""
-                  />
-                </Link>
-              </li>
-              <li>
-                <Link href="/raven" onClick={toggleMenu}>
-                  <img
-                    src="https://uploads.pixecurity.com/files/raven-logo-dark-bkgd-centered.png"
-                    alt=""
-                  />
-                </Link>
-              </li>
-            </ul>
-          </li>
+  <span className={styles.dropdownTitle} onClick={toggleDropdown}>
+    Nos solutions Diviniti <i className="fa-solid fa-caret-down"></i>
+  </span>
+
+  <AnimatePresence>
+    {dropdownOpen && (
+      <motion.ul
+        className={styles.dropdownMenu}
+        initial={{ opacity: 0, y: -10 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -10 }}
+        transition={{ type: "spring", stiffness: 100, damping: 15 }}
+      >
+        <li>
+          <Link href="/soron" onClick={() => { toggleMenu(); setDropdownOpen(false); }}>
+            <img src="https://uploads.pixecurity.com/files/soron-logo-dark-bkgd-centered.png" alt="Soron" />
+          </Link>
+        </li>
+        <li>
+          <Link href="/atna" onClick={() => { toggleMenu(); setDropdownOpen(false); }}>
+            <img src="https://uploads.pixecurity.com/files/ATNa-logo-dark-bkgd-centered.png" alt="ATNa" />
+          </Link>
+        </li>
+        <li>
+          <Link href="/befrost" onClick={() => { toggleMenu(); setDropdownOpen(false); }}>
+            <img src="https://uploads.pixecurity.com/files/befrost-logo-dark-bkgd-centered.png" alt="Befrost" />
+          </Link>
+        </li>
+        <li>
+          <Link href="/raven" onClick={() => { toggleMenu(); setDropdownOpen(false); }}>
+            <img src="https://uploads.pixecurity.com/files/raven-logo-dark-bkgd-centered.png" alt="Raven" />
+          </Link>
+        </li>
+      </motion.ul>
+    )}
+  </AnimatePresence>
+</li>
+
 
           <li>
             <Link href="/qui-sommes-nous" onClick={toggleMenu}>
