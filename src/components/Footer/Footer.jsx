@@ -27,28 +27,22 @@ function Footer() {
       <div className={styles["section-2"]}>
         <h4>Plan de site </h4>
         <ul>
-          <Link href="/">
-            <li>Accueil</li>
-          </Link>
-          <Link href="/gaming-for-realiti">
-            <li>Notre Mission et Vision</li>
-          </Link>
-          <p onClick={() => setShowModalSolutions(true)}>
-            <li>Nos Solutions</li>
-          </p>
+  <li>
+    <Link href="/">Accueil</Link>
+  </li>
+  <li>
+    <Link href="/gaming-for-realiti">Notre Mission et Vision</Link>
+  </li>
+  <li onClick={() => setShowModalSolutions(true)}>Nos Solutions</li>
+  <li>
+    <Link href="/qui-sommes-nous">Qui Sommes-Nous ?</Link>
+  </li>
+  <li>
+    <Link href="/tendances-et-actus">Tendances & Actus</Link>
+  </li>
+  <li onClick={() => setShowModalDemo(true)}>Demander une démo</li>
+</ul>
 
-          <Link href="/qui-sommes-nous">
-            <li>Qui Sommes-Nous ?</li>
-          </Link>
-          <Link href="/tendances-et-actus">
-            <li>Tendances & Actus</li>
-          </Link>
-         
-          <p onClick={() => setShowModalDemo(true)}>
-            <li>Demander une démo</li>
-          </p>
-          
-        </ul>
       </div>
 
       <div className={styles["section-3"]}>

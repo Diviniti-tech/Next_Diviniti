@@ -23,9 +23,8 @@
         url(https://uploads.pixecurity.com/files/AdobeStock_1299330558.png);
       background-size: cover;
       background-position: top left;
-      //fixed
-       background-attachment: fixed;
-      // // width: 100%;
+      background-attachment: fixed;
+      padding-bottom: 20%;
 
       .header1 {
         display: flex;
@@ -38,7 +37,7 @@
         margin: auto;
 
         img {
-          width: 30rem;
+          width: 14rem;
           height: auto;
         }
 
@@ -59,16 +58,14 @@
           flex-direction: column;
           justify-content: center;
           padding-left: 10%;
-          
+
           h3 {
             font-size: 1.6rem;
-       
+
             margin: 2rem 0;
             line-height: 2rem;
             font-weight: 700;
-            color: #fb922b /* Fallback solid color */
-       
-           
+            color: #fb922b; /* Fallback solid color */
           }
 
           p {
@@ -116,12 +113,29 @@
         }
       }
     }
+    .demoVideo {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      background: linear-gradient(90deg, #000000, rgb(50, 50, 50));
+
+      video {
+        position: relative;
+        margin-top: -15%;
+        box-shadow: 1px 1px 50px #fb932b2d;
+        width: 60%;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+      }
+    }
 
     .section {
-      background: linear-gradient(90deg, #000000, rgb(50, 50, 50));
       width: 100%;
       padding: 3rem 1rem;
-
+      background: linear-gradient(90deg, #000000, rgb(50, 50, 50));
       .sectionContent {
         max-width: 1400px;
         height: 100%;
@@ -154,8 +168,8 @@
             flex-direction: column;
             justify-content: center;
             background-color: #5353531f;
-            border-radius: 10px;
             box-shadow: 1px 1px 50px #fb932b2d;
+            border-radius: 10px;
 
             h3 {
               font-size: 1.6rem;

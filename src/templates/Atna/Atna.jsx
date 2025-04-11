@@ -10,7 +10,7 @@ export default function Atna() {
         <div className={styles.headerSection}>
           <div className={styles.header1}>
             <img
-              src="https://uploads.pixecurity.com/files/ATNa-logo-dark-bkgd-long.png"
+              src="https://uploads.pixecurity.com/files/ATNa-logo-dark-bkgd-centered.png"
               alt=""
             />
             <h2>L’IA au service de la prise de décision</h2>

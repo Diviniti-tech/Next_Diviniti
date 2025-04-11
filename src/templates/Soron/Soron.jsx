@@ -10,7 +10,7 @@ export default function Soron() {
         <div className={styles.headerSection}>
           <div className={styles.header1}>
             <img
-              src="https://uploads.pixecurity.com/files/soron-logo-dark-bkgd-long.png"
+              src="https://uploads.pixecurity.com/files/soron-logo-dark-bkgd-centered.png"
               alt=""
             />
             <h2 className={styles.h2}>Notre outil d'hypervision</h2>
@@ -24,7 +24,7 @@ export default function Soron() {
           <div className={styles.header2}>
             <div className={styles.header2Left}>
               <h3>Un hyperviseur construit sur trois grands axes :</h3>
-              <ul >
+              <ul>
                 <li>
                   La modélisation 3D sur mesure de votre environnement
                   d’intérêt.
@@ -54,6 +54,14 @@ export default function Soron() {
           </div>
         </div>
 
+        <div className={styles.demoVideo}>
+          <video autoPlay loop muted>
+            <source
+              src="https://uploads.pixecurity.com/files/soron_test2_%E2%80%90_R%C3%A9alis%C3%A9e_avec_Clipchamp.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
         <div className={styles.section}>
           <h2>Une modélisation 3D fidèle à la réalité</h2>
           <div className={styles.sectionContent}>
