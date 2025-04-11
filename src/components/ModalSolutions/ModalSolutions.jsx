@@ -6,6 +6,8 @@ import Image from "next/image";
 
 
 
+
+
 export default function ModalSolutions({ showModal, setShowModal }) {
   const modalRef = useRef(null);
 

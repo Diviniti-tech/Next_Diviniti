@@ -1,7 +1,7 @@
 import "@/index.css";
 
 // import { AppProvider } from "@/Components/appContext";
-import Template from "@/Components/Template/Template";
+import Template from "@/components/Template/Template";
 import Head from "next/head";
 import { useRouter } from 'next/router';
 import * as gtag from '../../lib/gtag';
