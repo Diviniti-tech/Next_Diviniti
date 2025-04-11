@@ -87,30 +87,7 @@ export default function Atna() {
             </div>
           </div>
         </div>
-        {/* <div className={styles.section}>
-          <h2>Nos solutions</h2>
-          <div className={styles.sectionContent}>
-            <div className={styles.sectionLeft}>
-              <img
-                src="https://uploads.pixecurity.com/files/Image6.png"
-                alt=""
-              />
-            </div>
-            <div className={styles.sectionRight}>
-              <div className={styles.sectionCard}>
-                <h3>Tous les capteurs sur une même interface</h3>
-                <h4>Contrôle d'accès & Videoprotection</h4>
-                <p>
-                  Caméras, portes, détecteurs d’intrusion, de fumée, infos
-                  trafic, infos sur les transports en commun, tout est aisément
-                  visualisable dans l’interface. Possibilité de masquer/afficher
-                  chaque élément, de naviguer aisément dans les différents
-                  niveaux d’immersion.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div> */}
+      
 
       </div>
     </div>

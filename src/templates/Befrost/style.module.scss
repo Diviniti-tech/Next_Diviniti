@@ -16,6 +16,7 @@
   background-position: bottom;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  padding: 5rem 2rem;
 
   h1 {
     font-size: 2.5em;
@@ -33,7 +34,6 @@
     width: 100%;
     max-width: 1400px;
     margin: auto;
-    padding: 5rem 2rem;
 
     .header1 {
       display: flex;
@@ -56,18 +56,22 @@
       }
     }
     .cardsSection {
-      display: flex;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
       max-width: 1400px;
       margin: 6rem auto;
-      gap: 2rem;
+      gap: 1rem;
 
       .card {
-        width: 23%;
+        // width: 23%;
         background-color: #00000088;
         height: auto;
         border-radius: 1rem;
         box-shadow: inset 0px 0px 10px #000000, 0px 0px 10px #000000;
-
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
         h2 {
           height: 2rem;
           font-size: 1.5rem;
@@ -158,6 +162,27 @@
         -moz-transform: scale(1);
         -ms-transform: scale(1);
         -o-transform: scale(1);
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .befrostContainer {
+    .headerSection {
+      .cardsSection {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .befrostContainer {
+    .headerSection {
+      .cardsSection {
+        grid-template-columns: 1fr;
       }
     }
   }

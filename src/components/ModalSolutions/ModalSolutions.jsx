@@ -29,7 +29,7 @@ export default function ModalSolutions({ showModal, setShowModal }) {
       opacity: 1,
       scale: 1,
       transition: {
-        delayChildren: 0.3,
+        delayChildren: 0.2,
         staggerChildren: 0.2,
       },
     },
@@ -65,11 +65,10 @@ export default function ModalSolutions({ showModal, setShowModal }) {
             <motion.div variants={item}>
               <Link href="/soron" passHref>
                 <div className={styles.solution} onClick={handleClose}>
-                  <Image
+                  <img
                     src="https://uploads.pixecurity.com/files/soron-logo-dark-bkgd-centered.png"
                     alt=""
-                    width={130}
-                    height={140}
+              
                   />
                 </div>
               </Link>
@@ -78,11 +77,10 @@ export default function ModalSolutions({ showModal, setShowModal }) {
             <motion.div variants={item}>
               <Link href="/atna" passHref>
                 <div className={styles.solution} onClick={handleClose}>
-                  <Image
+                  <img
                     src="https://uploads.pixecurity.com/files/ATNa-logo-dark-bkgd-centered.png"
                     alt=""
-                    width={95}
-                    height={135}
+                 
                   />
                 </div>
               </Link>
@@ -91,11 +89,10 @@ export default function ModalSolutions({ showModal, setShowModal }) {
             <motion.div variants={item}>
               <Link href="/befrost" passHref>
                 <div className={styles.solution} onClick={handleClose}>
-                  <Image
+                  <img
                     src="https://uploads.pixecurity.com/files/befrost-logo-dark-bkgd-centered.png"
                     alt=""
-                    width={180}
-                    height={140}
+                 
                   />
                 </div>
               </Link>
@@ -104,11 +101,10 @@ export default function ModalSolutions({ showModal, setShowModal }) {
             <motion.div variants={item}>
               <Link href="/raven" passHref>
                 <div className={styles.solution} onClick={handleClose}>
-                  <Image
+                  <img
                     src="https://uploads.pixecurity.com/files/raven-logo-dark-bkgd-centered.png"
                     alt=""
-                    width={140}
-                    height={140}
+                 
                   />
                 </div>
               </Link>

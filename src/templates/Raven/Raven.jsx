@@ -27,7 +27,6 @@ export default function Raven() {
               l’autre bout du monde vous interagissez avec tous les capteurs
               comme si vous pouviez les toucher du doigt.
             </p>
-           
           </div>
 
           <div className={styles.section1Right}>
@@ -45,7 +44,10 @@ export default function Raven() {
             />
           </div>
           <div className={styles.section2Left}>
-    <h2>Contrôlez vos capteurs et améliorez la communication sur le terrain</h2>
+            <h2>
+              Contrôlez vos capteurs et améliorez la communication sur le
+              terrain
+            </h2>
             <p>
               Sur le terrain, RAVEN vous donne la possibilité de commander tous
               les capteurs qui vous entourent, en revisionnant des flux vidéo de
@@ -55,10 +57,8 @@ export default function Raven() {
             </p>
             <h3>COMING SOON, in 2026…</h3>
           </div>
-
         </div>
       </div>
-
     </div>
   );
 }

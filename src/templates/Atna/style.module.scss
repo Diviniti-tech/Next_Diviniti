@@ -26,7 +26,6 @@
       background-position: right;
       width: 100%;
       background-attachment: fixed;
-    
 
       .header1 {
         display: flex;
@@ -37,7 +36,6 @@
         padding: 2rem 2rem;
         max-width: 1400px;
         margin: auto;
-     
 
         img {
           width: 9.5rem;
@@ -51,24 +49,22 @@
         }
       }
       .header2 {
-        display: flex;  
+        display: flex;
         max-width: 1400px;
         margin: auto;
-        
+        padding: 2rem 2rem;
 
         .header2Left {
-          width: 50%;
-          padding: 2rem 0rem 2rem 2rem;
+          width: 100%;
+          padding: 2rem 2rem;
           display: flex;
           flex-direction: column;
           justify-content: center;
-      
 
           h3 {
             font-size: 1.5rem;
             margin-bottom: 1rem;
             font-weight: 800;
-
             background: linear-gradient(90deg, #f4a8fe 0%, #696dff 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -82,7 +78,7 @@
         }
 
         .header2Right {
-          width: 50%;
+          width: 100%;
           padding: 2rem 0rem 2rem 2rem;
           display: flex;
           flex-direction: column;
@@ -99,19 +95,15 @@
     .section1 {
       background: linear-gradient(90deg, #000000, rgb(50, 50, 50));
       width: 100%;
-      padding: 3rem 1rem;
+      padding: 2rem 0rem;
 
       .section1Content {
-     
         height: 100%;
         display: flex;
         margin: auto;
 
-        
         .section1Right {
-         
-          width: 50%;
-          padding: 0rem 0rem 2rem 2rem;
+          width: 100%;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -119,115 +111,142 @@
         img {
           width: 100%;
           height: auto;
-          margin: 2rem 0;
-   
-        
         }
         .section1Left {
           width: 50%;
-          padding-left: 10%;
+          // padding-left: 10%;
 
-
-    
           .section1Card {
-           
-          padding: 0rem 0rem 2rem 2rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          padding-left: 10%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
 
-          p {
-            font-size: 1.2rem;
-            margin: 2rem 0;
-            line-height: 2rem;
-          }
+            p {
+              font-size: 1.2rem;
+              margin: 2rem 0;
+              line-height: 2rem;
+              padding: 0rem 2rem;
+            }
 
-          ul {
-            list-style-type: " \2713";
-            padding: 0;
-            margin: 0;
-            font-size: 1.2rem;
-            line-height: 2rem;
-            margin-left: 2rem;
-            li {
-              margin-bottom: 2rem;
-              position: relative;
-              padding-left: 1.5rem;
-              &:before {
-                content: "";
-                position: absolute;
-                left: 0;
-                top: 0.5rem;
-                width: 0.5rem;
-                height: 0.5rem;
-   
-                border-radius: 50%;
+            ul {
+              list-style-type: " \2713";
+              padding: 0;
+              margin: 0;
+              font-size: 1.2rem;
+              line-height: 2rem;
+              margin-left: 4rem;
+              li {
+                margin-bottom: 2rem;
+                position: relative;
+                padding-left: 1rem;
+
+                &:before {
+                  content: "";
+                  position: absolute;
+                  left: 0;
+                  top: 0.5rem;
+                  width: 0.5rem;
+                  height: 0.5rem;
+
+                  border-radius: 50%;
+                }
               }
-            }}}
+            }
+          }
         }
       }
     }
+  }
+}
 
-    .section6 {
-      background: linear-gradient(90deg, #000000, rgb(50, 50, 50));
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      padding: 5rem 0rem;
-      height: 100%;
-
-      .section6content {
-        max-width: 1400px;
-        position: relative;
-        padding: 0 1rem;
-
-        p {
-          font-size: 1.2rem;
-          margin: 1rem 0;
-          line-height: 1.5rem;
+@media (max-width: 1024px) {
+  .atnaContainer {
+    .atnaSolution {
+      .headerSection {
+        .header1 {
+          padding: 1rem 1rem;
         }
-
-        img {
-          width: 100%;
-          height: auto;
-          margin: 2rem 0;
+        .header2 {
+          flex-direction: column-reverse;
+          align-items: center;
+          .header2Left {
+            width: 100%;
+            padding: 2rem 0rem;
+          }
+          .header2Right {
+            width: 100%;
+            padding: 2rem 0rem;
+          }
         }
+      }
 
-        .section6card1 {
-          width: 50%;
-          position: absolute;
-          left: 50%;
+      .section1 {
+        .section1Content {
+          flex-direction: column-reverse;
+          align-items: center;
+          .section1Right {
+            width: 100%;
+            padding: 0rem 0rem;
+          }
+          .section1Left {
+            width: 100%;
+            .section1Card {
+              padding: 0rem 0rem 0rem 0rem;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              padding-left: 0%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
-          h3 {
-            color: rgb(255, 102, 242);
-            font-size: 1.5rem;
-            font-weight: 800;
+@media (max-width: 768px) {
+  .atnaContainer {
+    h2 {
+      font-size: 1.5rem;
+      margin: 2rem 0;
+    }
+    margin-top: 0rem;
+    padding-top: 2rem;
+    .atnaSolution {
+      .headerSection {
+        padding: 1rem 1rem;
+        .header1 {
+          img {
+            width: 10rem;
           }
         }
 
-        .section6card2 {
-          width: 50%;
-          position: absolute;
-          bottom: -10%;
+        .header2 {
+          flex-direction: column-reverse;
+          padding: 1rem 1rem;
+          padding-bottom: 5rem;
 
-          h3 {
-            color: rgb(250, 107, 45);
-            font-size: 1.5rem;
-            font-weight: 800;
+          .header2Left {
+            width: 100%;
+            padding: 1rem 1rem;
+            padding-left: 0%;
+          }
+          .header2Right {
           }
         }
-        .section6card3 {
-          width: 50%;
-          position: absolute;
-          bottom: -10%;
-          left: 50%;
-
-          h3 {
-            color: rgb(148, 67, 255);
-            font-size: 1.5rem;
-            font-weight: 800;
+      }
+      .section1 {
+        padding: 1rem 0rem;
+        .section1Content {
+          .section1Left,
+          .section1Right {
+            width: 90%;
+            padding: 1rem;
+            img {
+              width: 100%;
+              height: auto;
+            }
           }
         }
       }
