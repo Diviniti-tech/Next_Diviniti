@@ -2,7 +2,7 @@ import styles from "./style.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import ModalBookDemo from "../ModalBookDemo/ModalBookDemo";
+import ModalBookDemo from "@/components/ModalBookDemo/ModalBookDemo";
 import { AnimatePresence, motion } from "framer-motion";
 
 export default function Header() {
