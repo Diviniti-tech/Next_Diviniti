@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "./style.module.scss";
+import Image from "next/image";
+
 export default function Soron() {
   return (
     <div className={styles.soronContainer}>
@@ -9,9 +11,11 @@ export default function Soron() {
       <div className={styles.soronSolution}>
         <div className={styles.headerSection}>
           <div className={styles.header1}>
-            <img
+            <Image
               src="https://uploads.pixecurity.com/files/soron-logo-dark-bkgd-centered.png"
               alt=""
+              width={200}
+              height={200}
             />
             <h2 className={styles.h2}>Notre outil d'hypervision</h2>
             <p>
@@ -46,9 +50,11 @@ export default function Soron() {
             </div>
 
             <div className={styles.header2Right}>
-              <img
+              <Image
                 src="https://uploads.pixecurity.com/files/Image15.png"
                 alt=""
+                width={500}
+                height={500}
               />
             </div>
           </div>
@@ -77,9 +83,11 @@ export default function Soron() {
               </div>
             </div>
             <div className={styles.sectionRight}>
-              <img
+              <Image
                 src="https://uploads.pixecurity.com/files/Image18.png"
                 alt=""
+                width={500}
+                height={500}
               />
             </div>
           </div>
@@ -88,9 +96,11 @@ export default function Soron() {
           <h2>Nos solutions</h2>
           <div className={styles.sectionContent}>
             <div className={styles.sectionLeft}>
-              <img
+              <Image
                 src="https://uploads.pixecurity.com/files/Image6.png"
                 alt=""
+                width={500}
+                height={500}
               />
             </div>
             <div className={styles.sectionRight}>
@@ -122,9 +132,11 @@ export default function Soron() {
               </div>
             </div>
             <div className={styles.sectionRight}>
-              <img
+              <Image
                 src="https://uploads.pixecurity.com/files/Image9.png"
                 alt=""
+                width={500}
+                height={500}
               />
             </div>
           </div>
@@ -133,9 +145,11 @@ export default function Soron() {
           <h2>L’utilisateur au centre du projet</h2>
           <div className={styles.sectionContent}>
             <div className={styles.sectionLeft}>
-              <img
+              <Image
                 src="https://uploads.pixecurity.com/files/Image10.png"
                 alt=""
+                width={500}
+                height={500}
               />
             </div>
             <div className={styles.sectionRight}>
@@ -175,9 +189,11 @@ export default function Soron() {
               </p>
             </div>
 
-            <img
+            <Image
               src="https://uploads.pixecurity.com/files/Image11.png"
               alt=""
+              width={500}
+              height={500}
             />
           </div>
         </div>

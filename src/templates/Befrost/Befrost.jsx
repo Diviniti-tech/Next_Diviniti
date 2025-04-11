@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "./style.module.scss";
+import Image from "next/image";
+
 export default function Befrost() {
   const cardsData = [
     {
@@ -7,19 +9,19 @@ export default function Befrost() {
       imgUrl: "https://uploads.pixecurity.com/files/AdobeStock_1261669582.jpeg",
       partners: [
         {
-          logo: "assets/partners/vms1.png",
+          logo: "/assets/partners/vms1.png",
           alt: "milestone logo",
           className: "milestone",
           percentage: "95%",
         },
         {
-          logo: "assets/partners/vms3.png",
+          logo: "/assets/partners/vms3.png",
           alt: "vxcore logo",
           className: "vxcore",
           percentage: "75%",
         },
         {
-          logo: "assets/partners/vms2.png",
+          logo: "/assets/partners/vms2.png",
           alt: "genetec logo",
           className: "genetec",
           percentage: "5%",
@@ -31,19 +33,19 @@ export default function Befrost() {
       imgUrl: "https://uploads.pixecurity.com/files/AdobeStock_1362299000.jpeg",
       partners: [
         {
-          logo: "assets/partners/CA2.png",
+          logo: "/assets/partners/CA2.png",
           alt: "synchronic logo",
           className: "synchronic",
           percentage: "2%",
         },
         {
-          logo: "assets/partners/CA3.png",
+          logo: "/assets/partners/CA3.png",
           alt: "til technologies logo",
           className: "til",
           percentage: "20%",
         },
         {
-          logo: "assets/partners/CA1.png",
+          logo: "/assets/partners/CA1.png",
           alt: "nedap logo",
           className: "nedap",
           percentage: "2%",
@@ -55,19 +57,19 @@ export default function Befrost() {
       imgUrl: "https://uploads.pixecurity.com/files/AdobeStock_1114186388.jpeg",
       partners: [
         {
-          logo: "assets/partners/Res1.png",
+          logo: "/assets/partners/Res1.png",
           alt: "cisco logo",
           className: "cisco",
           percentage: "2%",
         },
         {
-          logo: "assets/partners/Res3.png",
+          logo: "/assets/partners/Res3.png",
           alt: "logic monitor logo",
           className: "logic",
           percentage: "2%",
         },
         {
-          logo: "assets/partners/Res2.png",
+          logo: "/assets/partners/Res2.png",
           alt: "nebula zyxel logo",
           className: "nebula",
           percentage: "2%",
@@ -79,19 +81,19 @@ export default function Befrost() {
       imgUrl: "https://uploads.pixecurity.com/files/AdobeStock_1178672896.jpeg",
       partners: [
         {
-          logo: "assets/partners/GTB3.png",
+          logo: "/assets/partners/GTB3.png",
           alt: "regin logo",
           className: "regin",
           percentage: "2%",
         },
         {
-          logo: "assets/partners/GTB1.png",
+          logo: "/assets/partners/GTB1.png",
           alt: "schneider electric logo",
           className: "schneider",
           percentage: "2%",
         },
         {
-          logo: "assets/partners/GTB2.png",
+          logo: "/assets/partners/GTB2.png",
           alt: "siemens logo",
           className: "siemens",
           percentage: "2%",
@@ -104,9 +106,11 @@ export default function Befrost() {
     <div className={styles.befrostContainer}>
       <div className={styles.headerSection}>
         <div className={styles.header1}>
-          <img
+          <Image
             src="https://uploads.pixecurity.com/files/befrost-logo-dark-bkgd-centered.png"
             alt=""
+            width={200}
+            height={200}
           />
           <h1>La passerelle entre différents univers</h1>
           <p>
@@ -120,12 +124,16 @@ export default function Befrost() {
             <div className={styles.card} key={index}>
               <h2>{card.title}</h2>
               <div className={styles.cardImg}>
-                <img src={card.imgUrl} alt={`illustration ${card.title}`} />
+                <Image src={card.imgUrl} alt={`illustration ${card.title}`}
+                    width={400}
+                    height={400} />
               </div>
               <div className={styles.cardBottom}>
                 {card.partners.map((partner, idx) => (
                   <div className={styles.progressContainer} key={idx}>
-                    <img src={partner.logo} alt={partner.alt} />
+                    <Image src={partner.logo} alt={partner.alt}
+                        width={100}
+                        height={100} />
                     <div className={styles.progressBar}>
                       <div
                         className={`${styles.fill} ${

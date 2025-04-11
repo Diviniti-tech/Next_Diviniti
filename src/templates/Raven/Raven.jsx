@@ -1,13 +1,16 @@
 import React from "react";
 import styles from "./style.module.scss";
+import Image from "next/image";
 export default function Raven() {
   return (
     <div className={styles.ravenContainer}>
       <div className={styles.headerSection}>
         <div className={styles.header1}>
-          <img
+          <Image
             src="https://uploads.pixecurity.com/files/raven-logo-dark-bkgd-centered.png"
             alt=""
+            width={200}
+            height={200}
           />
           <h1>Être partout en même temps grâce à la XR</h1>
           <p>
@@ -30,17 +33,21 @@ export default function Raven() {
           </div>
 
           <div className={styles.section1Right}>
-            <img
+            <Image
               src="https://uploads.pixecurity.com/files/AdobeStock_720388563.jpeg"
               alt=""
+              width={400}
+              height={400}
             />
           </div>
         </div>
         <div className={styles.section2}>
           <div className={styles.section2Right}>
-            <img
+            <Image
               src="https://uploads.pixecurity.com/files/AdobeStock_1387063479.jpeg"
               alt=""
+              width={400}
+              height={400}
             />
           </div>
           <div className={styles.section2Left}>

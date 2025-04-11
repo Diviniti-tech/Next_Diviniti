@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "./style.module.scss";
+import Image from "next/image";
+
 export default function Atna() {
   return (
     <div className={styles.atnaContainer}>
@@ -9,9 +11,11 @@ export default function Atna() {
       <div className={styles.atnaSolution}>
         <div className={styles.headerSection}>
           <div className={styles.header1}>
-            <img
+            <Image
               src="https://uploads.pixecurity.com/files/ATNa-logo-dark-bkgd-centered.png"
               alt=""
+              width={200}
+              height={200}
             />
             <h2>L’IA au service de la prise de décision</h2>
             <p>
@@ -48,9 +52,11 @@ export default function Atna() {
             </div>
 
             <div className={styles.header2Right}>
-              <img
+              <Image
                 src="https://uploads.pixecurity.com/files/Image12.png"
                 alt=""
+                width={800}
+                height={800}
               />
             </div>
           </div>
@@ -80,9 +86,11 @@ export default function Atna() {
               </div>
             </div>
             <div className={styles.section1Right}>
-              <img
+              <Image
                 src="https://uploads.pixecurity.com/files/Image13.png"
                 alt=""
+                width={600}
+                height={600}
               />
             </div>
           </div>

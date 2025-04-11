@@ -58,44 +58,87 @@ export default function Header() {
             </Link>
           </li>
           <li className={styles.dropdown}>
-  <span className={styles.dropdownTitle} onClick={toggleDropdown}>
-    Nos solutions Diviniti <i className="fa-solid fa-caret-down"></i>
-  </span>
+            <span className={styles.dropdownTitle} onClick={toggleDropdown}>
+              Nos solutions Diviniti <i className="fa-solid fa-caret-down"></i>
+            </span>
 
-  <AnimatePresence>
-    {dropdownOpen && (
-      <motion.ul
-        className={styles.dropdownMenu}
-        initial={{ opacity: 0, y: -10 }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: -10 }}
-        transition={{ type: "spring", stiffness: 100, damping: 15 }}
-      >
-        <li>
-          <Link href="/soron" onClick={() => { toggleMenu(); setDropdownOpen(false); }}>
-            <img src="https://uploads.pixecurity.com/files/soron-logo-dark-bkgd-centered.png" alt="Soron" />
-          </Link>
-        </li>
-        <li>
-          <Link href="/atna" onClick={() => { toggleMenu(); setDropdownOpen(false); }}>
-            <img src="https://uploads.pixecurity.com/files/ATNa-logo-dark-bkgd-centered.png" alt="ATNa" />
-          </Link>
-        </li>
-        <li>
-          <Link href="/befrost" onClick={() => { toggleMenu(); setDropdownOpen(false); }}>
-            <img src="https://uploads.pixecurity.com/files/befrost-logo-dark-bkgd-centered.png" alt="Befrost" />
-          </Link>
-        </li>
-        <li>
-          <Link href="/raven" onClick={() => { toggleMenu(); setDropdownOpen(false); }}>
-            <img src="https://uploads.pixecurity.com/files/raven-logo-dark-bkgd-centered.png" alt="Raven" />
-          </Link>
-        </li>
-      </motion.ul>
-    )}
-  </AnimatePresence>
-</li>
-
+            <AnimatePresence>
+              {dropdownOpen && (
+                <motion.ul
+                  className={styles.dropdownMenu}
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -10 }}
+                  transition={{ type: "spring", stiffness: 100, damping: 15 }}
+                >
+                  <li>
+                    <Link
+                      href="/soron"
+                      onClick={() => {
+                        toggleMenu();
+                        setDropdownOpen(false);
+                      }}
+                    >
+                      <Image
+                        src="https://uploads.pixecurity.com/files/soron-logo-dark-bkgd-centered.png"
+                        alt="Soron"
+                        width={200}
+                        height={200}
+                      />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/atna"
+                      onClick={() => {
+                        toggleMenu();
+                        setDropdownOpen(false);
+                      }}
+                    >
+                      <Image
+                        src="https://uploads.pixecurity.com/files/ATNa-logo-dark-bkgd-centered.png"
+                        alt="ATNa"
+                        width={200}
+                        height={200}
+                      />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/befrost"
+                      onClick={() => {
+                        toggleMenu();
+                        setDropdownOpen(false);
+                      }}
+                    >
+                      <Image
+                        src="https://uploads.pixecurity.com/files/befrost-logo-dark-bkgd-centered.png"
+                        alt="Befrost"
+                        width={200}
+                        height={200}
+                      />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/raven"
+                      onClick={() => {
+                        toggleMenu();
+                        setDropdownOpen(false);
+                      }}
+                    >
+                      <Image
+                        src="https://uploads.pixecurity.com/files/raven-logo-dark-bkgd-centered.png"
+                        alt="Raven"
+                        width={200}
+                        height={200}
+                      />
+                    </Link>
+                  </li>
+                </motion.ul>
+              )}
+            </AnimatePresence>
+          </li>
 
           <li>
             <Link href="/qui-sommes-nous" onClick={toggleMenu}>
@@ -127,17 +170,10 @@ export default function Header() {
             </Link>
           </li>
         </ul>
-      
-          <button
-            className={styles.demoBtn}
-            onClick={() => setShowModal(true)}
-          >
-          
-          <i className="fa-solid fa-rocket"></i>  {"  "}  Commencez ici 
-          </button>
-        
-        
-        
+
+        <button className={styles.demoBtn} onClick={() => setShowModal(true)}>
+          <i className="fa-solid fa-rocket"></i> {"  "} Commencez ici
+        </button>
       </motion.nav>
 
       {/* Menu burger */}
