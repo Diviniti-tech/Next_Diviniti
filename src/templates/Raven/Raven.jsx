@@ -8,9 +8,10 @@ export default function Raven() {
         <div className={styles.header1}>
           <Image
             src="https://uploads.pixecurity.com/files/raven-logo-dark-bkgd-centered.png"
-            alt=""
+            alt="Diviniti - Raven solution"
             width={200}
             height={200}
+            priority={true}
           />
           <h1>Être partout en même temps grâce à la XR</h1>
           <p>
@@ -34,8 +35,8 @@ export default function Raven() {
 
           <div className={styles.section1Right}>
             <Image
-              src="https://uploads.pixecurity.com/files/AdobeStock_720388563.jpeg"
-              alt=""
+              src="https://uploads.pixecurity.com/files/AdobeStock_720388563.webp"
+              alt="Image de la solution Raven"
               width={400}
               height={400}
             />
@@ -44,8 +45,8 @@ export default function Raven() {
         <div className={styles.section2}>
           <div className={styles.section2Right}>
             <Image
-              src="https://uploads.pixecurity.com/files/AdobeStock_1387063479.jpeg"
-              alt=""
+              src="https://uploads.pixecurity.com/files/AdobeStock_1387063479.webp"
+              alt="Image de la solution Raven"
               width={400}
               height={400}
             />

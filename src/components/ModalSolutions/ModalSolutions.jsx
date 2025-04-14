@@ -71,8 +71,8 @@ export default function ModalSolutions({ showModal, setShowModal }) {
                   <Image
                     src="https://uploads.pixecurity.com/files/soron-logo-dark-bkgd-centered.png"
                     alt=""
-                    width={200}
-                    height={200}
+                    width={130}
+                    height={130}
               
                   />
                 </div>
@@ -85,8 +85,8 @@ export default function ModalSolutions({ showModal, setShowModal }) {
                   <Image
                     src="https://uploads.pixecurity.com/files/ATNa-logo-dark-bkgd-centered.png"
                     alt=""
-                    width={200}
-                    height={200}
+                    width={130}
+                    height={130}
                  
                   />
                 </div>
@@ -99,8 +99,8 @@ export default function ModalSolutions({ showModal, setShowModal }) {
                   <Image
                     src="https://uploads.pixecurity.com/files/befrost-logo-dark-bkgd-centered.png"
                     alt=""
-                    width={200}
-                    height={200}
+                    width={130}
+                    height={130}
                  
                   />
                 </div>
@@ -113,8 +113,8 @@ export default function ModalSolutions({ showModal, setShowModal }) {
                   <Image
                     src="https://uploads.pixecurity.com/files/raven-logo-dark-bkgd-centered.png"
                     alt=""
-                    width={200}
-                    height={200}
+                    width={130}
+                    height={130}
                  
                   />
                 </div>

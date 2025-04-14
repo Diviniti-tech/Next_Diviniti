@@ -7,7 +7,6 @@
     margin: 2rem 0;
     padding: 1rem 2rem;
     font-weight: 800;
-    // color: #ff7f50; /* Fallback solid color */
     background: linear-gradient(90deg, #f4a8fe 0%, #696dff 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -21,7 +20,7 @@
 
     .headerSection {
       background: linear-gradient(180deg, #000000, rgba(0, 0, 0, 0.452)),
-        url(https://uploads.pixecurity.com/files/AdobeStock_1083240270.webp);
+        url(https://uploads.pixecurity.com/files/AdobeStock_1083240270-1.webp);
       background-size: cover;
       background-position: right;
       width: 100%;
@@ -38,7 +37,7 @@
         margin: auto;
 
         img {
-          width: 9.5rem;
+          width: 9rem;
           height: auto;
         }
 
@@ -103,17 +102,17 @@
         margin: auto;
 
         .section1Right {
-          width: 100%;
+          width: 40%;
           display: flex;
           flex-direction: column;
           justify-content: center;
-        }
-        img {
-          width: 100%;
-          height: auto;
+          img {
+            width: 100%;
+            height: auto;
+          }
         }
         .section1Left {
-          width: 50%;
+          width: 60%;
           // padding-left: 10%;
 
           .section1Card {

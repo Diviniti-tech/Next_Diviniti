@@ -21,11 +21,12 @@
 
     .headerSection {
       background: linear-gradient(180deg, #000000, rgba(0, 0, 0, 0.459)),
-        url(https://uploads.pixecurity.com/files/AdobeStock_1299330558.png);
+        url(https://uploads.pixecurity.com/files/AdobeStock_1299330558.webp);
       background-size: cover;
       background-position: top left;
       background-attachment: fixed;
       padding-bottom: 20%;
+      padding-top: 2rem;
 
       .header1 {
         display: flex;
@@ -38,7 +39,7 @@
         margin: auto;
 
         img {
-          width: 14rem;
+          width: 13rem;
           height: auto;
         }
 
@@ -279,8 +280,7 @@
           .header2Left {
             width: 100%;
             padding: 1rem 1rem;
-            padding-left : 0%;
-            
+            padding-left: 0%;
           }
           .header2Right {
             display: none;
@@ -288,13 +288,12 @@
         }
       }
       .demoVideo {
-      padding-top: 3rem;
+        padding-top: 3rem;
         width: 100%;
         height: 100%;
 
         video {
           width: 90%;
-         
         }
       }
       .section {

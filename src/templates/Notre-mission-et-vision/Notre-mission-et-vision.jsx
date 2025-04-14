@@ -33,7 +33,13 @@ export default function NotreMissionEtVision() {
 
       <div className={styles.aboutContainer}>
         <div className={styles.section1}>
-          <video autoPlay loop muted className={styles.backgroundVideo}>
+          <video
+            autoPlay
+            loop
+            muted
+            preload="auto"
+            className={styles.backgroundVideo}
+          >
             <source src="/assets/video.mp4" type="video/mp4" />
           </video>
           <div className={styles.section1content}>
@@ -48,37 +54,30 @@ export default function NotreMissionEtVision() {
               <div className={styles.solutionsLogos}>
                 <Image
                   src="https://uploads.pixecurity.com/files/soron.png"
-                  alt=""
+                  alt="Diviniti - Soron"
                   width={100}
                   height={100}
                 />
                 <Image
                   src="https://uploads.pixecurity.com/files/atna.png"
-                  alt=""
+                  alt=" Diviniti - Atna"
                   width={100}
                   height={100}
                 />
                 <Image
                   src="https://uploads.pixecurity.com/files/befrost.png"
-                  alt=""
+                  alt=" Diviniti - Befrost"
                   width={100}
                   height={100}
                 />
                 <Image
                   src="https://uploads.pixecurity.com/files/raven.png"
-                  alt=""
+                  alt=" Diviniti - Raven"
                   width={100}
                   height={100}
                 />
               </div>
             </div>
-
-            {/* <button
-              className={styles.bookDemoButton}
-              onClick={() => setShowModal(true)}
-            >
-              Demander une démo
-            </button> */}
           </div>
         </div>
         <div className={styles.section2}>
@@ -125,37 +124,12 @@ export default function NotreMissionEtVision() {
         </div>
         <div className={styles.section3}>
           <div className={styles.section3content}>
-            {/* <Image
-              src="https://uploads.pixecurity.com/files/screenshots1.webp"
-              alt="Aperçu des solutions Diviniti"
-              className={styles.mainImage}
-              width={800}
-              height={500}
-              loading="lazy"
-            />
-
-            <div className={styles.section3cards}>
-              <Image
-                src="https://uploads.pixecurity.com/files/screenshots_%282%29.webp"
-                alt="Interface utilisateur Diviniti"
-                width={400}
-                height={400}
-                loading="lazy"
-              />
-
-              <Image
-                src="https://uploads.pixecurity.com/files/screenshots_%283%29.webp"
-                alt="Technologie immersive Diviniti"
-                width={400}
-                height={400}
-                loading="lazy"
-              /> */}
-            {/* </div> */}
-
-            <video autoPlay loop muted className={styles.backgroundVideo}>
+            <video autoPlay loop muted  preload="auto"
+                controls className={styles.backgroundVideo}>
               <source
                 src="https://uploads.pixecurity.com/files/soron_test2_%E2%80%90_R%C3%A9alis%C3%A9e_avec_Clipchamp.mp4"
                 type="video/mp4"
+               
               />
             </video>
             <button
@@ -182,8 +156,8 @@ export default function NotreMissionEtVision() {
                 <Image
                   src="https://uploads.pixecurity.com/files/boy.png"
                   alt="Utilisateur Diviniti"
-                  width={400}
-                  height={400}
+                  width={100}
+                  height={100}
                   loading="lazy"
                 />
                 <p>Une innovation au service de la sûreté</p>

@@ -13,9 +13,10 @@ export default function Atna() {
           <div className={styles.header1}>
             <Image
               src="https://uploads.pixecurity.com/files/ATNa-logo-dark-bkgd-centered.png"
-              alt=""
+              alt="Diviniti - ATNa solution"
               width={200}
               height={200}
+              priority={true}
             />
             <h2>L’IA au service de la prise de décision</h2>
             <p>
@@ -53,10 +54,11 @@ export default function Atna() {
 
             <div className={styles.header2Right}>
               <Image
-                src="https://uploads.pixecurity.com/files/Image12.png"
+                src="https://uploads.pixecurity.com/files/Image12-1.webp"
                 alt=""
-                width={800}
-                height={800}
+                width={900}
+                height={900}
+                priority={true}
               />
             </div>
           </div>
@@ -82,12 +84,16 @@ export default function Atna() {
                   <li>1ers secours/incendie,</li>
                   <li>Maintenance/technique</li>
                 </ul>
-                <p>Notre IA vise donc à faire remonter les informations les plus pertinentes et de vous suggérer les choix de réponses appropriés dans le but d’optimiser votre prise de décision.</p>
+                <p>
+                  Notre IA vise donc à faire remonter les informations les plus
+                  pertinentes et de vous suggérer les choix de réponses
+                  appropriés dans le but d’optimiser votre prise de décision.
+                </p>
               </div>
             </div>
             <div className={styles.section1Right}>
               <Image
-                src="https://uploads.pixecurity.com/files/Image13.png"
+                src="https://uploads.pixecurity.com/files/Image13.webp"
                 alt=""
                 width={600}
                 height={600}
@@ -95,8 +101,6 @@ export default function Atna() {
             </div>
           </div>
         </div>
-      
-
       </div>
     </div>
   );

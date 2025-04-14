@@ -5,17 +5,15 @@ import Image from "next/image";
 export default function Soron() {
   return (
     <div className={styles.soronContainer}>
-      <h1>Nos Solutions Diviniti</h1>
-      <p>Découvrez nos solutions innovantes et adaptées à vos besoins.</p>
-
       <div className={styles.soronSolution}>
         <div className={styles.headerSection}>
           <div className={styles.header1}>
             <Image
               src="https://uploads.pixecurity.com/files/soron-logo-dark-bkgd-centered.png"
-              alt=""
+              alt="Diviniti - Soron solution"
               width={200}
               height={200}
+              priority={true}
             />
             <h2 className={styles.h2}>Notre outil d'hypervision</h2>
             <p>
@@ -51,17 +49,18 @@ export default function Soron() {
 
             <div className={styles.header2Right}>
               <Image
-                src="https://uploads.pixecurity.com/files/Image15.png"
-                alt=""
-                width={500}
-                height={500}
+                src="https://uploads.pixecurity.com/files/Image15.webp"
+                alt=" Image de la solution Soron"
+                width={1000}
+                height={1000}
+                priority={true}
               />
             </div>
           </div>
         </div>
 
         <div className={styles.demoVideo}>
-          <video autoPlay loop muted>
+          <video autoPlay loop muted preload="auto" controls>
             <source
               src="https://uploads.pixecurity.com/files/soron_test2_%E2%80%90_R%C3%A9alis%C3%A9e_avec_Clipchamp.mp4"
               type="video/mp4"
@@ -84,8 +83,8 @@ export default function Soron() {
             </div>
             <div className={styles.sectionRight}>
               <Image
-                src="https://uploads.pixecurity.com/files/Image18.png"
-                alt=""
+                src="https://uploads.pixecurity.com/files/Image18.webp"
+                alt=" Image de la solution Soron"
                 width={500}
                 height={500}
               />
@@ -97,10 +96,10 @@ export default function Soron() {
           <div className={styles.sectionContent}>
             <div className={styles.sectionLeft}>
               <Image
-                src="https://uploads.pixecurity.com/files/Image6.png"
-                alt=""
+                src="https://uploads.pixecurity.com/files/Image6.webp"
+                alt=" Image de la solution Soron"
                 width={500}
-                height={500}
+                height={380}
               />
             </div>
             <div className={styles.sectionRight}>
@@ -133,10 +132,10 @@ export default function Soron() {
             </div>
             <div className={styles.sectionRight}>
               <Image
-                src="https://uploads.pixecurity.com/files/Image9.png"
-                alt=""
+                src="https://uploads.pixecurity.com/files/Image9.webp"
+                alt=" Image de la solution Soron"
                 width={500}
-                height={500}
+                height={380}
               />
             </div>
           </div>
@@ -146,10 +145,10 @@ export default function Soron() {
           <div className={styles.sectionContent}>
             <div className={styles.sectionLeft}>
               <Image
-                src="https://uploads.pixecurity.com/files/Image10.png"
+                src="https://uploads.pixecurity.com/files/Image10.webp"
                 alt=""
                 width={500}
-                height={500}
+                height={380}
               />
             </div>
             <div className={styles.sectionRight}>
@@ -190,10 +189,10 @@ export default function Soron() {
             </div>
 
             <Image
-              src="https://uploads.pixecurity.com/files/Image11.png"
+              src="https://uploads.pixecurity.com/files/Image11.webp"
               alt=""
-              width={500}
-              height={500}
+              width={1100}
+              height={1100}
             />
           </div>
         </div>

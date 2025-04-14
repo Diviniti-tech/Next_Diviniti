@@ -94,6 +94,8 @@ export default function ModalBookDemo({ showModal, setShowModal }) {
           <source
             src="https://uploads.pixecurity.com/files/soron_test_mini_%E2%80%90_R%C3%A9alis%C3%A9e_avec_Clipchamp.mp4"
             type="video/mp4"
+            preload="auto"
+     
           />
         </video>
 

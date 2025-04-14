@@ -54,7 +54,6 @@ export default function Home() {
               environnements urbains et industriels.
             </p>
             <div className={styles.cta}>
-        
               <button
                 className={styles.seeSolutions}
                 onClick={() => setShowModalSolutions(true)}
@@ -69,6 +68,7 @@ export default function Home() {
               alt="Animation de présentation Diviniti"
               width={400}
               height={400}
+              priority={true}
             />
           </div>
         </div>
@@ -82,16 +82,16 @@ export default function Home() {
               menaces en temps réel, réduisant les risques et optimisant la
               gestion des interventions.
             </p>
-                  <Link
-                href="/notre-mission-et-vision"
-                passHref
-                className={styles.ctaButton}
-              >
-                Notre mission et vision
-              </Link> 
+            <Link
+              href="/notre-mission-et-vision"
+              passHref
+              className={styles.ctaButton}
+            >
+              Notre mission et vision
+            </Link>
           </div>
         </div>
-      
+
         <div className={styles.section3}>
           <div className={styles.section3content}>
             <span>Nos solutions technologiques</span>
@@ -101,70 +101,68 @@ export default function Home() {
               l’IA, la 3D et la réalité mixte pour répondre aux défis de la
               sécurité de demain.
             </p>
-         
+
             <div className={styles.cards}>
-                <Link href="/soron" passHref>
-              <div className={styles.card}>
-                <Image
-                  src="https://uploads.pixecurity.com/files/soron-logo-clear-bkgd-centered.png"
-                  alt="Soron Logo"
-                  width={150}
-                  height={100}
-                  loading="lazy"
-                />
-                <p>
-                  <strong>Soron</strong> - Logiciel d’hypervision 3D pour une
-                  gestion immersive des opérations de sûreté.
-                </p>
-              </div>
+              <Link href="/soron" passHref>
+                <div className={styles.card}>
+                  <Image
+                    src="https://uploads.pixecurity.com/files/soron-logo-clear-bkgd-centered.png"
+                    alt="Soron Logo"
+                    width={150}
+                    height={110}
+                    loading="lazy"
+                  />
+                  <p>
+                    <strong>Soron</strong> - Logiciel d’hypervision 3D pour une
+                    gestion immersive des opérations de sûreté.
+                  </p>
+                </div>
               </Link>
               <Link href="/atna" passHref>
-              <div className={styles.card}>
-
-                <Image
-                  src="https://uploads.pixecurity.com/files/ATNa-logo-clear-bkgd-centered.png"
-                  alt="ATNa Logo"
-                  width={100}
-                  height={100}
-                  loading="lazy"
-                />
-                <p>
-                  <strong>ATNa</strong> - Intelligence artificielle et
-                  algorithmes avancés pour l’analyse des flux vidéo.
-                </p>
-              </div>
+                <div className={styles.card}>
+                  <Image
+                    src="https://uploads.pixecurity.com/files/ATNa-logo-clear-bkgd-centered.png"
+                    alt="ATNa Logo"
+                    width={100}
+                    height={100}
+                    loading="lazy"
+                  />
+                  <p>
+                    <strong>ATNa</strong> - Intelligence artificielle et
+                    algorithmes avancés pour l’analyse des flux vidéo.
+                  </p>
+                </div>
               </Link>
 
               <Link href="/raven" passHref>
-
-              <div className={styles.card}>
-                <Image
-                  src="https://uploads.pixecurity.com/files/raven-logo-clear-bkgd-centered.png"
-                  alt="Raven Logo"
-                  width={150}
-                  height={100}
-                  loading="lazy"
-                />
-                <p>
-                  <strong>Raven</strong> - Casques VR et solutions de réalité
-                  mixte pour l'entraînement et l’intervention.
-                </p>
-              </div>
+                <div className={styles.card}>
+                  <Image
+                    src="https://uploads.pixecurity.com/files/raven-logo-clear-bkgd-centered.png"
+                    alt="Raven Logo"
+                    width={150}
+                    height={100}
+                    loading="lazy"
+                  />
+                  <p>
+                    <strong>Raven</strong> - Casques VR et solutions de réalité
+                    mixte pour l'entraînement et l’intervention.
+                  </p>
+                </div>
               </Link>
               <Link href="/befrost" passHref>
-              <div className={styles.card}>
-                <Image
-                  src="https://uploads.pixecurity.com/files/befrost-logo-clear-bkgd-centered.png"
-                  alt="Befrost Logo"
-                  width={200}
-                  height={100}
-                  loading="lazy"
-                />
-                <p>
-                  <strong>Befrost</strong> - Connecteurs intelligents assurant
-                  l’interopérabilité des systèmes de sécurité.
-                </p>
-              </div>
+                <div className={styles.card}>
+                  <Image
+                    src="https://uploads.pixecurity.com/files/befrost-logo-clear-bkgd-centered.png"
+                    alt="Befrost Logo"
+                    width={210}
+                    height={110}
+                    loading="lazy"
+                  />
+                  <p>
+                    <strong>Befrost</strong> - Connecteurs intelligents assurant
+                    l’interopérabilité des systèmes de sécurité.
+                  </p>
+                </div>
               </Link>
             </div>
           </div>
@@ -186,6 +184,7 @@ export default function Home() {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
+            loading="lazy"
           ></iframe>
         </div>
 
@@ -195,8 +194,8 @@ export default function Home() {
               <Image
                 src="https://uploads.pixecurity.com/files/AdobeStock_540919231.webp"
                 alt="Illustration de la sûreté augmentée"
-                width={500}
-                height={500}
+                width={400}
+                height={400}
                 loading="lazy"
               />
             </div>
@@ -217,9 +216,15 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <ModalBookDemo setShowModal={setShowModalDemo} showModal={showModalDemo} />
+      <ModalBookDemo
+        setShowModal={setShowModalDemo}
+        showModal={showModalDemo}
+      />
 
-      <ModalSolutions showModal={showModalSolutions} setShowModal={setShowModalSolutions} />
+      <ModalSolutions
+        showModal={showModalSolutions}
+        setShowModal={setShowModalSolutions}
+      />
     </>
   );
 }

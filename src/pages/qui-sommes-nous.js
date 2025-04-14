@@ -1,3 +1,3 @@
-import Team from '@/templates/team/team';
+import QuiSommesNous from "@/templates/Qui-sommes-nous/Qui-sommes-nous";
 
-export default Team;
+export default QuiSommesNous;

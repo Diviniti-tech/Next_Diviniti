@@ -38,8 +38,8 @@ export default function Header() {
           <Image
             src="/assets/logo/diviniti3.png"
             alt="Diviniti logo"
-            width={200}
-            height={200}
+            width={100}
+            height={100}
           />
         </Link>
       </div>
@@ -82,8 +82,8 @@ export default function Header() {
                       <Image
                         src="https://uploads.pixecurity.com/files/soron-logo-dark-bkgd-centered.png"
                         alt="Soron"
-                        width={200}
-                        height={200}
+                        width={80}
+                        height={80}
                       />
                     </Link>
                   </li>
@@ -98,8 +98,8 @@ export default function Header() {
                       <Image
                         src="https://uploads.pixecurity.com/files/ATNa-logo-dark-bkgd-centered.png"
                         alt="ATNa"
-                        width={200}
-                        height={200}
+                        width={80}
+                        height={80}
                       />
                     </Link>
                   </li>
@@ -114,8 +114,8 @@ export default function Header() {
                       <Image
                         src="https://uploads.pixecurity.com/files/befrost-logo-dark-bkgd-centered.png"
                         alt="Befrost"
-                        width={200}
-                        height={200}
+                        width={80}
+                        height={80}
                       />
                     </Link>
                   </li>
@@ -130,8 +130,8 @@ export default function Header() {
                       <Image
                         src="https://uploads.pixecurity.com/files/raven-logo-dark-bkgd-centered.png"
                         alt="Raven"
-                        width={200}
-                        height={200}
+                        width={80}
+                        height={80}
                       />
                     </Link>
                   </li>

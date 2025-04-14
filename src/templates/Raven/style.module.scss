@@ -1,10 +1,10 @@
 .ravenContainer {
   min-height: 100vh;
   margin-top: 3rem;
-  background: linear-gradient(180deg, #000000, rgba(0, 0, 0, 0.452)),
-    url(https://uploads.pixecurity.com/files/AdobeStock_1263764734.png);
+  background: linear-gradient(180deg, #000000, rgba(0, 0, 0, 0.315)),
+    url(https://uploads.pixecurity.com/files/AdobeStock_1263764734.webp);
   background-size: cover;
-  background-position: bottom;
+  background-position: top;
   background-repeat: no-repeat;
   background-attachment: fixed;
 
@@ -37,12 +37,12 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 2rem 2rem;
+      padding: 1rem 2rem;
       max-width: 1400px;
       margin: auto;
 
       img {
-        width: 13rem;
+        width: 12rem;
         height: auto;
       }
 
@@ -60,7 +60,7 @@
 
       .section1Left {
         width: 100%;
-        padding: 2rem 0rem 2rem 2rem;
+        padding: 2rem 2rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -95,11 +95,11 @@
       display: flex;
       max-width: 1400px;
       margin: auto;
-      margin-top: -4rem;
+      // margin-top: -2rem;
 
       .section2Left {
         width: 95%;
-        padding: 2rem 0rem 2rem 2rem;
+        padding: 2rem 2rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -110,7 +110,7 @@
           line-height: 2rem;
         }
         h3 {
-          font-size: 3rem;
+          font-size: 2.5rem;
           margin-top: 5rem;
           font-weight: 800;
           color: white;
@@ -136,6 +136,7 @@
         -moz-border-radius: 71% 29% 33% 67% / 72% 42% 58% 28%;
         -ms-border-radius: 71% 29% 33% 67% / 72% 42% 58% 28%;
         -o-border-radius: 71% 29% 33% 67% / 72% 42% 58% 28%;
+        margin-top: -5rem;
       }
     }
   }

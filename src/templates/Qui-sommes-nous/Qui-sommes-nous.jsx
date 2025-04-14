@@ -3,7 +3,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Head from "next/head";
 
-export default function Team() {
+export default function QuiSommesNous() {
   const team = [
     {
       name: "Fabien THOMAS",
@@ -67,6 +67,7 @@ export default function Team() {
             loop
             muted
             playsInline
+            preload="auto"
           >
             <source
               src="https://uploads.pixecurity.com/files/Aurora-1744296233957.mp4"
@@ -98,7 +99,7 @@ export default function Team() {
               transition={{ duration: 1 }}
             >
               <Image
-                src="/assets/team/YANN.jpg"
+                src="/assets/team/YANN.webp"
                 alt="Yann Duchet - CEO Diviniti"
                 width={300}
                 height={250}
@@ -126,40 +127,44 @@ export default function Team() {
             priority={false}
           />
           <div className={styles.teamMemberContent}>
-            {team.map((member, index) => (
-              <motion.div
-                key={index}
-                className={styles.teamMember}
-                initial={{
-                  opacity: 0,
-                  y: 100,
-                  x: index % 2 === 0 ? -100 : 100,
-                }}
-                whileInView={{ opacity: 1, y: 0, x: 0 }}
-                viewport={{ once: true, amount: 0.2 }}
-                transition={{
-                  duration: 0.5,
-                  delay: index * 0.1,
-                  type: "spring",
-                  stiffness: 80,
-                  damping: 12,
-                }}
-                whileHover={{
-                  scale: 1.03,
-                  y: -10,
-                  transition: { type: "spring", stiffness: 100 },
-                }}
-              >
-                <Image
-                  src={member.image}
-                  alt={`Photo de ${member.name}, ${member.role}`}
-                  width={150}
-                  height={150}
-                />
-                <h2>{member.name}</h2>
-                <p>{member.role}</p>
-              </motion.div>
-            ))}
+            {team.map((member, index) => {
+              const randomX = Math.floor(Math.random() * 40) - 20; // entre -20 et +20 px
+
+              return (
+                <motion.div
+                  key={index}
+                  className={styles.teamMember}
+                  initial={{
+                    opacity: 0,
+                    y: 100,
+                    x: randomX,
+                  }}
+                  whileInView={{ opacity: 1, y: 0, x: 0 }}
+                  viewport={{ once: true, amount: 0.2 }}
+                  transition={{
+                    duration: 0.5,
+                    delay: index * 0.1,
+                    type: "spring",
+                    stiffness: 80,
+                    damping: 12,
+                  }}
+                  whileHover={{
+                    scale: 1.03,
+                    y: -10,
+                    transition: { type: "spring", stiffness: 100 },
+                  }}
+                >
+                  <Image
+                    src={member.image}
+                    alt={`Photo de ${member.name}, ${member.role}`}
+                    width={150}
+                    height={150}
+                  />
+                  <h2>{member.name}</h2>
+                  <p>{member.role}</p>
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </div>
