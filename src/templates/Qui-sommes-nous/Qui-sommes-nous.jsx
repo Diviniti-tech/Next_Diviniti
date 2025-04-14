@@ -46,17 +46,47 @@ export default function QuiSommesNous() {
     <>
       <Head>
         <title>Diviniti - Notre équipe</title>
+        <meta
+          name="description"
+          content="Découvrez l'équipe passionnée de Diviniti, experts en innovation pour les solutions de sécurité et de sûreté augmentée pour les villes intelligentes."
+        />
+        <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="Diviniti - Notre équipe" />
+
+        {/* Open Graph */}
+        <meta property="og:title" content="Diviniti - Qui Sommes-Nous ?" />
         <meta
           property="og:description"
-          content="Découvrez les talents qui construisent l’avenir chez Diviniti."
+          content="Découvrez l'équipe de Diviniti, pionniers dans l'innovation en matière de sécurité et de technologies de ville intelligente."
         />
         <meta
-          property="og:keywords"
-          content="sûreté augmentée, vidéoprotection, intelligence artificielle, réalité étendue, XR, ville intelligente, sécurité proactive, analyse d'image, contrôle d'accès, prédiction des risques, gestion de la sécurité, smart city, transport sécurisé, Diviniti"
+          property="og:image"
+          content="https://uploads.pixecurity.com/files/divinit-new.jpg"
         />
-        <meta property="og:url" content="https://www.diviniti.tech" />
+        <meta
+          property="og:url"
+          content="https://www.diviniti.tech/qui-sommes-nous"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="fr_FR" />
+
+        {/* Twitter Cards */}
+        <meta name="twitter:title" content="Diviniti - Qui Sommes-Nous ?" />
+        <meta
+          name="twitter:description"
+          content="Découvrez l'équipe innovante de Diviniti, experts en solutions de sûreté augmentée et technologies de villes intelligentes."
+        />
+        <meta
+          name="twitter:image"
+          content="https://uploads.pixecurity.com/files/divinit-new.jpg"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+
+        {/* Canonical */}
+        <link
+          rel="canonical"
+          href="https://www.diviniti.tech/qui-sommes-nous"
+        />
       </Head>
 
       <div className={styles.teamContainer}>

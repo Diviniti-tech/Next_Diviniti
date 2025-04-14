@@ -12,24 +12,37 @@ export default function NotreMissionEtVision() {
 
   return (
     <>
-      <Head>
-        <title>Diviniti - Notre mission et Vision</title>
+    <Head>
+  <title>Diviniti - Notre mission et vision</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <meta
+    property="og:title"
+    content="Diviniti - Notre mission et vision"
+  />
+  <meta
+    property="og:description"
+    content="Découvrez la mission et la vision de Diviniti, pionnier de la sûreté augmentée, avec des solutions innovantes intégrant IA, réalité étendue et technologies avancées."
+  />
+  <meta
+    property="og:keywords"
+    content="mission, vision, sûreté augmentée, vidéoprotection, intelligence artificielle, réalité étendue, XR, villes intelligentes, sécurité proactive, IA, innovations, Diviniti"
+  />
+  <meta property="og:url" content="https://www.diviniti.tech/notre-mission-et-vision" />
+  <meta property="og:image" content="https://uploads.pixecurity.com/files/divinit-new.jpg" />
+  
+  <meta
+    name="twitter:title"
+    content="Diviniti - Notre mission et vision"
+  />
+  <meta
+    name="twitter:description"
+    content="Découvrez la mission et la vision de Diviniti, pionnier de la sûreté augmentée, avec des solutions innovantes intégrant IA, réalité étendue et technologies avancées."
+  />
+  <meta name="twitter:image" content="https://uploads.pixecurity.com/files/divinit-new.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+</Head>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta
-          property="og:title"
-          content="Diviniti - Sûreté augmentée pour la ville de demain"
-        />
-        <meta
-          property="og:description"
-          content="Découvrez les solutions Diviniti pour la ville de demain, combinant IA et réalité étendue pour une sécurité proactive."
-        />
-        <meta
-          property="og:keywords"
-          content="sûreté augmentée, vidéoprotection, intelligence artificielle, réalité étendue, XR, ville intelligente, sécurité proactive, analyse d'image, contrôle d'accès, prédiction des risques, gestion de la sécurité, smart city, transport sécurisé, Diviniti"
-        />
-        <meta property="og:url" content="https://www.diviniti.tech" />
-      </Head>
 
       <div className={styles.aboutContainer}>
         <div className={styles.section1}>

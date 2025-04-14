@@ -14,18 +14,38 @@ export default function Actualites() {
 
   return (
     <>
-      <Head>
+     <Head>
         <title>Diviniti - Actualités</title>
+        <meta name="description" content="Restez informé des dernières actualités de Diviniti, expert en sécurité augmentée, vidéoprotection et solutions intelligentes pour les villes de demain." />
+        <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        {/* Open Graph */}
         <meta property="og:title" content="Diviniti - Actualités" />
         <meta
           property="og:description"
-          content="Découvrez les dernières actualités de Diviniti."
+          content="Découvrez les dernières actualités de Diviniti, leader en vidéoprotection et solutions pour les villes intelligentes."
         />
         <meta
           property="og:keywords"
           content="actualités, news, Diviniti, sécurité augmentée, vidéoprotection, intelligence artificielle, réalité étendue, XR, ville intelligente, sécurité proactive, analyse d'image, contrôle d'accès, prédiction des risques, gestion de la sécurité, smart city, transport sécurisé"
         />
+        <meta property="og:image" content="https://uploads.pixecurity.com/files/divinit-new.jpg" />
+        <meta property="og:url" content="https://www.diviniti.tech/actualites" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="fr_FR" />
+
+        {/* Twitter Cards */}
+        <meta name="twitter:title" content="Diviniti - Actualités" />
+        <meta
+          name="twitter:description"
+          content="Restez à jour avec les dernières actualités et innovations de Diviniti pour la sécurité et les villes intelligentes."
+        />
+        <meta name="twitter:image" content="https://uploads.pixecurity.com/files/divinit-new.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+
+        {/* Canonical URL */}
+        <link rel="canonical" href="https://www.diviniti.tech/actualites" />
       </Head>
 
       <div className={styles.actualitesContainer}>
