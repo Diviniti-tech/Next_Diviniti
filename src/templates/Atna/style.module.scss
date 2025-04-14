@@ -19,12 +19,13 @@
     align-items: center;
 
     .headerSection {
-      background: linear-gradient(180deg, #000000, rgba(0, 0, 0, 0.452)),
+      background: linear-gradient(180deg, #000000, rgba(0, 0, 0, 0.288)),
         url(https://uploads.pixecurity.com/files/AdobeStock_1083240270-1.webp);
       background-size: cover;
       background-position: right;
       width: 100%;
       background-attachment: fixed;
+      background-color: #000000;
 
       .header1 {
         display: flex;

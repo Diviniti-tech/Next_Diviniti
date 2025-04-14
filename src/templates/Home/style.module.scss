@@ -29,10 +29,11 @@
 
   .section1 {
     min-height: 100vh;
-    background-image: url("https://uploads.pixecurity.com/files/1.webp");
-    // background-image: url("https://uploads.pixecurity.com/files/2.jpeg");
+    background-image: url("https://uploads.pixecurity.com/files/1-1.webp");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    background-color: #000; // fallback si image lente
     display: flex;
     width: 100%;
     background-attachment: fixed; /* Ajout pour parallax */
@@ -46,12 +47,10 @@
       flex-direction: column;
 
       h2 {
-        // color: #f7b422;
         color: #ffd67d;
         font-weight: 800;
         font-size: 4rem;
         letter-spacing: 2px;
-        font-weight: 00;
         margin-bottom: 2rem;
         border-radius: 10px 10px 10px 10px;
         -webkit-border-radius: 10px 10px 10px 10px;

@@ -19,6 +19,7 @@
       object-fit: cover;
       filter: brightness(80%);
       -webkit-filter: brightness(80%);
+      background-color: #000; // fallback color in case video fails to load
     }
     .section1content {
       position: relative;

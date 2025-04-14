@@ -1,6 +1,7 @@
 .soronContainer {
   min-height: 100vh;
   margin-top: 3rem;
+  background-color: #000000; /* Fallback solid color */
 
   h2 {
     font-size: 2.5em;
@@ -20,7 +21,7 @@
     align-items: center;
 
     .headerSection {
-      background: linear-gradient(180deg, #000000, rgba(0, 0, 0, 0.459)),
+      background: linear-gradient(180deg, #000000, rgba(0, 0, 0, 0.421)),
         url(https://uploads.pixecurity.com/files/AdobeStock_1299330558.webp);
       background-size: cover;
       background-position: top left;

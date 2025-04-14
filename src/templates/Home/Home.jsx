@@ -36,7 +36,7 @@ export default function Home() {
 
         <link
           rel="preload"
-          href="https://uploads.pixecurity.com/files/1.webp"
+          href="https://uploads.pixecurity.com/files/1-1.webp"
           as="image"
         />
 
@@ -65,10 +65,11 @@ export default function Home() {
           <div className={styles.section1right}>
             <Image
               src="/assets/logo/test1.gif"
-              alt="Animation de présentation Diviniti"
+              alt="Animation Soron Logo"
               width={400}
               height={400}
-              priority={true}
+              priority
+              sizes="(max-width: 768px) 200px, 400px"
             />
           </div>
         </div>

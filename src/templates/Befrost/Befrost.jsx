@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./style.module.scss";
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
 
 export default function Befrost() {
   const cardsData = [
@@ -117,45 +118,89 @@ export default function Befrost() {
   ];
 
   return (
-    <div className={styles.befrostContainer}>
-      <div className={styles.headerSection}>
-        <div className={styles.header1}>
-          <Image
-            src="https://uploads.pixecurity.com/files/befrost-logo-dark-bkgd-centered.png"
-            alt="Diviniti - Befrost solution"
-            width={200}
-            height={200}
-            priority={true}
-          />
-          <h1>La passerelle entre différents univers</h1>
-          <p>
-            Conçu pour s'adapter à divers appareils et plateformes, BEFROST
-            permet de connecter notamment les systèmes de vidéoprotection,
-            contrôle d'accès, intrusion, Géolocalisation, interphonie, incendie.
-          </p>
-        </div>
-        <div className={styles.cardsSection}>
-          {cardsData.map((card, index) => (
-            <div className={styles.card} key={index}>
-              <h2>{card.title}</h2>
-              <div className={styles.cardImg}>
-                <Image
-                  src={card.imgUrl}
-                  alt={`illustration ${card.title}`}
-                  width={300}
-                  height={300}
-                />
-              </div>
-              <div className={styles.cardBottom}>
-                {card.partners.map((partner, idx) => (
-                  <div className={styles.progressContainer} key={idx}>
+    <>
+      <Head>
+        <title>Diviniti - Befrost</title>
+        <meta
+          name="description"
+          content="Befrost est une solution de passerelle entre différents univers, conçue pour s'adapter à divers appareils et plateformes."
+        />
+        <meta
+
+          name="keywords"
+          content="Befrost, passerelle, univers, appareils, plateformes, vidéoprotection, contrôle d'accès, intrusion, géolocalisation, interphonie, incendie"
+        />
+        <meta name="author" content="Diviniti" />
+        <meta property="og:title" content="Diviniti - Befrost" />
+        <meta
+
+          property="og:description"
+          content="Befrost est une solution de passerelle entre différents univers, conçue pour s'adapter à divers appareils et plateformes."
+        />
+        <meta property="og:image" content="/assets/og-image.png" />
+        <meta property="og:url" content="https://www.diviniti.fr/befrost" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Diviniti" />
+        <meta property="og:locale" content="fr_FR" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Diviniti - Befrost" />
+        <link
+          rel="preload"
+          href="https://uploads.pixecurity.com/files/AdobeStock_1091490449-1.webp"
+          as="image"
+        />
+
+</Head>
+
+      <div className={styles.befrostContainer}>
+        <div className={styles.headerSection}>
+          <div className={styles.header1}>
+            <Image
+              src="https://uploads.pixecurity.com/files/befrost-logo-dark-bkgd-centered.png"
+              alt="Diviniti - Befrost solution"
+              width={200}
+              height={200}
+              priority={true}
+            />
+            <h1>La passerelle entre différents univers</h1>
+            <p>
+              Conçu pour s'adapter à divers appareils et plateformes, BEFROST
+              permet de connecter notamment les systèmes de vidéoprotection,
+              contrôle d'accès, intrusion, Géolocalisation, interphonie,
+              incendie.
+            </p>
+          </div>
+          <div className={styles.cardsSection}>
+            {cardsData.map((card, index) => (
+              <div className={styles.card} key={index}>
+                <h2>{card.title}</h2>
+                <div className={styles.cardImg}>
+                  <Image
+                    src={card.imgUrl}
+                    alt={`illustration ${card.title}`}
+                    width={300}
+                    height={300}
+                  />
+                </div>
+                <div className={styles.cardBottom}>
+                  {card.partners.map((partner, idx) => (
                     <div className={styles.progressContainer} key={idx}>
-                      {partner.website ? (
-                        <Link
-                          href={partner.website}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
+                      <div className={styles.progressContainer} key={idx}>
+                        {partner.website ? (
+                          <Link
+                            href={partner.website}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <Image
+                              src={partner.logo}
+                              alt={partner.alt}
+                              width={100}
+                              height={100}
+                              priority={true}
+                            />
+                          </Link>
+                        ) : (
                           <Image
                             src={partner.logo}
                             alt={partner.alt}
@@ -163,36 +208,28 @@ export default function Befrost() {
                             height={100}
                             priority={true}
                           />
-                        </Link>
-                      ) : (
-                        <Image
-                          src={partner.logo}
-                          alt={partner.alt}
-                          width={100}
-                          height={100}
-                          priority={true}
-                        />
-                      )}
-                    </div>
+                        )}
+                      </div>
 
-                    <div className={styles.progressBar}>
-                      <div
-                        className={`${styles.fill} ${
-                          styles[partner.className]
-                        }`}
-                        style={{
-                          "--target-width": partner.percentage,
-                          width: partner.percentage,
-                        }}
-                      />
+                      <div className={styles.progressBar}>
+                        <div
+                          className={`${styles.fill} ${
+                            styles[partner.className]
+                          }`}
+                          style={{
+                            "--target-width": partner.percentage,
+                            width: partner.percentage,
+                          }}
+                        />
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
