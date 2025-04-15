@@ -14,7 +14,7 @@ export default function Soron() {
           property="og:description"
           content="Découvrez la solution Soron de Diviniti, une plateforme d'hypervision pour la sécurité urbaine et industrielle."
         />
-        <meta property="og:url" content="https://www.diviniti.tech" />
+        <meta property="og:url" content="https://www.diviniti.tech/soron" />
         <meta
           name="description"
           content="Découvrez la solution Soron de Diviniti, une plateforme d'hypervision pour la sécurité urbaine et industrielle."

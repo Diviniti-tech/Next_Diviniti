@@ -23,7 +23,7 @@ export default function Raven() {
           content="Raven est une solution de réalité augmentée qui permet aux opérateurs de se projeter sur le terrain à tout moment."
         />
         <meta property="og:image" content="/assets/og-image.png" />
-        <meta property="og:url" content="https://www.diviniti.fr/raven" />
+        <meta property="og:url" content="https://www.diviniti.tech/raven" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Diviniti" />
         <meta property="og:locale" content="fr_FR" />
