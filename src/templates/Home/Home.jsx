@@ -12,66 +12,55 @@ export default function Home() {
 
   return (
     <>
- <Head>
-  <title>Diviniti - Sûreté augmentée pour la ville de demain</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta
-    name="description"
-    content="Découvrez les solutions Diviniti pour la ville de demain, combinant IA et réalité étendue pour une sécurité proactive. Diviniti révolutionne la sûreté avec des technologies innovantes pour les environnements urbains et industriels."
-  />
-  <meta
-    name="robots"
-    content="index, follow"
-  />
-  <meta
-    property="og:title"
-    content="Diviniti - Sûreté augmentée pour la ville de demain"
-  />
-  <meta
-    property="og:description"
-    content="Découvrez les solutions Diviniti pour la ville de demain, combinant IA et réalité étendue pour une sécurité proactive."
-  />
-  <meta property="og:url" content="https://www.diviniti.tech" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://uploads.pixecurity.com/files/divinit-new.jpg" />
-  <meta
-    name="twitter:card"
-    content="summary_large_image"
-  />
-  <meta
-    name="twitter:title"
-    content="Diviniti - Sûreté augmentée pour la ville de demain"
-  />
-  <meta
-    name="twitter:description"
-    content="Découvrez les solutions Diviniti pour la ville de demain, combinant IA et réalité étendue pour une sécurité proactive."
-  />
-  <meta
-    name="twitter:image"
-    content="https://uploads.pixecurity.com/files/divinit-new.jpg" 
-  />
+      <Head>
+        <title>Diviniti - Sûreté augmentée pour la ville de demain</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="description"
+          content="Découvrez les solutions Diviniti pour la ville de demain, combinant IA et réalité étendue pour une sécurité proactive. Diviniti révolutionne la sûreté avec des technologies innovantes pour les environnements urbains et industriels."
+        />
+        <meta name="robots" content="index, follow" />
+        <meta
+          property="og:title"
+          content="Diviniti - Sûreté augmentée pour la ville de demain"
+        />
+        <meta
+          property="og:description"
+          content="Découvrez les solutions Diviniti pour la ville de demain, combinant IA et réalité étendue pour une sécurité proactive."
+        />
+        <meta property="og:url" content="https://www.diviniti.tech" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://uploads.pixecurity.com/files/divinit-new.jpg"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Diviniti - Sûreté augmentée pour la ville de demain"
+        />
+        <meta
+          name="twitter:description"
+          content="Découvrez les solutions Diviniti pour la ville de demain, combinant IA et réalité étendue pour une sécurité proactive."
+        />
+        <meta
+          name="twitter:image"
+          content="https://uploads.pixecurity.com/files/divinit-new.jpg"
+        />
 
-  <meta
-    property="og:keywords"
-    content="sûreté augmentée, vidéoprotection, intelligence artificielle, réalité étendue, XR, ville intelligente, sécurité proactive, analyse d'image, contrôle d'accès, prédiction des risques, gestion de la sécurité, smart city, transport sécurisé, Diviniti"
-  />
- 
-  <link
-    rel="preload"
-    href="https://uploads.pixecurity.com/files/1-1.webp"
-    as="image"
-  />
-  <link
-    rel="preload"
-    href="/assets/logo/test1.gif"
-    as="image"
-  />
-  <link
-    rel="canonical"
-    href="https://www.diviniti.tech"
-  />
-</Head>
+        <meta
+          property="og:keywords"
+          content="sûreté augmentée, vidéoprotection, intelligence artificielle, réalité étendue, XR, ville intelligente, sécurité proactive, analyse d'image, contrôle d'accès, prédiction des risques, gestion de la sécurité, smart city, transport sécurisé, Diviniti"
+        />
 
+        <link
+          rel="preload"
+          href="https://uploads.pixecurity.com/files/1-1.webp"
+          as="image"
+        />
+        <link rel="preload" href="/assets/logo/test1.gif" as="image" />
+        <link rel="canonical" href="https://www.diviniti.tech" />
+      </Head>
 
       <div className={styles.homeContainer}>
         <div className={styles.section1}>

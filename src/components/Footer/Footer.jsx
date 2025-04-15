@@ -41,6 +41,9 @@ function Footer() {
     <Link href="/tendances-et-actus">Tendances & Actus</Link>
   </li>
   <li onClick={() => setShowModalDemo(true)}>Demander une démo</li>
+  <li>
+    <Link href="/contact">Contactez-nous</Link>
+  </li>
 </ul>
 
       </div>
