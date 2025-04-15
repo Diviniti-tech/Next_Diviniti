@@ -105,13 +105,6 @@ export default function Contact() {
   return (
     <div className={styles.contactContainer}>
       <div className={styles.contactContent}>
-        <div className={styles.contactLeft}>
-          <img
-            src="https://uploads.pixecurity.com/files/diviniti-logo-white_copie.png"
-            alt=""
-          />
-        </div>
-
         <div className={styles.contactRight}>
           <h1>Envie d’innover avec nous ? </h1>
           <h2>Contactez Diviniti</h2>
@@ -174,6 +167,12 @@ export default function Contact() {
               {isSending ? "Envoi en cours..." : "Envoyer"}
             </button>
           </form>
+        </div>
+        <div className={styles.contactLeft}>
+          <img
+            src="https://uploads.pixecurity.com/files/diviniti-logo-white_copie.png"
+            alt=""
+          />
         </div>
       </div>
     </div>
