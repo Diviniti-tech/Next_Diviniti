@@ -104,11 +104,8 @@ export default function Contact() {
   };
 
   return (
-
-    <> 
-
-
-<Head>
+    <>
+      <Head>
         <title>Diviniti - Contact</title>
         <meta
           name="description"
@@ -135,7 +132,7 @@ export default function Contact() {
         <meta name="twitter:title" content="Contact | Diviniti" />
         <meta
           name="twitter:description"
-          content="Contactez-nous pour vos projets de design, communication ou branding."
+          content="Prenez contact avec l'équipe Diviniti pour vos projets, partenariats ou informations."
         />
         <meta
           name="twitter:image"
@@ -143,84 +140,87 @@ export default function Contact() {
         />
 
         {/* Favicon */}
-        <link rel="icon" href="https://uploads.pixecurity.com/files/divinit-new.jpg" />
+        <link
+          rel="icon"
+          href="https://uploads.pixecurity.com/files/divinit-new.jpg"
+        />
       </Head>
-  
 
+      <div className={styles.contactContainer}>
+        <div className={styles.contactContent}>
+          <div className={styles.contactRight}>
+            <h1>Envie d’innover avec nous ? </h1>
+            <h2>Contactez Diviniti</h2>
+            <h3>
+              Diviniti, c’est avant tout une aventure humaine et technologique.
+              Que vous soyez une entreprise, une collectivité ou un curieux de
+              passage, on serait ravis d’échanger avec vous. Laissez-nous un
+              message, on vous répond vite !
+            </h3>
+            <form onSubmit={handleSubmit} className={styles.form}>
+              <input
+                type="text"
+                name="nom"
+                placeholder="Nom et prénom"
+                value={formData.nom}
+                onChange={handleChange}
+              />
+              {errors.nom && <p className={styles.error}>{errors.nom}</p>}
 
-    <div className={styles.contactContainer}>
-      <div className={styles.contactContent}>
-        <div className={styles.contactRight}>
-          <h1>Envie d’innover avec nous ? </h1>
-          <h2>Contactez Diviniti</h2>
-          <h3>
-            Diviniti, c’est avant tout une aventure humaine et technologique.
-            Que vous soyez une entreprise, une collectivité ou un curieux de
-            passage, on serait ravis d’échanger avec vous. Laissez-nous un
-            message, on vous répond vite !
-          </h3>
-          <form onSubmit={handleSubmit} className={styles.form}>
-            <input
-              type="text"
-              name="nom"
-              placeholder="Nom et prénom"
-              value={formData.nom}
-              onChange={handleChange}
+              <input
+                type="text"
+                name="entreprise"
+                placeholder="Entreprise (optionnel)"
+                value={formData.entreprise}
+                onChange={handleChange}
+              />
+
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                value={formData.email}
+                onChange={handleChange}
+              />
+              {errors.email && <p className={styles.error}>{errors.email}</p>}
+
+              <input
+                type="tel"
+                name="telephone"
+                placeholder="Téléphone (optionnel)"
+                value={formData.telephone}
+                onChange={handleChange}
+              />
+              {errors.telephone && (
+                <p className={styles.error}>{errors.telephone}</p>
+              )}
+
+              <textarea
+                name="message"
+                placeholder="Votre message"
+                rows="5"
+                value={formData.message}
+                onChange={handleChange}
+              />
+              {errors.message && (
+                <p className={styles.error}>{errors.message}</p>
+              )}
+
+              {errors.submit && <p className={styles.error}>{errors.submit}</p>}
+
+              <button type="submit" disabled={isSending}>
+                {isSending ? "Envoi en cours..." : "Envoyer"}
+              </button>
+            </form>
+          </div>
+          <div className={styles.contactLeft}>
+            <img
+              src="https://uploads.pixecurity.com/files/diviniti-logo-white_copie.png"
+              alt=""
             />
-            {errors.nom && <p className={styles.error}>{errors.nom}</p>}
-
-            <input
-              type="text"
-              name="entreprise"
-              placeholder="Entreprise (optionnel)"
-              value={formData.entreprise}
-              onChange={handleChange}
-            />
-
-            <input
-              type="email"
-              name="email"
-              placeholder="Email"
-              value={formData.email}
-              onChange={handleChange}
-            />
-            {errors.email && <p className={styles.error}>{errors.email}</p>}
-
-            <input
-              type="tel"
-              name="telephone"
-              placeholder="Téléphone (optionnel)"
-              value={formData.telephone}
-              onChange={handleChange}
-            />
-            {errors.telephone && (
-              <p className={styles.error}>{errors.telephone}</p>
-            )}
-
-            <textarea
-              name="message"
-              placeholder="Votre message"
-              rows="5"
-              value={formData.message}
-              onChange={handleChange}
-            />
-            {errors.message && <p className={styles.error}>{errors.message}</p>}
-
-            {errors.submit && <p className={styles.error}>{errors.submit}</p>}
-
-            <button type="submit" disabled={isSending}>
-              {isSending ? "Envoi en cours..." : "Envoyer"}
-            </button>
-          </form>
-        </div>
-        <div className={styles.contactLeft}>
-          <img
-            src="https://uploads.pixecurity.com/files/diviniti-logo-white_copie.png"
-            alt=""
-          />
+          </div>
         </div>
       </div>
-    </div>
     </>
   );
 }
