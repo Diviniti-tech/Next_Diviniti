@@ -2,6 +2,7 @@ import styles from "./style.module.scss";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
+import Head from "next/head";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -103,6 +104,50 @@ export default function Contact() {
   };
 
   return (
+
+    <> 
+
+
+<Head>
+        <title>Diviniti - Contact</title>
+        <meta
+          name="description"
+          content="Contactez Diviniti pour toute question, collaboration ou demande de devis. Nous sommes à votre écoute."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow" />
+
+        {/* Open Graph (Facebook, LinkedIn, etc.) */}
+        <meta property="og:title" content="Contact | Diviniti" />
+        <meta
+          property="og:description"
+          content="Prenez contact avec l'équipe Diviniti pour vos projets, partenariats ou informations."
+        />
+        <meta
+          property="og:image"
+          content="https://uploads.pixecurity.com/files/divinit-new.jpg"
+        />
+        <meta property="og:url" content="https://www.diviniti.tech/contact" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Contact | Diviniti" />
+        <meta
+          name="twitter:description"
+          content="Contactez-nous pour vos projets de design, communication ou branding."
+        />
+        <meta
+          name="twitter:image"
+          content="https://uploads.pixecurity.com/files/divinit-new.jpg"
+        />
+
+        {/* Favicon */}
+        <link rel="icon" href="https://uploads.pixecurity.com/files/divinit-new.jpg" />
+      </Head>
+  
+
+
     <div className={styles.contactContainer}>
       <div className={styles.contactContent}>
         <div className={styles.contactRight}>
@@ -176,5 +221,6 @@ export default function Contact() {
         </div>
       </div>
     </div>
+    </>
   );
 }

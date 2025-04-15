@@ -1,3 +1,3 @@
-import Contact from '@/templates/Contact/Contact';
+import Contact from "@/templates/Contact/Contact";
 
 export default Contact;
