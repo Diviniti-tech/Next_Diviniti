@@ -59,7 +59,7 @@ export default function Header() {
           </li>
           <li className={styles.dropdown}>
             <span className={styles.dropdownTitle} onClick={toggleDropdown}>
-              Nos solutions Diviniti <i className="fa-solid fa-caret-down"></i>
+              Nos Solutions <i className="fa-solid fa-caret-down"></i>
             </span>
 
             <AnimatePresence>
