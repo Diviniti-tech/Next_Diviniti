@@ -2,6 +2,7 @@ import styles from "./style.module.scss";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Head from "next/head";
+import Link from "next/link";
 
 export default function QuiSommesNous() {
   const team = [
@@ -89,8 +90,8 @@ export default function QuiSommesNous() {
         />
       </Head>
 
-      <div className={styles.teamContainer}>
-        <div className={styles.teamHero}>
+      <div className={styles.aboutUsContainer}>
+        <div className={styles.aboutUsHero}>
           <video
             className={styles.backgroundVideo}
             autoPlay
@@ -108,43 +109,137 @@ export default function QuiSommesNous() {
 
           <div className={styles.heroContent}>
             <div className={styles.heroLeft}>
-              <h1>Diviniti : Qui Sommes-Nous ?</h1>
-              <h2>Une équipe passionnée, engagée pour l’innovation</h2>
+              <h1>Qui Sommes-Nous</h1>
+              <h2>DIVINITI : Une startup récompensée pour son innovation</h2>
+
               <p>
-                Chez Diviniti, notre force réside dans les talents exceptionnels
-                qui composent notre équipe. Ensemble, nous repoussons les
-                limites de la technologie pour imaginer, concevoir et réaliser
-                des solutions révolutionnaires pour la ville de demain.
+                <strong>Incubée à Station F</strong>, au cœur du programme{" "}
+                <strong>Ville de Demain</strong>.
               </p>
+
+              <ul className={styles.heroList}>
+                <li>
+                  <strong>Station F</strong> : Le plus grand campus de startups
+                  au monde, en plein Paris.
+                </li>
+                <li>
+                  <strong>Ville de Demain</strong> : Un programme dédié aux
+                  projets qui réinventent la ville de demain.
+                </li>
+                <li>
+                  <strong>Un écosystème stimulant</strong> : Innovation,
+                  accompagnement, réseau d’experts.
+                </li>
+                <li>
+                  <strong>Des partenariats stratégiques</strong> avec les
+                  acteurs majeurs de l’urbanisme et de la sécurité.
+                </li>
+                <li>
+                  <strong>Un engagement fort</strong> pour des solutions
+                  technologiques responsables, durables et sécurisées.
+                </li>
+              </ul>
+
               <p>
-                Animés par une passion commune pour l’innovation, nous unissons
-                nos expertises pour transformer la manière dont le monde aborde
-                la sûreté et la supervision.
+                <strong>Un intérêt grandissant</strong> de la part de
+                partenaires publics et privés :
+                <br />
+                <i class="fa-regular fa-circle-right"></i>{" "}
+                <strong>Secteur public</strong> : Collectivités, municipalités,
+                Police Nationale (BRI)
+                <br />
+                <i class="fa-regular fa-circle-right"></i>{" "}
+                <strong>Secteur privé</strong> : Énergie, logistique, défense,
+                événementiel
               </p>
             </div>
+
             <motion.div
               className={styles.heroRight}
               initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
             >
-              <Image
-                src="/assets/team/YANN.webp"
-                alt="Yann Duchet - CEO Diviniti"
-                width={300}
-                height={250}
-                priority={true}
-              />
-              <h2>Yann DUCHET</h2>
-              <p>CEO</p>
+              <div className={styles.images}>
+                <Link
+                  href="https://stationf.co/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="https://uploads.pixecurity.com/files/stationF.png"
+                    alt="station f logo"
+                    width={250}
+                    height={80}
+                    priority
+                  />
+                </Link>
+                <Image
+                  src="https://uploads.pixecurity.com/files/create-zone.jpg"
+                  alt="bureaux station f"
+                  width={500}
+                  height={300}
+                  priority
+                  className={styles.officeImg}
+                />
+
+                <Link
+                  href="https://www.ville-demain.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="https://uploads.pixecurity.com/files/villedemain.png"
+                    alt="ville de demain logo"
+                    width={220}
+                    height={110}
+                    priority
+                  />
+                </Link>
+              </div>
             </motion.div>
           </div>
         </div>
-        <div className={styles.teamMembersIntro}>
+
+        <div className={styles.section1}>
+          <motion.div
+            className={styles.section1Right}
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+          >
+            <Image
+              src="/assets/team/YANN.webp"
+              alt="Yann Duchet - CEO Diviniti"
+              width={300}
+              height={250}
+              priority={true}
+            />
+            <h2>Yann DUCHET</h2>
+            <p>CEO</p>
+          </motion.div>
+          <div className={styles.section1Left}>
+            <h2>L’humain au cœur de l’innovation</h2>
+            <h3>Une passion commune pour la ville de demain</h3>
+            <p>
+              Chez Diviniti, notre force réside dans les talents exceptionnels
+              qui composent notre équipe. Ensemble, nous repoussons les limites
+              de la technologie pour imaginer, concevoir et réaliser des
+              solutions révolutionnaires pour la ville de demain.
+            </p>
+            <p>
+              Animés par une passion commune pour l’innovation, nous unissons
+              nos expertises pour transformer la manière dont le monde aborde la
+              sûreté et la supervision.
+            </p>
+          </div>
+        </div>
+
+        <div className={styles.section2}>
           <h1>Rencontrez la Divini'team</h1>
           <p>Découvrez les talents qui construisent l’avenir</p>
         </div>
-        <div className={styles.teamMembers}>
+        <div className={styles.section3}>
           <p>
             Nous sommes une équipe dédiée à l'innovation et à la créativité.
           </p>
