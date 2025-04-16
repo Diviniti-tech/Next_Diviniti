@@ -46,7 +46,7 @@ export default function QuiSommesNous() {
   return (
     <>
       <Head>
-        <title>Diviniti - Notre équipe</title>
+        <title>Diviniti - Qui sommes nous</title>
         <meta
           name="description"
           content="Découvrez l'équipe passionnée de Diviniti, experts en innovation pour les solutions de sécurité et de sûreté augmentée pour les villes intelligentes."
