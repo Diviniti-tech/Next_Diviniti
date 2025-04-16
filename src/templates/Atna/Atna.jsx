@@ -14,7 +14,7 @@ export default function Atna() {
           property="og:description"
           content="Découvrez ATNa, l'IA au service de la prise de décision pour une sécurité proactive et efficace."
         />
-        <meta property="og:url" content="https://www.diviniti.tech/atna" />
+        <meta property="og:url" content="https://diviniti.tech/atna" />
 
         <meta
           name="description"

@@ -65,7 +65,7 @@ export default function QuiSommesNous() {
         />
         <meta
           property="og:url"
-          content="https://www.diviniti.tech/qui-sommes-nous"
+          content="https://diviniti.tech/qui-sommes-nous"
         />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="fr_FR" />

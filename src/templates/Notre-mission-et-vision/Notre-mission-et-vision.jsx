@@ -28,7 +28,7 @@ export default function NotreMissionEtVision() {
     property="og:keywords"
     content="mission, vision, sûreté augmentée, vidéoprotection, intelligence artificielle, réalité étendue, XR, villes intelligentes, sécurité proactive, IA, innovations, Diviniti"
   />
-  <meta property="og:url" content="https://www.diviniti.tech/notre-mission-et-vision" />
+  <meta property="og:url" content="https://diviniti.tech/notre-mission-et-vision" />
   <meta property="og:image" content="https://uploads.pixecurity.com/files/divinit-new.jpg" />
   
   <meta

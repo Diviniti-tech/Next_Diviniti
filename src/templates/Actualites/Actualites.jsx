@@ -39,7 +39,7 @@ export default function Actualites() {
         />
         <meta
           property="og:url"
-          content="https://www.diviniti.tech/actualites"
+          content="https://diviniti.tech/actualites"
         />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="fr_FR" />

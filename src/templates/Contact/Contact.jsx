@@ -124,7 +124,7 @@ export default function Contact() {
           property="og:image"
           content="https://uploads.pixecurity.com/files/divinit-new.jpg"
         />
-        <meta property="og:url" content="https://www.diviniti.tech/contact" />
+        <meta property="og:url" content="https://diviniti.tech/contact" />
         <meta property="og:type" content="website" />
 
         {/* Twitter card */}

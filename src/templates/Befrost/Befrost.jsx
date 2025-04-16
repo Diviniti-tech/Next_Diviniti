@@ -138,7 +138,7 @@ export default function Befrost() {
           content="Befrost est une solution de passerelle entre différents univers, conçue pour s'adapter à divers appareils et plateformes."
         />
         <meta property="og:image" content="/assets/og-image.png" />
-        <meta property="og:url" content="https://www.diviniti.tech/befrost" />
+        <meta property="og:url" content="https://diviniti.tech/befrost" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Diviniti" />
         <meta property="og:locale" content="fr_FR" />

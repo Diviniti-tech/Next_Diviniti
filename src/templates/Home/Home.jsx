@@ -28,7 +28,7 @@ export default function Home() {
           property="og:description"
           content="Découvrez les solutions Diviniti pour la ville de demain, combinant IA et réalité étendue pour une sécurité proactive."
         />
-        <meta property="og:url" content="https://www.diviniti.tech" />
+        <meta property="og:url" content="https://diviniti.tech" />
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
