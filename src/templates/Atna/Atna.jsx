@@ -82,7 +82,7 @@ export default function Atna() {
 
               <div className={styles.header2Right}>
                 <Image
-                  src="https://uploads.pixecurity.com/files/Image12-1.webp"
+                  src="https://uploads.pixecurity.com/files/Image12.webp"
                   alt=""
                   width={900}
                   height={900}
