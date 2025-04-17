@@ -175,7 +175,7 @@ export default function QuiSommesNous() {
                   />
                 </Link>
                 <Image
-                  src="https://uploads.pixecurity.com/files/create-zone.jpg"
+                  src="https://uploads.pixecurity.com/files/create-zone.webp"
                   alt="bureaux station f"
                   width={500}
                   height={300}
