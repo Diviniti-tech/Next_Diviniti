@@ -36,7 +36,7 @@ export default function Header() {
       <div className={styles.headerLogo}>
         <Link href="/">
           <Image
-            src="/assets/logo/diviniti3.png"
+            src="/assets/logo/diviniti3.webp"
             alt="Diviniti logo"
             width={100}
             height={100}
