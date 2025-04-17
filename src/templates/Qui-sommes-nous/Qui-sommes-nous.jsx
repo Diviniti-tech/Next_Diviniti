@@ -88,6 +88,9 @@ export default function QuiSommesNous() {
           rel="canonical"
           href="https://www.diviniti.tech/qui-sommes-nous"
         />
+
+<link rel="preload" href="https://uploads.pixecurity.com/files/create-zone.webp" as="image" type="image/webp" />
+
       </Head>
 
       <div className={styles.aboutUsContainer}>
@@ -171,7 +174,7 @@ export default function QuiSommesNous() {
                     alt="station f logo"
                     width={250}
                     height={80}
-                    priority
+                    priority={true}
                   />
                 </Link>
                 <Image
