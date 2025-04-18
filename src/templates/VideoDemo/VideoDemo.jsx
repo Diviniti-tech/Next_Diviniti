@@ -20,7 +20,6 @@ export default function VideoDemo() {
         <video
           autoPlay
           loop
-          muted
           preload="auto"
           controls
           className={styles.backgroundVideo}
