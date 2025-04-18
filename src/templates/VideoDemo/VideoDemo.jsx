@@ -11,19 +11,25 @@ export default function VideoDemo() {
       </Head>
 
       <div className={styles.videoDemoContainer}>
+        <img
+          src="https://uploads.pixecurity.com/files/soron-logo-dark-bkgd-long.png"
+          alt=""
+          className={styles.logoDemo}
+        />
 
-<img src="https://uploads.pixecurity.com/files/soron-logo-dark-bkgd-long.png" alt=""  className={styles.logoDemo}/>
-
-
-        <video autoPlay loop muted  preload="auto"
-                controls className={styles.backgroundVideo}>
-              <source
-                src="https://uploads.pixecurity.com/files/test_soron5_%E2%80%90_R%C3%A9alis%C3%A9e_avec_Clipchamp.mp4"
-                type="video/mp4"
-               
-              />
-            </video>
-
+        <video
+          autoPlay
+          loop
+          muted
+          preload="auto"
+          controls
+          className={styles.backgroundVideo}
+        >
+          <source
+            src="https://uploads.pixecurity.com/files/Soron_-_demo_video_%2804.2025%29.mp4"
+            type="video/mp4"
+          />
+        </video>
       </div>
     </>
   );
