@@ -89,8 +89,12 @@ export default function QuiSommesNous() {
           href="https://www.diviniti.tech/qui-sommes-nous"
         />
 
-<link rel="preload" href="https://uploads.pixecurity.com/files/create-zone.webp" as="image" type="image/webp" />
-
+        <link
+          rel="preload"
+          href="https://uploads.pixecurity.com/files/create-zone.webp"
+          as="image"
+          type="image/webp"
+        />
       </Head>
 
       <div className={styles.aboutUsContainer}>
