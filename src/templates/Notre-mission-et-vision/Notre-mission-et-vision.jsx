@@ -12,37 +12,45 @@ export default function NotreMissionEtVision() {
 
   return (
     <>
-    <Head>
-  <title>Diviniti - Notre mission et vision</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  
-  <meta
-    property="og:title"
-    content="Diviniti - Notre mission et vision"
-  />
-  <meta
-    property="og:description"
-    content="Découvrez la mission et la vision de Diviniti, pionnier de la sûreté augmentée, avec des solutions innovantes intégrant IA, réalité étendue et technologies avancées."
-  />
-  <meta
-    property="og:keywords"
-    content="mission, vision, sûreté augmentée, vidéoprotection, intelligence artificielle, réalité étendue, XR, villes intelligentes, sécurité proactive, IA, innovations, Diviniti"
-  />
-  <meta property="og:url" content="https://diviniti.tech/notre-mission-et-vision" />
-  <meta property="og:image" content="https://uploads.pixecurity.com/files/divinit-new.jpg" />
-  
-  <meta
-    name="twitter:title"
-    content="Diviniti - Notre mission et vision"
-  />
-  <meta
-    name="twitter:description"
-    content="Découvrez la mission et la vision de Diviniti, pionnier de la sûreté augmentée, avec des solutions innovantes intégrant IA, réalité étendue et technologies avancées."
-  />
-  <meta name="twitter:image" content="https://uploads.pixecurity.com/files/divinit-new.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-</Head>
+      <Head>
+        <title>Diviniti - Notre mission et vision</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+        <meta
+          property="og:title"
+          content="Diviniti - Notre mission et vision"
+        />
+        <meta
+          property="og:description"
+          content="Découvrez la mission et la vision de Diviniti, pionnier de la sûreté augmentée, avec des solutions innovantes intégrant IA, réalité étendue et technologies avancées."
+        />
+        <meta
+          property="og:keywords"
+          content="mission, vision, sûreté augmentée, vidéoprotection, intelligence artificielle, réalité étendue, XR, villes intelligentes, sécurité proactive, IA, innovations, Diviniti"
+        />
+        <meta
+          property="og:url"
+          content="https://diviniti.tech/notre-mission-et-vision"
+        />
+        <meta
+          property="og:image"
+          content="https://uploads.pixecurity.com/files/divinit-new.jpg"
+        />
+
+        <meta
+          name="twitter:title"
+          content="Diviniti - Notre mission et vision"
+        />
+        <meta
+          name="twitter:description"
+          content="Découvrez la mission et la vision de Diviniti, pionnier de la sûreté augmentée, avec des solutions innovantes intégrant IA, réalité étendue et technologies avancées."
+        />
+        <meta
+          name="twitter:image"
+          content="https://uploads.pixecurity.com/files/divinit-new.jpg"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Head>
 
       <div className={styles.aboutContainer}>
         <div className={styles.section1}>
@@ -137,12 +145,17 @@ export default function NotreMissionEtVision() {
         </div>
         <div className={styles.section3}>
           <div className={styles.section3content}>
-            <video autoPlay loop muted  preload="auto"
-                controls className={styles.backgroundVideo}>
+            <video
+              autoPlay
+              loop
+              muted
+              preload="auto"
+              controls
+              className={styles.backgroundVideo}
+            >
               <source
                 src="https://uploads.pixecurity.com/files/soron_test2_%E2%80%90_R%C3%A9alis%C3%A9e_avec_Clipchamp.mp4"
                 type="video/mp4"
-               
               />
             </video>
             <button

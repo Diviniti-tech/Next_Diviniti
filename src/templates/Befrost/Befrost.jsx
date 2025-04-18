@@ -126,14 +126,12 @@ export default function Befrost() {
           content="Befrost est une solution de passerelle entre différents univers, conçue pour s'adapter à divers appareils et plateformes."
         />
         <meta
-
           name="keywords"
           content="Befrost, passerelle, univers, appareils, plateformes, vidéoprotection, contrôle d'accès, intrusion, géolocalisation, interphonie, incendie"
         />
         <meta name="author" content="Diviniti" />
         <meta property="og:title" content="Diviniti - Befrost" />
         <meta
-
           property="og:description"
           content="Befrost est une solution de passerelle entre différents univers, conçue pour s'adapter à divers appareils et plateformes."
         />
@@ -149,8 +147,7 @@ export default function Befrost() {
           href="https://uploads.pixecurity.com/files/AdobeStock_1091490449-1.webp"
           as="image"
         />
-
-</Head>
+      </Head>
 
       <div className={styles.befrostContainer}>
         <div className={styles.headerSection}>
@@ -158,8 +155,8 @@ export default function Befrost() {
             <Image
               src="https://uploads.pixecurity.com/files/befrost-logo-dark-bkgd-centered.png"
               alt="Diviniti - Befrost solution"
-              width={200}
-              height={200}
+              width={150}
+              height={150}
               priority={true}
             />
             <h1>La passerelle entre différents univers</h1>
@@ -178,8 +175,8 @@ export default function Befrost() {
                   <Image
                     src={card.imgUrl}
                     alt={`illustration ${card.title}`}
-                    width={300}
-                    height={300}
+                    width={10}
+                    height={10}
                   />
                 </div>
                 <div className={styles.cardBottom}>
@@ -195,8 +192,8 @@ export default function Befrost() {
                             <Image
                               src={partner.logo}
                               alt={partner.alt}
-                              width={100}
-                              height={100}
+                              width={50}
+                              height={50}
                               priority={true}
                             />
                           </Link>
@@ -204,8 +201,8 @@ export default function Befrost() {
                           <Image
                             src={partner.logo}
                             alt={partner.alt}
-                            width={100}
-                            height={100}
+                            width={50}
+                            height={50}
                             priority={true}
                           />
                         )}
