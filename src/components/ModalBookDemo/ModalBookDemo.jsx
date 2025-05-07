@@ -4,8 +4,10 @@ import { db } from "../../firebase/firebase";
 import { collection, addDoc } from "firebase/firestore";
 import Swal from "sweetalert2";
 import emailjs from "@emailjs/browser";
+import { useTranslation } from "react-i18next";
 
 export default function ModalBookDemo({ showModal, setShowModal }) {
+  const { t } = useTranslation();
   const [name, setName] = useState("");
   const [company, setCompany] = useState("");
   const [email, setEmail] = useState("");
@@ -16,23 +18,18 @@ export default function ModalBookDemo({ showModal, setShowModal }) {
     setError("");
 
     if (!name || !email) {
-      setError("Veuillez remplir tous les champs");
+      setError(t("modal.errorFillFields"));
       return;
     }
 
-    // Valider la configuration EmailJS
     if (
       !process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID ||
       !process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID ||
       !process.env.NEXT_PUBLIC_EMAILJS_USER_ID
     ) {
-      console.log("Service ID:", process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID);
-      console.log("Template ID:", process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID);
-      console.log("User ID:", process.env.NEXT_PUBLIC_EMAILJS_USER_ID);
-
       Swal.fire({
-        title: "Erreur",
-        text: "La configuration EmailJS est manquante. Veuillez contacter l'administrateur.",
+        title: t("modal.errorTitle"),
+        text: t("modal.errorConfig"),
         icon: "error",
         confirmButtonText: "OK",
       });
@@ -40,19 +37,9 @@ export default function ModalBookDemo({ showModal, setShowModal }) {
     }
 
     try {
-      // Ajouter le prospect à Firestore
-      await addDoc(collection(db, "demoContact"), {
-        name: name,
-        company: company,
-        email: email,
-      });
+      await addDoc(collection(db, "demoContact"), { name, company, email });
 
-      // Envoi de l'email via EmailJS
-      const templateParams = {
-        name,
-        company,
-        email,
-      };
+      const templateParams = { name, company, email };
 
       await emailjs.send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID1,
@@ -61,19 +48,16 @@ export default function ModalBookDemo({ showModal, setShowModal }) {
         process.env.NEXT_PUBLIC_EMAILJS_USER_ID
       );
 
-      // Afficher une alerte SweetAlert et fermer le modal
       Swal.fire({
-        title: "Merci !",
-        text: "Votre demande a été envoyée avec succès. Vous serez recontacté sous peu.",
+        title: t("modal.successTitle"),
+        text: t("modal.successText"),
         icon: "success",
         confirmButtonText: "OK",
-      }).then(() => {
-        setShowModal(false); // Fermer le modal
-      });
+      }).then(() => setShowModal(false));
     } catch (e) {
       Swal.fire({
-        title: "Erreur",
-        text: "Une erreur s'est produite. Veuillez réessayer.",
+        title: t("modal.errorTitle"),
+        text: t("modal.errorGeneric"),
         icon: "error",
         confirmButtonText: "OK",
       });
@@ -85,45 +69,30 @@ export default function ModalBookDemo({ showModal, setShowModal }) {
   return (
     <div className={styles.modalContainer}>
       <div className={styles.modalContent}>
-        <span onClick={() => setShowModal(false)} className={styles.closeModal}>
-          X
-        </span>
-        <h1>Planifions une démo !</h1>
+        <span onClick={() => setShowModal(false)} className={styles.closeModal}>X</span>
+        <h1>{t("modal.title")}</h1>
 
         <video autoPlay loop muted className={styles.backgroundVideo}>
           <source
             src="https://uploads.pixecurity.com/files/soron_test_mini_%E2%80%90_R%C3%A9alis%C3%A9e_avec_Clipchamp.mp4"
             type="video/mp4"
             preload="auto"
-     
           />
         </video>
 
-        <h2>
-          Remplissez le formulaire ci-dessous et nous vous recontacterons dans
-          les plus brefs délais.
-        </h2>
+        <h2>{t("modal.subtitle")}</h2>
         <form onSubmit={handleSubmit}>
-          <label htmlFor="name">Nom et prénom</label>
-          <input
-            type="text"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-          <label htmlFor="company">Entreprise (optionnel)</label>
-          <input
-            type="text"
-            value={company}
-            onChange={(e) => setCompany(e.target.value)}
-          />
-          <label htmlFor="email">Email</label>
-          <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
+          <label htmlFor="name">{t("modal.labelName")}</label>
+          <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+
+          <label htmlFor="company">{t("modal.labelCompany")}</label>
+          <input type="text" value={company} onChange={(e) => setCompany(e.target.value)} />
+
+          <label htmlFor="email">{t("modal.labelEmail")}</label>
+          <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+
           <button type="submit" className={styles.submitBtn}>
-            Me contacter
+            {t("modal.submitButton")}
           </button>
         </form>
         {error && <p className={styles.error}>{error}</p>}

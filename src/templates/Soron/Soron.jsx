@@ -2,27 +2,19 @@ import React from "react";
 import styles from "./style.module.scss";
 import Image from "next/image";
 import Head from "next/head";
+import { t } from "i18next";
 
 export default function Soron() {
   return (
     <>
       <Head>
-        <title>Diviniti - Soron</title>
+        <title>{t("soron.title")}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="Diviniti - Soron solution" />
-        <meta
-          property="og:description"
-          content="Découvrez la solution Soron de Diviniti, une plateforme d'hypervision pour la sécurité urbaine et industrielle."
-        />
-        <meta property="og:url" content="https://diviniti.tech/soron" />
-        <meta
-          name="description"
-          content="Découvrez la solution Soron de Diviniti, une plateforme d'hypervision pour la sécurité urbaine et industrielle."
-        />
-        <meta
-          property="og:keywords"
-          content="Soron, hypervision, sécurité urbaine, sécurité industrielle, modélisation 3D, intelligence artificielle, interface utilisateur, Diviniti"
-        />
+        <meta property="og:title" content={t("soron.ogTitle")} />
+        <meta property="og:description" content={t("soron.ogDescription")} />
+        <meta property="og:url" content={t("soron.ogUrl")} />
+        <meta name="description" content={t("soron.metaDescription")} />
+        <meta property="og:keywords" content={t("soron.ogKeywords")} />
         <link
           rel="preload"
           href="https://uploads.pixecurity.com/files/AdobeStock_1299330558.webp"
@@ -41,37 +33,18 @@ export default function Soron() {
                 height={200}
                 priority={true}
               />
-              <h2 className={styles.h2}>Notre outil d'hypervision</h2>
-              <p>
-                SORON est la plateforme qui permet d’avoir à l’oeil tout
-                l’environnement à superviser. Grâce à la modélisation 3D et à
-                son interface inspirée du gaming et pensée pour l’utilisateur
-                votre site vous obéit au doigt et à l’oeil.
-              </p>
+              <h2 className={styles.h2}>{t("soron.header1Title")}</h2>
+              <p>{t("soron.header1Description")}</p>
             </div>
             <div className={styles.header2}>
               <div className={styles.header2Left}>
-                <h3>Un hyperviseur construit sur trois grands axes :</h3>
+                <h3>{t("soron.header2Title")}</h3>
                 <ul>
-                  <li>
-                    La modélisation 3D sur mesure de votre environnement
-                    d’intérêt.
-                  </li>
-                  <li>
-                    La connexion de vos systèmes de gestion des objets connectés
-                    à notre outil pour une centralisation des données en temps
-                    réel.
-                  </li>
-                  <li>
-                    L’ajout de notre logiciel d’Intelligence Artificielle pour
-                    une remontée et un traitement de données optimisés et une
-                    prise de décision optimisée.
-                  </li>
+                  <li>{t("soron.header2List1")}</li>
+                  <li>{t("soron.header2List2")}</li>
+                  <li>{t("soron.header2List3")}</li>
                 </ul>
-                <h3>
-                  Le tout rassemblé sur un seul et même outil inspiré de
-                  l’univers du jeux vidéo pour une navigation intuitive.
-                </h3>
+                <h3>{t("soron.header3Title")}</h3>
               </div>
 
               <div className={styles.header2Right}>
@@ -95,17 +68,11 @@ export default function Soron() {
             </video>
           </div>
           <div className={styles.section}>
-            <h2>Une modélisation 3D fidèle à la réalité</h2>
+            <h2>{t("soron.section1Title")}</h2>
             <div className={styles.sectionContent}>
               <div className={styles.sectionLeft}>
                 <div className={styles.sectionCard}>
-                  <h3>Un environnement sur mesure</h3>
-                  <p>
-                    Nos artistes 3D créent un jumeau numérique de
-                    l’environnement à superviser : bâtiment, usine, stade, gare,
-                    ville entière… Selon le niveau de détail souhaité et faisant
-                    le focus sur les principaux points d’intérêt. Il est ainsi
-                  </p>
+                  <h3>{t("soron.section1Description")}</h3>
                 </div>
               </div>
               <div className={styles.sectionRight}>
@@ -119,7 +86,7 @@ export default function Soron() {
             </div>
           </div>
           <div className={styles.section}>
-            <h2>Nos solutions</h2>
+            <h2>{t("soron.section2Title")}</h2>
             <div className={styles.sectionContent}>
               <div className={styles.sectionLeft}>
                 <Image
@@ -131,30 +98,20 @@ export default function Soron() {
               </div>
               <div className={styles.sectionRight}>
                 <div className={styles.sectionCard}>
-                  <h3>Tous les capteurs sur une même interface</h3>
-                  <h4>Contrôle d'accès & Videoprotection</h4>
-                  <p>
-                    Caméras, portes, détecteurs d’intrusion, de fumée, infos
-                    trafic, infos sur les transports en commun, tout est
-                    aisément visualisable dans l’interface. Possibilité de
-                    masquer/afficher chaque élément, de naviguer aisément dans
-                    les différents niveaux d’immersion.
-                  </p>
+                  <h3>{t("soron.section2CardTitle")}</h3>
+                  <h4>{t("soron.section2CardSubtitle")}</h4>
+                  <p>{t("soron.section2CardDescription")}</p>
                 </div>
               </div>
             </div>
           </div>
           <div className={styles.section}>
-            <h2>Les codes du gaming au service de l’efficacité</h2>
+            <h2>{t("soron.section3Title")}</h2>
             <div className={styles.sectionContent}>
               <div className={styles.sectionLeft}>
                 <div className={styles.sectionCard}>
-                  <h3>Des interactions simples et intuitives</h3>
-                  <p>
-                    En plus d’être tous présents sur une même interface, les
-                    différents capteurs sont facilement pilotables et
-                    communiquent tous avec le même «langage»
-                  </p>
+                  <h3>{t("soron.section3CardTitle")}</h3>
+                  <p>{t("soron.section3CardDescription")}</p>
                 </div>
               </div>
               <div className={styles.sectionRight}>
@@ -168,7 +125,7 @@ export default function Soron() {
             </div>
           </div>
           <div className={styles.section}>
-            <h2>L’utilisateur au centre du projet</h2>
+            <h2>{t("soron.section4Title")}</h2>
             <div className={styles.sectionContent}>
               <div className={styles.sectionLeft}>
                 <Image
@@ -180,14 +137,8 @@ export default function Soron() {
               </div>
               <div className={styles.sectionRight}>
                 <div className={styles.sectionCard}>
-                  <h3>Une interface pensée pour l’utilisateur</h3>
-                  <p>
-                    L’utilisateur final est au coeur de la conception de Soron.
-                    Notre logiciel a été conçu en s’inspirant des codes du
-                    gaming pour être aussi facilement utilisable qu’un Sim City.
-                    Nous menons constamment des recherches en UX/UI pour
-                    répondre au mieux aux besoin des opérateurs.
-                  </p>
+                  <h3>{t("soron.section4CardTitle")}</h3>
+                  <p>{t("soron.section4CardDescription")}</p>
                 </div>
               </div>
             </div>
@@ -195,25 +146,16 @@ export default function Soron() {
           <div className={styles.section6}>
             <div className={styles.section6content}>
               <div className={styles.section6card1}>
-                <h3>Dashboard</h3>
-                <p>
-                  Permet de garder à l’oeil les informations principales sur un
-                  écran totalement customisable.
-                </p>
+                <h3>{t("soron.section6Card1Title")}</h3>
+                <p>{t("soron.section6Card1Description")}</p>
               </div>
               <div className={styles.section6card2}>
-                <h3>Remontée d’informations en direct</h3>
-                <p>
-                  Ici les prochaines arrivées de train en gare de
-                  Maisons-Laffitte
-                </p>
+                <h3>{t("soron.section6Card2Title")}</h3>
+                <p>{t("soron.section6Card2Description")}</p>
               </div>
               <div className={styles.section6card3}>
-                <h3>Modélisation détaillée avec une grande précision</h3>
-                <p>
-                  Accès à un nombre illimité de capteurs en simultané (ici une
-                  porte et sa caméras associée + une autre caméra)
-                </p>
+                <h3>{t("soron.section6Card3Title")}</h3>
+                <p>{t("soron.section6Card3Description")}</p>
               </div>
 
               <Image

@@ -3,8 +3,11 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Head from "next/head";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 export default function QuiSommesNous() {
+  const { t } = useTranslation();
+
   const team = [
     {
       name: "Fabien THOMAS",
@@ -46,55 +49,9 @@ export default function QuiSommesNous() {
   return (
     <>
       <Head>
-        <title>Diviniti - Qui sommes nous</title>
-        <meta
-          name="description"
-          content="Découvrez l'équipe passionnée de Diviniti, experts en innovation pour les solutions de sécurité et de sûreté augmentée pour les villes intelligentes."
-        />
-        <meta name="robots" content="index, follow" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        {/* Open Graph */}
-        <meta property="og:title" content="Diviniti - Qui Sommes-Nous ?" />
-        <meta
-          property="og:description"
-          content="Découvrez l'équipe de Diviniti, pionniers dans l'innovation en matière de sécurité et de technologies de ville intelligente."
-        />
-        <meta
-          property="og:image"
-          content="https://uploads.pixecurity.com/files/divinit-new.jpg"
-        />
-        <meta
-          property="og:url"
-          content="https://diviniti.tech/qui-sommes-nous"
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:locale" content="fr_FR" />
-
-        {/* Twitter Cards */}
-        <meta name="twitter:title" content="Diviniti - Qui Sommes-Nous ?" />
-        <meta
-          name="twitter:description"
-          content="Découvrez l'équipe innovante de Diviniti, experts en solutions de sûreté augmentée et technologies de villes intelligentes."
-        />
-        <meta
-          name="twitter:image"
-          content="https://uploads.pixecurity.com/files/divinit-new.jpg"
-        />
-        <meta name="twitter:card" content="summary_large_image" />
-
-        {/* Canonical */}
-        <link
-          rel="canonical"
-          href="https://www.diviniti.tech/qui-sommes-nous"
-        />
-
-        <link
-          rel="preload"
-          href="https://uploads.pixecurity.com/files/create-zone.webp"
-          as="image"
-          type="image/webp"
-        />
+        <title>{t("about.title")}</title>
+        <meta name="description" content={t("about.subtitle")} />
+        {/* Les autres balises meta peuvent rester telles quelles */}
       </Head>
 
       <div className={styles.aboutUsContainer}>
@@ -111,53 +68,30 @@ export default function QuiSommesNous() {
               src="https://uploads.pixecurity.com/files/Aurora-1744296233957.mp4"
               type="video/mp4"
             />
-            Your browser does not support the video tag.
           </video>
 
           <div className={styles.heroContent}>
             <div className={styles.heroLeft}>
-              <h1>Qui Sommes-Nous</h1>
-              <h2>DIVINITI : Une startup récompensée pour son innovation</h2>
-
-              <p>
-                <strong>Incubée à Station F</strong>, au cœur du programme{" "}
-                <strong>Ville de Demain</strong>.
-              </p>
+              <h1>{t("about.title")}</h1>
+              <h2>{t("about.subtitle")}</h2>
+              <p>{t("about.incubated")}</p>
 
               <ul className={styles.heroList}>
-                <li>
-                  <strong>Station F</strong> : Le plus grand campus de startups
-                  au monde, en plein Paris.
-                </li>
-                <li>
-                  <strong>Ville de Demain</strong> : Un programme dédié aux
-                  projets qui réinventent la ville de demain.
-                </li>
-                <li>
-                  <strong>Un écosystème stimulant</strong> : Innovation,
-                  accompagnement, réseau d’experts.
-                </li>
-                <li>
-                  <strong>Des partenariats stratégiques</strong> avec les
-                  acteurs majeurs de l’urbanisme et de la sécurité.
-                </li>
-                <li>
-                  <strong>Un engagement fort</strong> pour des solutions
-                  technologiques responsables, durables et sécurisées.
-                </li>
+                <li>{t("about.heroList.0")}</li>
+                <li>{t("about.heroList.1")}</li>
+                <li>{t("about.heroList.2")}</li>
+                <li>{t("about.heroList.3")}</li>
+                <li>{t("about.heroList.4")}</li>
               </ul>
 
               <p>
-                <strong>Un intérêt grandissant</strong> de la part de
-                partenaires publics et privés :
+                <strong>{t("about.interest")}</strong>
                 <br />
-                <i class="fa-regular fa-circle-right"></i>{" "}
-                <strong>Secteur public</strong> : Collectivités, municipalités,
-                Police Nationale (BRI)
+                <i className="fa-regular fa-circle-right"></i>{" "}
+                {t("about.sector.public")}
                 <br />
-                <i class="fa-regular fa-circle-right"></i>{" "}
-                <strong>Secteur privé</strong> : Énergie, logistique, défense,
-                événementiel
+                <i className="fa-regular fa-circle-right"></i>{" "}
+                {t("about.sector.private")}
               </p>
             </div>
 
@@ -178,7 +112,7 @@ export default function QuiSommesNous() {
                     alt="station f logo"
                     width={250}
                     height={80}
-                    priority={true}
+                    priority
                   />
                 </Link>
                 <Image
@@ -189,7 +123,6 @@ export default function QuiSommesNous() {
                   priority
                   className={styles.officeImg}
                 />
-
                 <Link
                   href="https://www.ville-demain.com/"
                   target="_blank"
@@ -217,60 +150,45 @@ export default function QuiSommesNous() {
           >
             <Image
               src="/assets/team/YANN.webp"
-              alt="Yann Duchet - CEO Diviniti"
+              alt={t("about.ceo.name")}
               width={300}
               height={250}
-              priority={true}
+              priority
             />
-            <h2>Yann DUCHET</h2>
-            <p>CEO</p>
+            <h2>{t("about.ceo.name")}</h2>
+            <p>{t("about.ceo.role")}</p>
           </motion.div>
           <div className={styles.section1Left}>
-            <h2>L’humain au cœur de l’innovation</h2>
-            <h3>Une passion commune pour la ville de demain</h3>
-            <p>
-              Chez Diviniti, notre force réside dans les talents exceptionnels
-              qui composent notre équipe. Ensemble, nous repoussons les limites
-              de la technologie pour imaginer, concevoir et réaliser des
-              solutions révolutionnaires pour la ville de demain.
-            </p>
-            <p>
-              Animés par une passion commune pour l’innovation, nous unissons
-              nos expertises pour transformer la manière dont le monde aborde la
-              sûreté et la supervision.
-            </p>
+            <h2>{t("about.human.title")}</h2>
+            <h3>{t("about.human.subtitle")}</h3>
+            <p>{t("about.human.1")}</p>
+            <p>{t("about.human.2")}</p>
           </div>
         </div>
 
         <div className={styles.section2}>
-          <h1>Rencontrez la Divini'team</h1>
-          <p>Découvrez les talents qui construisent l’avenir</p>
+          <h1>{t("about.team.title")}</h1>
+          <p>{t("about.team.subtitle")}</p>
         </div>
+
         <div className={styles.section3}>
-          <p>
-            Nous sommes une équipe dédiée à l'innovation et à la créativité.
-          </p>
+          <p>{t("about.team.intro")}</p>
           <Image
             src="/assets/logo/diviniti-logo3.png"
             alt="Diviniti Logo"
             className={styles.imgLogo}
             width={200}
             height={200}
-            priority={false}
           />
           <div className={styles.teamMemberContent}>
             {team.map((member, index) => {
-              const randomX = Math.floor(Math.random() * 40) - 20; // entre -20 et +20 px
+              const randomX = Math.floor(Math.random() * 40) - 20;
 
               return (
                 <motion.div
                   key={index}
                   className={styles.teamMember}
-                  initial={{
-                    opacity: 0,
-                    y: 100,
-                    x: randomX,
-                  }}
+                  initial={{ opacity: 0, y: 100, x: randomX }}
                   whileInView={{ opacity: 1, y: 0, x: 0 }}
                   viewport={{ once: true, amount: 0.2 }}
                   transition={{
@@ -288,7 +206,7 @@ export default function QuiSommesNous() {
                 >
                   <Image
                     src={member.image}
-                    alt={`Photo de ${member.name}, ${member.role}`}
+                    alt={`Photo de ${member.name}`}
                     width={150}
                     height={150}
                   />

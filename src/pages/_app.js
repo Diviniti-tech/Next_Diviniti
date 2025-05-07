@@ -6,6 +6,9 @@ import Head from "next/head";
 import { useRouter } from 'next/router';
 import * as gtag from '../../lib/gtag';
 import { useEffect } from 'react';
+import '../../i18n';
+import { appWithTranslation } from 'next-i18next';
+
 
 
  function App({ Component, pageProps }) {
@@ -39,4 +42,4 @@ import { useEffect } from 'react';
   );
 }
 
-export default App;
+export default appWithTranslation(App);

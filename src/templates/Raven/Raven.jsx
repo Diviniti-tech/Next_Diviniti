@@ -2,33 +2,28 @@ import React from "react";
 import styles from "./style.module.scss";
 import Image from "next/image";
 import Head from "next/head";
+import { useTranslation } from "next-i18next";
+
 
 export default function Raven() {
+ const { t } = useTranslation();
+
   return (
     <>
       <Head>
-        <title>Diviniti - Raven</title>
-        <meta
-          name="description"
-          content="Raven est une solution de réalité augmentée qui permet aux opérateurs de se projeter sur le terrain à tout moment."
-        />
-        <meta
-          name="keywords"
-          content="Raven, réalité augmentée, sécurité, surveillance, capteurs, communication, terrain"
-        />
+        <title>{t("meta.title")}</title>
+        <meta name="description" content={t("meta.description")} />
+        <meta name="keywords" content={t("meta.keywords")} />
         <meta name="author" content="Diviniti" />
-        <meta property="og:title" content="Diviniti - Raven" />
-        <meta
-          property="og:description"
-          content="Raven est une solution de réalité augmentée qui permet aux opérateurs de se projeter sur le terrain à tout moment."
-        />
+        <meta property="og:title" content={t("meta.title")} />
+        <meta property="og:description" content={t("meta.description")} />
         <meta property="og:image" content="/assets/og-image.png" />
         <meta property="og:url" content="https://diviniti.tech/raven" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Diviniti" />
-        <meta property="og:locale" content="fr_FR" />
+        <meta property="og:locale" content={t("meta.locale")} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Diviniti - Raven" />
+        <meta name="twitter:title" content={t("meta.title")} />
         <link
           rel="preload"
           href="https://uploads.pixecurity.com/files/AdobeStock_1263764734.webp"
@@ -40,35 +35,23 @@ export default function Raven() {
           <div className={styles.header1}>
             <Image
               src="https://uploads.pixecurity.com/files/raven-logo-dark-bkgd-centered.png"
-              alt="Diviniti - Raven solution"
+              alt={t("logoAlt")}
               width={200}
               height={200}
               priority={true}
             />
-            <h1>Être partout en même temps grâce à la XR</h1>
-            <p>
-              RAVEN permet aux opérateurs d’être à la fois en position de
-              superviser tout l’environnement et de se projeter sur le terrain à
-              tout moment. Les agents sur site peuvent aussi interagir avec les
-              capteurs sans
-            </p>
+            <h1>{t("headerRaven.title")}</h1>
+            <p>{t("headerRaven.text")}</p>
           </div>
           <div className={styles.section1}>
             <div className={styles.section1Left}>
-              <h2>L'immersion totale à portée de main !</h2>
-              <p>
-                RAVEN permet, à distance, de se déplacer facilement à n’importe
-                quel endroit de l’environnement à piloter. A vol d’oiseau ou en
-                immersion totale, depuis le PC sécurité, depuis chez soi ou
-                depuis l’autre bout du monde vous interagissez avec tous les
-                capteurs comme si vous pouviez les toucher du doigt.
-              </p>
+              <h2>{t("section1.title")}</h2>
+              <p>{t("section1.text")}</p>
             </div>
-
             <div className={styles.section1Right}>
               <Image
                 src="https://uploads.pixecurity.com/files/AdobeStock_720388563.webp"
-                alt="Image de la solution Raven"
+                alt={t("section1.imageAlt")}
                 width={400}
                 height={400}
               />
@@ -78,24 +61,15 @@ export default function Raven() {
             <div className={styles.section2Right}>
               <Image
                 src="https://uploads.pixecurity.com/files/AdobeStock_1387063479.webp"
-                alt="Image de la solution Raven"
+                alt={t("section2.imageAlt")}
                 width={400}
                 height={400}
               />
             </div>
             <div className={styles.section2Left}>
-              <h2>
-                Contrôlez vos capteurs et améliorez la communication sur le
-                terrain
-              </h2>
-              <p>
-                Sur le terrain, RAVEN vous donne la possibilité de commander
-                tous les capteurs qui vous entourent, en revisionnant des flux
-                vidéo de caméras par exemple, ou en déverrouillant une porte
-                d’un claquement de doigt. Et permet aussi de recevoir des
-                directives visuelles pour une communication plus efficace.
-              </p>
-              <h3>COMING SOON, in 2026…</h3>
+              <h2>{t("section2.title")}</h2>
+              <p>{t("section2.text")}</p>
+              <h3>{t("section2.comingSoon")}</h3>
             </div>
           </div>
         </div>
@@ -103,3 +77,5 @@ export default function Raven() {
     </>
   );
 }
+
+

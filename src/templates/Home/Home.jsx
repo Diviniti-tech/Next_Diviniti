@@ -5,59 +5,32 @@ import Head from "next/head";
 import Image from "next/image";
 import ModalBookDemo from "@/components/ModalBookDemo/ModalBookDemo";
 import ModalSolutions from "@/components/ModalSolutions/ModalSolutions";
+import { useTranslation } from 'next-i18next';
 
 export default function Home() {
   const [showModalDemo, setShowModalDemo] = useState(false);
   const [showModalSolutions, setShowModalSolutions] = useState(false);
+  
+  const { t } = useTranslation(); // Hook pour récupérer les traductions
 
   return (
     <>
       <Head>
-        <title>Diviniti - Sûreté augmentée pour la ville de demain</title>
+        <title>{t('home.title')}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta
-          name="description"
-          content="Découvrez les solutions Diviniti pour la ville de demain, combinant IA et réalité étendue pour une sécurité proactive. Diviniti révolutionne la sûreté avec des technologies innovantes pour les environnements urbains et industriels."
-        />
+        <meta name="description" content={t('home.metaDescription')} />
         <meta name="robots" content="index, follow" />
-        <meta
-          property="og:title"
-          content="Diviniti - Sûreté augmentée pour la ville de demain"
-        />
-        <meta
-          property="og:description"
-          content="Découvrez les solutions Diviniti pour la ville de demain, combinant IA et réalité étendue pour une sécurité proactive."
-        />
+        <meta property="og:title" content={t('home.title')} />
+        <meta property="og:description" content={t('home.metaDescription')} />
         <meta property="og:url" content="https://diviniti.tech" />
         <meta property="og:type" content="website" />
-        <meta
-          property="og:image"
-          content="https://uploads.pixecurity.com/files/divinit-new.jpg"
-        />
+        <meta property="og:image" content="https://uploads.pixecurity.com/files/divinit-new.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Diviniti - Sûreté augmentée pour la ville de demain"
-        />
-        <meta
-          name="twitter:description"
-          content="Découvrez les solutions Diviniti pour la ville de demain, combinant IA et réalité étendue pour une sécurité proactive."
-        />
-        <meta
-          name="twitter:image"
-          content="https://uploads.pixecurity.com/files/divinit-new.jpg"
-        />
-
-        <meta
-          property="og:keywords"
-          content="sûreté augmentée, vidéoprotection, intelligence artificielle, réalité étendue, XR, ville intelligente, sécurité proactive, analyse d'image, contrôle d'accès, prédiction des risques, gestion de la sécurité, smart city, transport sécurisé, Diviniti"
-        />
-
-        <link
-          rel="preload"
-          href="https://uploads.pixecurity.com/files/1-1.webp"
-          as="image"
-        />
+        <meta name="twitter:title" content={t('home.title')} />
+        <meta name="twitter:description" content={t('home.metaDescription')} />
+        <meta name="twitter:image" content="https://uploads.pixecurity.com/files/divinit-new.jpg" />
+        <meta property="og:keywords" content={t('home.metaKeywords')} />
+        <link rel="preload" href="https://uploads.pixecurity.com/files/1-1.webp" as="image" />
         <link rel="preload" href="/assets/logo/test1.gif" as="image" />
         <link rel="canonical" href="https://www.diviniti.tech" />
       </Head>
@@ -65,26 +38,22 @@ export default function Home() {
       <div className={styles.homeContainer}>
         <div className={styles.section1}>
           <div className={styles.section1left}>
-            <h2>Gaming for Realiti</h2>
-            <h1>Une nouvelle ère pour la sûreté</h1>
-            <p>
-              Grâce à une combinaison unique d’intelligence artificielle, de XR
-              et des codes du gaming, Diviniti révolutionne la sûreté pour les
-              environnements urbains et industriels.
-            </p>
+            <h2>{t('home.section1.title')}</h2>
+            <h1>{t('home.section1.subtitle')}</h1>
+            <p>{t('home.section1.description')}</p>
             <div className={styles.cta}>
               <button
                 className={styles.seeSolutions}
                 onClick={() => setShowModalSolutions(true)}
               >
-                Découvrir nos solutions
+                {t('home.section1.buttonText')}
               </button>
             </div>
           </div>
           <div className={styles.section1right}>
             <Image
               src="/assets/logo/test1.gif"
-              alt="Animation Soron Logo"
+              alt={t('home.section1.imageAlt')}
               width={400}
               height={400}
               priority
@@ -95,62 +64,48 @@ export default function Home() {
 
         <div className={styles.section2}>
           <div className={styles.section2content}>
-            <h3>Une solution innovante pour la sûreté</h3>
-            <h4>IA, XR et automatisation pour une sécurité proactive</h4>
-            <p>
-              Nos technologies permettent une détection et une anticipation des
-              menaces en temps réel, réduisant les risques et optimisant la
-              gestion des interventions.
-            </p>
+            <h3>{t('home.section2.title')}</h3>
+            <h4>{t('home.section2.subtitle')}</h4>
+            <p>{t('home.section2.description')}</p>
             <Link
               href="/notre-mission-et-vision"
               passHref
               className={styles.ctaButton}
             >
-              Notre mission et vision
+              {t('home.section2.linkText')}
             </Link>
           </div>
         </div>
 
         <div className={styles.section3}>
           <div className={styles.section3content}>
-            <span>Nos solutions technologiques</span>
-            <h4>Une suite complète pour une sûreté augmentée</h4>
-            <p>
-              Diviniti propose un écosystème de solutions innovantes intégrant
-              l’IA, la 3D et la réalité mixte pour répondre aux défis de la
-              sécurité de demain.
-            </p>
+            <span>{t('home.section3.subtitle')}</span>
+            <h4>{t('home.section3.title')}</h4>
+            <p>{t('home.section3.description')}</p>
 
             <div className={styles.cards}>
               <Link href="/soron" passHref>
                 <div className={styles.card}>
                   <Image
                     src="https://uploads.pixecurity.com/files/soron-logo-clear-bkgd-centered.png"
-                    alt="Soron Logo"
+                    alt={t('home.section3.soronAlt')}
                     width={150}
                     height={110}
                     loading="lazy"
                   />
-                  <p>
-                    <strong>Soron</strong> - Logiciel d’hypervision 3D pour une
-                    gestion immersive des opérations de sûreté.
-                  </p>
+                  <p>{t('home.section3.soronDescription')}</p>
                 </div>
               </Link>
               <Link href="/atna" passHref>
                 <div className={styles.card}>
                   <Image
                     src="https://uploads.pixecurity.com/files/ATNa-logo-clear-bkgd-centered.png"
-                    alt="ATNa Logo"
+                    alt={t('home.section3.atnaAlt')}
                     width={100}
                     height={100}
                     loading="lazy"
                   />
-                  <p>
-                    <strong>ATNa</strong> - Intelligence artificielle et
-                    algorithmes avancés pour l’analyse des flux vidéo.
-                  </p>
+                  <p>{t('home.section3.atnaDescription')}</p>
                 </div>
               </Link>
 
@@ -158,30 +113,24 @@ export default function Home() {
                 <div className={styles.card}>
                   <Image
                     src="https://uploads.pixecurity.com/files/raven-logo-clear-bkgd-centered.png"
-                    alt="Raven Logo"
+                    alt={t('home.section3.ravenAlt')}
                     width={150}
                     height={100}
                     loading="lazy"
                   />
-                  <p>
-                    <strong>Raven</strong> - Casques VR et solutions de réalité
-                    mixte pour l'entraînement et l’intervention.
-                  </p>
+                  <p>{t('home.section3.ravenDescription')}</p>
                 </div>
               </Link>
               <Link href="/befrost" passHref>
                 <div className={styles.card}>
                   <Image
                     src="https://uploads.pixecurity.com/files/befrost-logo-clear-bkgd-centered.png"
-                    alt="Befrost Logo"
+                    alt={t('home.section3.befrostAlt')}
                     width={210}
                     height={110}
                     loading="lazy"
                   />
-                  <p>
-                    <strong>Befrost</strong> - Connecteurs intelligents assurant
-                    l’interopérabilité des systèmes de sécurité.
-                  </p>
+                  <p>{t('home.section3.befrostDescription')}</p>
                 </div>
               </Link>
             </div>
@@ -190,12 +139,8 @@ export default function Home() {
 
         <div className={styles.section4}>
           <div className={styles.section4content}>
-            <h2>Des solutions adaptées aux défis d’aujourd’hui</h2>
-            <p>
-              Qu’il s’agisse de sécuriser des espaces publics, des
-              infrastructures critiques ou des événements, nos technologies
-              offrent une approche flexible et efficace.
-            </p>
+            <h2>{t('home.section4.title')}</h2>
+            <p>{t('home.section4.description')}</p>
           </div>
           <iframe
             className={styles.video}
@@ -213,24 +158,20 @@ export default function Home() {
             <div className={styles.section5left}>
               <Image
                 src="https://uploads.pixecurity.com/files/AdobeStock_540919231.webp"
-                alt="Illustration de la sûreté augmentée"
+                alt={t('home.section5.imageAlt')}
                 width={400}
                 height={400}
                 loading="lazy"
               />
             </div>
             <div className={styles.section5right}>
-              <h2>Découvrez la sûreté augmentée avec Diviniti</h2>
-              <p>
-                Grâce à une approche combinant analyse prédictive et assistance
-                immersive, nous permettons aux opérateurs de réagir plus
-                rapidement et plus efficacement.
-              </p>
+              <h2>{t('home.section5.title')}</h2>
+              <p>{t('home.section5.description')}</p>
               <button
                 className={styles.bookDemo}
                 onClick={() => setShowModalDemo(true)}
               >
-                Demander une démo
+                {t('home.section5.buttonText')}
               </button>
             </div>
           </div>

@@ -3,8 +3,11 @@ import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 import Head from "next/head";
+import { useTranslation } from "next-i18next";
 
 export default function Contact() {
+  const { t } = useTranslation();
+
   const [formData, setFormData] = useState({
     nom: "",
     entreprise: "",
@@ -13,7 +16,6 @@ export default function Contact() {
     message: "",
   });
   const [errors, setErrors] = useState({});
-
   const [isSending, setIsSending] = useState(false);
 
   const handleChange = (e) => {
@@ -30,21 +32,19 @@ export default function Contact() {
     const newErrors = {};
 
     if (!nomRegex.test(formData.nom)) {
-      newErrors.nom =
-        "Le nom doit contenir uniquement des lettres (min 2 caractères).";
+      newErrors.nom = t("contact.errors.name");
     }
 
     if (!emailRegex.test(formData.email)) {
-      newErrors.email = "Veuillez entrer une adresse email valide.";
+      newErrors.email = t("contact.errors.email");
     }
 
     if (formData.telephone && !phoneRegex.test(formData.telephone)) {
-      newErrors.telephone =
-        "Le téléphone doit contenir uniquement des chiffres (+ autorisé).";
+      newErrors.telephone = t("contact.errors.phone");
     }
 
     if (formData.message.trim().length < 30) {
-      newErrors.message = "Merci d’écrire au moins 30 caractères.";
+      newErrors.message = t("contact.errors.message");
     }
 
     setErrors(newErrors);
@@ -77,10 +77,10 @@ export default function Contact() {
         telephone: "",
         message: "",
       });
-      // Affichez une alerte de succès
+
       Swal.fire({
-        title: "Merci !",
-        text: "Votre message a été envoyé avec succès.",
+        title: t("contact.alert.successTitle"),
+        text: t("contact.alert.successText"),
         icon: "success",
         timer: 3000,
         showConfirmButton: false,
@@ -89,15 +89,14 @@ export default function Contact() {
       setErrors({});
     } catch (err) {
       console.error(err);
-      // Affichez une alerte d'erreur
       Swal.fire({
-        title: "Erreur !",
-        text: "Une erreur est survenue lors de l'envoi de votre message. Veuillez réessayer.",
+        title: t("contact.alert.errorTitle"),
+        text: t("contact.alert.errorText"),
         icon: "error",
-        confirmButtonText: "OK",
+        confirmButtonText: t("contact.alert.ok"),
       });
 
-      setErrors({ submit: "Une erreur est survenue. Veuillez réessayer." });
+      setErrors({ submit: t("contact.errors.submit") });
     } finally {
       setIsSending(false);
     }
@@ -109,17 +108,13 @@ export default function Contact() {
         <title>Diviniti - Contact</title>
         <meta
           name="description"
-          content="Contactez Diviniti pour toute question, collaboration ou demande de devis. Nous sommes à votre écoute."
+          content={t("contact.description")}
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
 
-        {/* Open Graph (Facebook, LinkedIn, etc.) */}
-        <meta property="og:title" content="Contact | Diviniti" />
-        <meta
-          property="og:description"
-          content="Prenez contact avec l'équipe Diviniti pour vos projets, partenariats ou informations."
-        />
+        <meta property="og:title" content={`Contact | Diviniti`} />
+        <meta property="og:description" content={t("contact.description")} />
         <meta
           property="og:image"
           content="https://uploads.pixecurity.com/files/divinit-new.jpg"
@@ -127,19 +122,14 @@ export default function Contact() {
         <meta property="og:url" content="https://diviniti.tech/contact" />
         <meta property="og:type" content="website" />
 
-        {/* Twitter card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Contact | Diviniti" />
-        <meta
-          name="twitter:description"
-          content="Prenez contact avec l'équipe Diviniti pour vos projets, partenariats ou informations."
-        />
+        <meta name="twitter:title" content={`Contact | Diviniti`} />
+        <meta name="twitter:description" content={t("contact.description")} />
         <meta
           name="twitter:image"
           content="https://uploads.pixecurity.com/files/divinit-new.jpg"
         />
 
-        {/* Favicon */}
         <link
           rel="icon"
           href="https://uploads.pixecurity.com/files/divinit-new.jpg"
@@ -149,19 +139,14 @@ export default function Contact() {
       <div className={styles.contactContainer}>
         <div className={styles.contactContent}>
           <div className={styles.contactRight}>
-            <h1>Envie d’innover avec nous ? </h1>
-            <h2>Contactez Diviniti</h2>
-            <h3>
-              Diviniti, c’est avant tout une aventure humaine et technologique.
-              Que vous soyez une entreprise, une collectivité ou un curieux de
-              passage, on serait ravis d’échanger avec vous. Laissez-nous un
-              message, on vous répond vite !
-            </h3>
+            <h1>{t("contact.title")}</h1>
+            <h2>{t("contact.subtitle")}</h2>
+            <h3>{t("contact.description")}</h3>
             <form onSubmit={handleSubmit} className={styles.form}>
               <input
                 type="text"
                 name="nom"
-                placeholder="Nom et prénom"
+                placeholder={t("contact.placeholders.name")}
                 value={formData.nom}
                 onChange={handleChange}
               />
@@ -170,7 +155,7 @@ export default function Contact() {
               <input
                 type="text"
                 name="entreprise"
-                placeholder="Entreprise (optionnel)"
+                placeholder={t("contact.placeholders.company")}
                 value={formData.entreprise}
                 onChange={handleChange}
               />
@@ -178,7 +163,7 @@ export default function Contact() {
               <input
                 type="email"
                 name="email"
-                placeholder="Email"
+                placeholder={t("contact.placeholders.email")}
                 value={formData.email}
                 onChange={handleChange}
               />
@@ -187,7 +172,7 @@ export default function Contact() {
               <input
                 type="tel"
                 name="telephone"
-                placeholder="Téléphone (optionnel)"
+                placeholder={t("contact.placeholders.phone")}
                 value={formData.telephone}
                 onChange={handleChange}
               />
@@ -197,7 +182,7 @@ export default function Contact() {
 
               <textarea
                 name="message"
-                placeholder="Votre message"
+                placeholder={t("contact.placeholders.message")}
                 rows="5"
                 value={formData.message}
                 onChange={handleChange}
@@ -206,10 +191,14 @@ export default function Contact() {
                 <p className={styles.error}>{errors.message}</p>
               )}
 
-              {errors.submit && <p className={styles.error}>{errors.submit}</p>}
+              {errors.submit && (
+                <p className={styles.error}>{errors.submit}</p>
+              )}
 
               <button type="submit" disabled={isSending}>
-                {isSending ? "Envoi en cours..." : "Envoyer"}
+                {isSending
+                  ? t("contact.button.sending")
+                  : t("contact.button.send")}
               </button>
             </form>
           </div>

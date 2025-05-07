@@ -4,10 +4,12 @@ import Image from "next/image";
 import { useState } from "react";
 import ModalSolutions from "../ModalSolutions/ModalSolutions";
 import ModalBookDemo from "../ModalBookDemo/ModalBookDemo";
+import { useTranslation } from "next-i18next";
 
 function Footer() {
   const [showModalSolutions, setShowModalSolutions] = useState(false);
   const [showModalDemo, setShowModalDemo] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <div className={styles["footer-container"]}>
@@ -20,41 +22,40 @@ function Footer() {
         />
         <p className={styles.slogan}>Gaming for Realiti</p>
         <p className={styles.description}>
-          Le nouveau système d&apos;exploitation sûreté
+          {t("footer.slogan")}
         </p>
       </div>
 
       <div className={styles["section-2"]}>
-        <h4>Plan de site </h4>
+        <h4>{t("footer.siteMap")}</h4>
         <ul>
-  <li>
-    <Link href="/">Accueil</Link>
-  </li>
-  <li>
-    <Link href="/gaming-for-realiti">Notre Mission et Vision</Link>
-  </li>
-  <li onClick={() => setShowModalSolutions(true)}>Nos Solutions</li>
-  <li>
-    <Link href="/qui-sommes-nous">Qui Sommes-Nous ?</Link>
-  </li>
-  <li>
-    <Link href="/tendances-et-actus">Tendances & Actus</Link>
-  </li>
-  <li onClick={() => setShowModalDemo(true)}>Demander une démo</li>
-  <li>
-    <Link href="/contact">Contactez-nous</Link>
-  </li>
-</ul>
-
+          <li>
+            <Link href="/">{t("footer.home")}</Link>
+          </li>
+          <li>
+            <Link href="/gaming-for-realiti">{t("footer.mission")}</Link>
+          </li>
+          <li onClick={() => setShowModalSolutions(true)}>
+            {t("footer.solutions")}
+          </li>
+          <li>
+            <Link href="/qui-sommes-nous">{t("footer.about")}</Link>
+          </li>
+          <li>
+            <Link href="/tendances-et-actus">{t("footer.blog")}</Link>
+          </li>
+          <li onClick={() => setShowModalDemo(true)}>
+            {t("footer.demo")}
+          </li>
+          <li>
+            <Link href="/contact">{t("footer.contact")}</Link>
+          </li>
+        </ul>
       </div>
 
       <div className={styles["section-3"]}>
-        <h4>Contact</h4>
+        <h4>{t("footer.contact")}</h4>
         <ul>
-          {/* <li>
-            <i className="fa-solid fa-envelope"></i>
-            <Link href="mailto:diviniti@diviniti.com">diviniti@diviniti.com</Link>
-          </li> */}
           <li>
             <i className="fa-solid fa-phone"></i>(+33) 1 39 60 98 82
           </li>
@@ -69,10 +70,11 @@ function Footer() {
             </Link>
           </li>
           <p className={styles.copyright}>
-            © 2025 Diviniti. Tous droits réservés.
+            © 2025 Diviniti. {t("footer.rights")}
           </p>
         </ul>
       </div>
+
       <ModalSolutions
         showModal={showModalSolutions}
         setShowModal={setShowModalSolutions}

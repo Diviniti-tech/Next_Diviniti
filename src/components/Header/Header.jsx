@@ -4,30 +4,55 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import ModalBookDemo from "@/components/ModalBookDemo/ModalBookDemo";
 import { AnimatePresence, motion } from "framer-motion";
+// Importer un package de switch ou utiliser un composant personnalisé
+import Switch from "react-switch";
+import { useTranslation } from "next-i18next"; // Importer le hook de traduction
+import { useRouter } from "next/router"; // Importer le hook de routage
+import i18next from "i18next";
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(false); // État pour le menu burger
-  const [isMobile, setIsMobile] = useState(false); // État pour la détection de l'écran mobile
+  const [isOpen, setIsOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   const linkedin = "https://www.linkedin.com/company/divinititech";
-  const [showModal, setShowModal] = useState(false); // État pour le modal de démo
+  const [showModal, setShowModal] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [isSwitchedOn, setIsSwitchedOn] = useState(false); // État pour le switch
+
+  const { t } = useTranslation();
+  const router = useRouter(); // Hook pour récupérer le routeur
+
+  const changeLanguage = (lng) => {
+    i18next.changeLanguage(lng);
+  };
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
   const toggleDropdown = () => {
     setDropdownOpen((prev) => !prev);
   };
+
+  const handleSwitchChange = () => {
+    const newState = !isSwitchedOn;
+    setIsSwitchedOn(newState);
+
+    const newLanguage = newState ? "en" : "fr"; // active 'en' quand switch est ON
+    changeLanguage(newLanguage);
+    router.push(router.pathname, router.asPath, { locale: newLanguage });
+  };
+
   // Détection de la taille de l'écran
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 1024); // Mobile/Tablet si largeur <= 1024px
+      setIsMobile(window.innerWidth <= 1024);
     };
 
-    handleResize(); // Vérifie une première fois au chargement
-    window.addEventListener("resize", handleResize); // Ajoute un écouteur pour suivre les changements
+    handleResize();
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener("resize", handleResize); // Nettoyage
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -48,19 +73,19 @@ export default function Header() {
       {/* Menu responsive */}
       <motion.nav
         className={styles.headerLinks}
-        initial={isMobile ? { x: "100%" } : { x: 0 }} // Visible sur desktop
+        initial={isMobile ? { x: "100%" } : { x: 0 }}
         animate={isOpen ? { x: 0 } : isMobile ? { x: "100%" } : { x: 0 }}
         transition={{ type: "keyframes", stiffness: 100, damping: 10 }}
       >
         <ul>
           <li>
             <Link href="/notre-mission-et-vision" onClick={toggleMenu}>
-              Notre Mission et Vision
+              {t("header.vision")}
             </Link>
           </li>
           <li className={styles.dropdown}>
             <span className={styles.dropdownTitle} onClick={toggleDropdown}>
-              Nos Solutions <i className="fa-solid fa-caret-down"></i>
+              {t("header.solutions")} <i className="fa-solid fa-caret-down"></i>
             </span>
 
             <AnimatePresence>
@@ -140,15 +165,14 @@ export default function Header() {
               )}
             </AnimatePresence>
           </li>
-
           <li>
             <Link href="/qui-sommes-nous" onClick={toggleMenu}>
-              Qui Sommes-Nous ?
+              {t("header.about")}
             </Link>
           </li>
           <li>
             <Link href="/tendances-et-actus" onClick={toggleMenu}>
-              Tendances & Actus
+              {t("header.news")}
             </Link>
           </li>
           <li>
@@ -157,7 +181,6 @@ export default function Header() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={toggleMenu}
-              style={{ textDecoration: "none" }}
               className={styles.linkedinIcon}
             >
               <Image
@@ -170,15 +193,49 @@ export default function Header() {
               />
             </Link>
           </li>
+          {/* Switch à droite */}
+          <div className={styles.switchContainer}>
+            <span className={styles.flagIcon}>
+              <Image
+                src="https://img.icons8.com/?size=100&id=YwnngGdMBmIV&format=png&color=000000"
+                alt="French flag"
+                width={28}
+                height={28}
+              />
+            </span>
+            {/* <span>FR</span> */}
+            <Switch
+              checked={isSwitchedOn}
+              onChange={handleSwitchChange}
+              offColor="#888"
+              onColor="#4CAF50"
+              uncheckedIcon={false}
+              checkedIcon={false}
+            />
+
+            <span className={styles.flagIcon}>
+              <Image
+                src="https://img.icons8.com/?size=100&id=t3NE3BsOAQwq&format=png&color=000000"
+                alt="English flag"
+                width={28}
+                height={28}
+              />
+            </span>
+            {/* <span>EN</span> */}
+          </div>
         </ul>
 
         <button className={styles.demoBtn} onClick={() => setShowModal(true)}>
-          <i className="fa-solid fa-rocket"></i> {"  "} Commencez ici
+          <i className="fa-solid fa-rocket"></i> {t("header.cta")}
         </button>
+
+        {/* <button className={styles.demoBtn} onClick={() => setShowModal(true)}>
+          <i className="fa-solid fa-rocket"></i> {t("header.CTA")}
+        </button> */}
       </motion.nav>
 
       {/* Menu burger */}
-      {isMobile && ( // Affiche le menu burger uniquement en mobile
+      {isMobile && (
         <div className={styles.burgerMenu} onClick={toggleMenu}>
           <motion.div
             animate={isOpen ? { rotate: 45, y: 12 } : { rotate: 0, y: 0 }}
@@ -194,6 +251,7 @@ export default function Header() {
           />
         </div>
       )}
+
       {/* Modal de démo */}
       {showModal && (
         <ModalBookDemo showModal={showModal} setShowModal={setShowModal} />

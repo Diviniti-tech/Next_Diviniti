@@ -1,0 +1,272 @@
+{
+    "header": {
+        "vision": "Our Mission and Vision",
+        "solutions": "Our Solutions",
+        "about": "About Us",
+        "news": "Trends & News",
+        "cta": "Start Here"
+    },
+    "footer": {
+        "slogan": "The new safety operating system",
+        "siteMap": "Site Map",
+        "home": "Home",
+        "mission": "Our Mission and Vision",
+        "solutions": "Our Solutions",
+        "about": "About Us",
+        "blog": "Trends & News",
+        "demo": "Request a demo",
+        "contact": "Contact us",
+        "rights": "All rights reserved."
+    },
+    "home": {
+        "title": "Diviniti - Augmented Security for the City of Tomorrow",
+        "metaDescription": "Discover Diviniti's solutions for the city of tomorrow, combining AI and extended reality for proactive security. Diviniti is revolutionizing security with innovative technologies for urban and industrial environments.",
+        "metaKeywords": "augmented security, video surveillance, artificial intelligence, extended reality, XR, smart city, proactive security, image analysis, access control, risk prediction, security management, smart city, secure transport, Diviniti",
+        "section1": {
+            "title": "Gaming for Realiti",
+            "subtitle": "A New Era for Security",
+            "description": "By combining artificial intelligence, XR, and gaming principles, Diviniti is revolutionizing security for urban and industrial environments.",
+            "buttonText": "Discover Our Solutions",
+            "imageAlt": "Soron Animation Logo"
+        },
+        "section2": {
+            "title": "An Innovative Solution for Security",
+            "subtitle": "AI, XR, and Automation for Proactive Security",
+            "description": "Our technologies enable real-time threat detection and anticipation, reducing risks and optimizing intervention management.",
+            "linkText": "Our Mission and Vision"
+        },
+        "section3": {
+            "subtitle": "Our Technological Solutions",
+            "title": "A Complete Suite for Augmented Security",
+            "description": "Diviniti offers an ecosystem of innovative solutions that integrate AI, 3D, and mixed reality to address the security challenges of tomorrow.",
+            "soronAlt": "Soron Logo",
+            "soronDescription": "3D hypervision software for immersive security operations management.",
+            "atnaAlt": "ATNa Logo",
+            "atnaDescription": "Artificial intelligence and advanced algorithms for video stream analysis.",
+            "ravenAlt": "Raven Logo",
+            "ravenDescription": "VR headsets and mixed reality solutions for training and intervention.",
+            "befrostAlt": "Befrost Logo",
+            "befrostDescription": "Smart connectors ensuring interoperability of security systems."
+        },
+        "section4": {
+            "title": "Solutions Tailored to Today's Challenges",
+            "description": "Whether securing public spaces, critical infrastructures, or events, our technologies offer a flexible and efficient approach."
+        },
+        "section5": {
+            "title": "Discover Augmented Security with Diviniti",
+            "description": "Through a combination of predictive analysis and immersive assistance, we empower operators to react more quickly and effectively.",
+            "buttonText": "Request a Demo",
+            "imageAlt": "Augmented Security Illustration"
+        }
+    },
+    "mission": {
+        "metaTitle": "Diviniti - Our Mission and Vision",
+        "metaDescription": "Discover Diviniti's mission and vision, pioneers of augmented safety, with innovative solutions integrating AI, extended reality, and advanced technologies.",
+        "metaKeywords": "mission, vision, augmented safety, video surveillance, artificial intelligence, extended reality, XR, smart cities, proactive security, AI, innovation, Diviniti",
+        "section1": {
+            "title": "Reinventing Security Through Innovation",
+            "text": "Diviniti is revolutionizing safety by combining artificial intelligence, extended reality, and advanced technologies to offer proactive and immersive protection for urban and industrial environments."
+        },
+        "section2": {
+            "title": "Our Mission and Vision",
+            "p1": "Diviniti is an innovative company developing software solutions for the city of tomorrow. With our expertise in video surveillance, access control, and image analysis, combined with the latest advances in hardware and AI, our mission is to transform how businesses, transport infrastructures, and cities secure and manage their environments.",
+            "p2": "We offer a true operating system for safety, inspired by gaming interfaces to deliver an intuitive and engaging user experience. With the integration of extended reality (XR), our users can remotely interact with and immerse themselves in physical locations as if they were there.",
+            "p3": "Artificial intelligence at the core of our technologies enables risk prediction, real-time video stream analysis, and automated responses for proactive security management. This innovative approach, blending foresight and immersion, is designed to meet the evolving needs of complex buildings, transport systems, and smart cities by providing increased control and enhanced efficiency.",
+            "p4": "As pioneers of augmented safety, Diviniti is redefining industry standards and shaping a safer, smarter, and more connected future."
+        },
+        "section3": {
+            "cta": "Discover our solutions"
+        },
+        "section4": {
+            "title": "A User-Centric Approach",
+            "subtitle": "Transforming safety into an immersive experience",
+            "description": "With an intuitive interface and AI-powered tools, we enable security operators to anticipate risks and respond effectively in real time.",
+            "link": "About us",
+            "footer1": "Innovation serving safety",
+            "footer2": "Optimization, reactivity and immersion"
+        }
+    },
+    "about": {
+        "title": "About Us",
+        "subtitle": "DIVINITI: An award-winning startup for its innovation",
+        "incubated": "Incubated at Station F, at the heart of the Ville de Demain program.",
+        "heroList": [
+            "Station F: The world’s largest startup campus, located in Paris.",
+            "Ville de Demain: A program dedicated to projects reimagining the city of tomorrow.",
+            "A stimulating ecosystem: Innovation, support, expert network.",
+            "Strategic partnerships with key players in urban planning and security.",
+            "A strong commitment to responsible, sustainable, and secure tech solutions."
+        ],
+        "interest": "Growing interest from both public and private partners:",
+        "sector": {
+            "public": "Public sector: Local governments, municipalities, National Police (BRI)",
+            "private": "Private sector: Energy, logistics, defense, event management"
+        },
+        "ceo": {
+            "name": "Yann DUCHET",
+            "role": "CEO"
+        },
+        "human": {
+            "title": "People at the Heart of Innovation",
+            "subtitle": "A shared passion for the city of tomorrow",
+            "1": "At Diviniti, our strength lies in the exceptional talents that make up our team. Together, we push the boundaries of technology to imagine, design, and deliver groundbreaking solutions for the city of tomorrow.",
+            "2": "Driven by a shared passion for innovation, we combine our expertise to transform the way the world approaches safety and supervision."
+        },
+        "team": {
+            "title": "Meet the Divini'team",
+            "subtitle": "Discover the talents building the future",
+            "intro": "We are a team dedicated to innovation and creativity."
+        }
+    },
+    "modal": {
+        "title": "Let’s schedule a demo!",
+        "subtitle": "Fill out the form below and we’ll get back to you shortly.",
+        "labelName": "Full name",
+        "labelCompany": "Company (optional)",
+        "labelEmail": "Email",
+        "submitButton": "Contact me",
+        "errorFillFields": "Please fill in all required fields",
+        "errorTitle": "Error",
+        "errorConfig": "EmailJS configuration is missing. Please contact the administrator.",
+        "errorGeneric": "An error occurred. Please try again.",
+        "successTitle": "Thank you!",
+        "successText": "Your request has been successfully sent. We will get back to you shortly."
+    },
+    "soron": {
+        "title": "Diviniti - Soron",
+        "metaDescription": "Discover Diviniti's Soron solution, a platform for urban and industrial security hypervision.",
+        "ogDescription": "Discover Diviniti's Soron solution, a platform for urban and industrial security hypervision.",
+        "ogTitle": "Diviniti - Soron solution",
+        "ogUrl": "https://diviniti.tech/soron",
+        "ogKeywords": "Soron, hypervision, urban security, industrial security, 3D modeling, artificial intelligence, user interface, Diviniti",
+        "preloadImage": "https://uploads.pixecurity.com/files/AdobeStock_1299330558.webp",
+        "header1Title": "Our Hypervision Tool",
+        "header1Description": "SORON is the platform that allows you to monitor your entire environment. Thanks to 3D modeling and its gaming-inspired interface designed for the user, your site obeys you at the touch of a button.",
+        "header2Title": "A hypervisor built on three main pillars:",
+        "header2List1": "Custom 3D modeling of your area of interest.",
+        "header2List2": "Connecting your IoT management systems to our tool for real-time data centralization.",
+        "header2List3": "Adding our Artificial Intelligence software for optimized data reporting and decision-making.",
+        "header3Title": "All brought together in one tool inspired by the video game universe for intuitive navigation.",
+        "section1Title": "A 3D model faithful to reality",
+        "section1Description": "Our 3D artists create a digital twin of the environment to monitor: building, factory, stadium, station, entire city... Depending on the desired level of detail, with a focus on key points of interest. It is customized according to your needs.",
+        "section2Title": "Our Solutions",
+        "section2CardTitle": "All sensors on a single interface",
+        "section2CardSubtitle": "Access Control & Video Protection",
+        "section2CardDescription": "Cameras, doors, intrusion detectors, smoke detectors, traffic information, public transport info, everything is easily visualizable in the interface. You can hide/show each element and navigate effortlessly through different levels of immersion.",
+        "section3Title": "Gaming codes serving efficiency",
+        "section3CardTitle": "Simple and intuitive interactions",
+        "section3CardDescription": "In addition to being all present on a single interface, the various sensors are easily controlled and all communicate using the same 'language'.",
+        "section4Title": "User at the center of the project",
+        "section4CardTitle": "An interface designed for the user",
+        "section4CardDescription": "The end user is at the heart of Soron’s design. Our software is inspired by gaming codes to be as easy to use as Sim City. We continuously conduct UX/UI research to best meet the needs of operators.",
+        "section6Title": "Advanced Features",
+        "section6Card1Title": "Dashboard",
+        "section6Card1Description": "Allows you to monitor key information on a fully customizable screen.",
+        "section6Card2Title": "Real-time data reporting",
+        "section6Card2Description": "Here are the upcoming train arrivals at Maisons-Laffitte station.",
+        "section6Card3Title": "Detailed modeling with high precision",
+        "section6Card3Description": "Access to an unlimited number of sensors simultaneously (here a door and its associated camera + another camera)."
+    },
+    "atna": {
+        "metaTitle": "Diviniti - ATNa",
+        "metaOGTitle": "Diviniti - ATNa Solution",
+        "metaDescription": "Discover ATNa, AI-powered decision support for proactive and effective security.",
+        "metaKeywords": "ATNa, AI, artificial intelligence, proactive security, data analysis, anomaly detection, risk anticipation",
+        "mainTitle": "Our Diviniti Solutions",
+        "mainDescription": "Discover our innovative and tailored solutions for your needs.",
+        "headerTitle": "AI for Decision-Making Support",
+        "headerDescription": "With ATNa, the AI integrated into Soron, we analyze massive amounts of data to detect and anticipate dangerous situations and enable immediate response.",
+        "realTimeAnalysisTitle": "Real-Time Data Analysis",
+        "realTimeAnalysisDesc": "Instant processing and interpretation of video streams, IoT sensors, and other data sources for optimal responsiveness.",
+        "anomalyDetectionTitle": "Anomaly Detection",
+        "anomalyDetectionDesc": "Automatic identification of suspicious behaviors or unusual events through advanced algorithms.",
+        "riskPredictionTitle": "Risk Prediction",
+        "riskPredictionDesc": "Prediction of dangerous situations using machine learning models, helping reduce incidents before they occur.",
+        "alertsTitle": "Real-Time Alerts",
+        "alertsDesc": "Automated and contextualized alerts sent to operators, enabling rapid and targeted interventions.",
+        "efficiencyTitle": "AI to Improve Efficiency",
+        "efficiencyP1": "Our AI integrated into cameras triggers alerts when anomalies are detected (fall, accident, theft, technical camera failure, etc.), creating a logbook.",
+        "efficiencyP2": "From there, the user can immediately respond to the incident by dispatching, depending on the anomaly detected, a team of:",
+        "teamPolice": "Police/security,",
+        "teamFirstAid": "First responders/firefighters,",
+        "teamMaintenance": "Maintenance/technical",
+        "efficiencyP3": "Our AI aims to bring up the most relevant information and suggest appropriate response options to optimize your decision-making."
+    },
+    "befrost": {
+        "meta": {
+            "title": "Diviniti - Befrost",
+            "description": "Befrost is a gateway solution between different systems, designed to adapt to various devices and platforms.",
+            "keywords": "Befrost, gateway, systems, devices, platforms, video surveillance, access control, intrusion, geolocation, intercom, fire"
+        },
+        "header": {
+            "title": "The gateway between different systems",
+            "subtitle": "Designed to adapt to various devices and platforms, BEFROST connects systems like video surveillance, access control, intrusion, geolocation, intercom, and fire detection."
+        },
+        "cards": {
+            "vms": {
+                "title": "VMS"
+            },
+            "accessControl": {
+                "title": "Access Control"
+            },
+            "network": {
+                "title": "Network"
+            },
+            "gtbgtc": {
+                "title": "BMS / GTB"
+            }
+        }
+    },
+    "meta": {
+        "title": "Diviniti - Raven",
+        "description": "Raven is an augmented reality solution that allows operators to project themselves into the field at any time.",
+        "keywords": "Raven, augmented reality, security, surveillance, sensors, communication, field operations",
+        "locale": "en_US"
+    },
+    "logoAlt": "Diviniti - Raven solution",
+    "headerRaven": {
+        "title": "Be everywhere at once with XR",
+        "text": "RAVEN enables operators to both supervise the entire environment and project themselves into the field at any time. On-site agents can also interact with sensors without..."
+    },
+    "section1": {
+        "title": "Total immersion at your fingertips!",
+        "text": "RAVEN makes it easy to navigate remotely to any location within the monitored environment. From a bird’s-eye view or in full immersion—from the security office, from home, or from across the globe—you can interact with all sensors as if you could touch them.",
+        "imageAlt": "Raven solution image"
+    },
+    "section2": {
+        "title": "Control your sensors and improve on-site communication",
+        "text": "On the field, RAVEN lets you operate all surrounding sensors—replay camera video streams, unlock doors with a snap, and receive visual instructions for more effective communication.",
+        "imageAlt": "Raven solution image",
+        "comingSoon": "COMING SOON, in 2026…"
+    },
+    "contact": {
+        "title": "Want to innovate with us?",
+        "subtitle": "Contact Diviniti",
+        "description": "Diviniti is above all a human and technological adventure. Whether you are a company, a community, or just curious, we’d be happy to talk with you. Leave us a message, we’ll get back to you quickly!",
+        "placeholders": {
+            "name": "Full name",
+            "company": "Company (optional)",
+            "email": "Email",
+            "phone": "Phone (optional)",
+            "message": "Your message"
+        },
+        "errors": {
+            "name": "Name must contain only letters (min 2 characters).",
+            "email": "Please enter a valid email address.",
+            "phone": "Phone number must contain only digits (+ allowed).",
+            "message": "Please write at least 30 characters.",
+            "submit": "An error occurred. Please try again."
+        },
+        "button": {
+            "send": "Send",
+            "sending": "Sending..."
+        },
+        "alert": {
+            "successTitle": "Thank you!",
+            "successText": "Your message was sent successfully.",
+            "errorTitle": "Error!",
+            "errorText": "An error occurred while sending your message. Please try again.",
+            "ok": "OK"
+        }
+    }
+}
