@@ -213,6 +213,7 @@
       display: flex;
       padding-right: 4rem;
     }
+  
 
     .headerLinks {
       position: fixed;
@@ -240,12 +241,19 @@
           border: none;
           position: absolute;
           bottom: 2rem;
-          right: -0rem;
+          right: -3.5rem;
 
           &:hover {
             background-color: transparent;
           }
         }
+        .switchContainer {
+          position: absolute;
+          top: 15%;
+          right: 50px;
+          transform: translateY(-50%);
+        }
+
       }
       .dropdownMenu {
         display: none;
@@ -269,4 +277,5 @@
       background-color: none;
     }
   }
+
 }
