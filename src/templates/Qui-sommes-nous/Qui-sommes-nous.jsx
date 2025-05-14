@@ -20,6 +20,11 @@ export default function QuiSommesNous() {
       image: "/assets/team/ABDEL-RAHMEN_.webp",
     },
     {
+      name: "Samuel THAUVIN",
+      role: "Lead Developer",
+      image: "https://uploads.pixecurity.com/files/samuel.jpg",
+    },
+    {
       name: "Ambroise JULIEN-LAFERRIERE",
       role: "VP Sales",
       image: "/assets/team/AMBROISE.webp",
