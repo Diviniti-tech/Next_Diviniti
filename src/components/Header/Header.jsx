@@ -165,11 +165,52 @@ export default function Header() {
               )}
             </AnimatePresence>
           </li>
-          <li>
+          {/* <li>
             <Link href="/qui-sommes-nous" onClick={toggleMenu}>
               {t("header.about")}
             </Link>
-          </li>
+          </li> */}
+          <li className={styles.dropdown}>
+  <span className={styles.dropdownTitle} onClick={toggleDropdown}>
+    {t("header.about")} <i className="fa-solid fa-caret-down"></i>
+  </span>
+
+  <AnimatePresence>
+    {dropdownOpen && (
+      <motion.ul
+        className={styles.dropdownMenu}
+        initial={{ opacity: 0, y: -10 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -10 }}
+        transition={{ type: "spring", stiffness: 100, damping: 15 }}
+      >
+        <li>
+          <Link
+            href="/qui-sommes-nous"
+            onClick={() => {
+              toggleMenu();
+              setDropdownOpen(false);
+            }}
+          >
+            {t("header.aboutUs")}
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/notre-demarche-rse"
+            onClick={() => {
+              toggleMenu();
+              setDropdownOpen(false);
+            }}
+          >
+            {t("header.rse")}
+          </Link>
+        </li>
+      </motion.ul>
+    )}
+  </AnimatePresence>
+</li>
+
           <li>
             <Link href="/tendances-et-actus" onClick={toggleMenu}>
               {t("header.news")}
