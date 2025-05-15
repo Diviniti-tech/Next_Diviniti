@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 import Head from "next/head";
 import { useTranslation } from "next-i18next";
+import { motion } from "framer-motion";
 
 export default function Contact() {
   const { t } = useTranslation();
@@ -138,7 +139,12 @@ export default function Contact() {
 
       <div className={styles.contactContainer}>
         <div className={styles.contactContent}>
-          <div className={styles.contactRight}>
+          <motion.div
+  className={styles.contactRight}
+  initial={{ opacity: 0, y: 50 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, ease: "easeOut" }}
+>
             <h1>{t("contact.title")}</h1>
             <h2>{t("contact.subtitle")}</h2>
             <h3>{t("contact.description")}</h3>
@@ -201,7 +207,7 @@ export default function Contact() {
                   : t("contact.button.send")}
               </button>
             </form>
-          </div>
+          </motion.div>
           <div className={styles.contactLeft}>
             <img
               src="https://uploads.pixecurity.com/files/diviniti-logo-white_copie.png"

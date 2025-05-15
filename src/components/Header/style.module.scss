@@ -74,6 +74,7 @@
             background-color: #a638ff;
             color: white;
             text-align: center;
+            width: 100%;
             border-radius: 30px;
             -webkit-border-radius: 30px;
             -moz-border-radius: 30px;
@@ -87,8 +88,10 @@
           width: 3rem;
           padding-right: 11rem;
 
+
           &:hover {
             background-color: transparent;
+              width: 3rem;
           }
         }
       }
