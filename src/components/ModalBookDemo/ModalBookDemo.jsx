@@ -74,7 +74,7 @@ export default function ModalBookDemo({ showModal, setShowModal }) {
 
         <video autoPlay loop muted className={styles.backgroundVideo}>
           <source
-            src="https://uploads.pixecurity.com/files/soron_test_mini_%E2%80%90_R%C3%A9alis%C3%A9e_avec_Clipchamp.mp4"
+            src="https://uploads.pixecurity.com/files/SORON-_web_video_480p.mp4"
             type="video/mp4"
             preload="auto"
           />

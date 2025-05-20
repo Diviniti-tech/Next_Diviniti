@@ -25,7 +25,7 @@ export default function VideoDemo() {
           className={styles.backgroundVideo}
         >
           <source
-            src="https://uploads.pixecurity.com/files/Soron_-_demo_video_%2804.2025%29.mp4"
+            src="https://uploads.pixecurity.com/files/SORON-_web_video_480p.mp4"
             type="video/mp4"
           />
         </video>

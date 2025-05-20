@@ -81,7 +81,7 @@ export default function NotreMissionEtVision() {
               className={styles.backgroundVideo}
             >
               <source
-                src="https://uploads.pixecurity.com/files/soron_test2_%E2%80%90_R%C3%A9alis%C3%A9e_avec_Clipchamp.mp4"
+                src="https://uploads.pixecurity.com/files/SORON-_web_video_480p.mp4"
                 type="video/mp4"
               />
             </video>
