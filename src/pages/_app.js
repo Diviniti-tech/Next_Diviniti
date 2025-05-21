@@ -15,15 +15,43 @@ import { appWithTranslation } from 'next-i18next';
 
   const router = useRouter();
 
-  useEffect(() => {
-    const handleRouteChange = (url) => {
-      gtag.pageview(url);
+   const umamiWebsiteId = "aa5e5015-df12-4d50-b548-6f2ffc0400fb"; 
+const umamiScriptUrl = "https://umami-analytics-navy-nu.vercel.app/script.js";
+
+let umamiLoaded = false;
+
+function loadUmami() {
+  if (!umamiLoaded) {
+    const script = document.createElement("script");
+    script.defer = true;
+    script.setAttribute("data-website-id", umamiWebsiteId);
+    script.src = umamiScriptUrl;
+    script.onload = () => {
+      umamiLoaded = true;
     };
-    router.events.on('routeChangeComplete', handleRouteChange);
-    return () => {
-      router.events.off('routeChangeComplete', handleRouteChange);
-    };
-  }, [router.events]);
+    document.head.appendChild(script);
+  }
+}
+
+ useEffect(() => {
+  loadUmami(); // Charge au premier affichage
+
+  const handleRouteChange = (url) => {
+    gtag.pageview(url);
+    if (window.umami) {
+      window.umami.track(url); // Appel correct
+    }
+  };
+
+  router.events.on('routeChangeComplete', handleRouteChange);
+  return () => {
+    router.events.off('routeChangeComplete', handleRouteChange);
+  };
+}, []);
+
+
+ 
+
   
   return (
     <>
